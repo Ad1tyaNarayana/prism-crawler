@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+*.db
+*.db-*
+*.lockfile
+data/
+.env
+.runtime/
+.DS_Store
+.firecrawl/
+
+# Local evidence, models, downloads and private provider state stay on this machine.
+reports/
+dist/
+.audit/
+.env.*
+*.pem
+*.key

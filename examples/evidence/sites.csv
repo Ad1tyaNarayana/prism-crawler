@@ -1,0 +1,51 @@
+id,cohort,url,passed,skipped_cloudflare,outcome,status,method,characters,elapsed_ms,reason
+python-tutorial,initial,https://docs.python.org/3/tutorial/index.html,True,False,ok,200,http,6220,832.830791012384,
+postgresql,initial,https://www.postgresql.org/docs/current/tutorial.html,True,False,ok,200,http,1995,1938.5692079958972,
+sqlite,initial,https://www.sqlite.org/about.html,True,False,ok,200,http,4164,5239.547458011657,
+nginx,initial,https://nginx.org/en/docs/beginners_guide.html,True,False,ok,200,http,11850,1329.4593750033528,
+redis,initial,https://redis.io/docs/latest/develop/get-started/,True,False,ok,200,http,603,3361.2789580074605,
+docker,initial,https://docs.docker.com/get-started/docker-overview/,True,False,ok,200,http,8954,859.3086669861805,
+git,initial,https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control,True,False,ok,200,http,7251,1212.988041981589,
+kubernetes,initial,https://kubernetes.io/docs/concepts/overview/,True,False,ok,200,http,9946,799.266207992332,
+django,initial,https://docs.djangoproject.com/en/5.2/intro/overview/,True,False,ok,200,http,11526,948.6288339830935,
+numpy,initial,https://numpy.org/doc/stable/user/absolute_beginners.html,True,False,ok,200,http,46358,2339.7897079994436,
+pandas,initial,https://pandas.pydata.org/docs/getting_started/intro_tutorials/01_table_oriented.html,True,False,ok,200,http,4469,4338.46224998706,
+rfc9309,initial,https://www.rfc-editor.org/rfc/rfc9309.html,True,False,ok,200,http,20771,1285.9144579852,
+w3-png,initial,https://www.w3.org/TR/PNG/,True,False,ok,200,http,225802,2183.9992919994984,
+ietf,initial,https://www.ietf.org/about/,True,False,ok,200,http,866,918.3615419897251,
+esa,initial,https://www.esa.int/Science_Exploration/Space_Science,True,False,ok,200,http,904,1538.37279198342,
+eso,initial,https://www.eso.org/public/about-eso/,True,False,ok,200,http,10499,2904.0846249845345,
+bgs,initial,https://www.bgs.ac.uk/about-bgs/,True,False,ok,200,http,3605,3111.7019160010386,
+loc,initial,https://www.loc.gov/about/,True,False,ok,200,http,2941,709.7265410120599,
+europeana,initial,https://www.europeana.eu/en/about-us,False,True,robots_unavailable,0,http,0,511.2108330067713,"Robots unavailable or restricted, HTTP 403"
+rijksmuseum,initial,https://www.rijksmuseum.nl/en/about-us,False,False,ok,200,http,290,1808.7308749963995,
+vam,initial,https://www.vam.ac.uk/info/about-us,True,False,ok,200,http,4094,1046.460040990496,
+tate,initial,https://www.tate.org.uk/about-us,True,False,ok,200,http,3299,1928.9053330139723,
+moma,initial,https://www.moma.org/about/,False,True,access_wall,403,http,0,1937.2253750043456,HTTP 403 access restriction
+louvre,initial,https://www.louvre.fr/en/the-museum,False,False,error,404,http,0,6606.312375020934,HTTP 404
+nationalgallery,initial,https://www.nationalgallery.org.uk/about-us,True,False,ok,200,http,7054,1888.0252499948256,
+un,initial,https://www.un.org/en/about-us,True,False,ok,200,http,2825,1964.7263750084676,
+unesco,initial,https://www.unesco.org/en/brief,True,False,ok,200,http,3897,2371.5945000003558,
+unicef,initial,https://www.unicef.org/what-we-do,True,False,ok,200,http,2486,1058.6142499814741,
+oecd,initial,https://www.oecd.org/en/about.html,False,True,access_wall,403,http,0,639.7955420252401,HTTP 403 access restriction
+worldbank,initial,https://www.worldbank.org/en/who-we-are,True,False,ok,200,http,9388,1255.3580419917125,
+wto,initial,https://www.wto.org/english/thewto_e/whatis_e/whatis_e.htm,True,False,ok,200,http,2014,1223.1563749955967,
+imf,initial,https://www.imf.org/en/About,True,False,ok,200,http,3757,1879.7669159830548,
+ecb,initial,https://www.ecb.europa.eu/ecb/html/index.en.html,True,False,ok,200,http,4117,7258.935332996771,
+data-gov,initial,https://data.gov/about/,True,False,ok,200,http,2908,2916.8219580024015,
+opensource,initial,https://opensource.org/about,True,False,ok,200,http,2713,1616.2422089837492,
+stackoverflow,initial,https://stackoverflow.com/tour,False,True,robots_unavailable,0,http,0,78.8191250176169,"Robots unavailable or restricted, HTTP 403"
+curl,initial,https://curl.se/docs/,True,False,ok,200,http,1530,1744.411666993983,
+ffmpeg,initial,https://ffmpeg.org/about.html,True,False,ok,200,http,2859,8834.244083001977,
+blender,initial,https://www.blender.org/about/,True,False,ok,200,http,3021,1310.6454160006251,
+videolan,initial,https://www.videolan.org/vlc/,True,False,ok,200,http,4601,1191.8215829937253,
+gimp,reserved,https://www.gimp.org/about/,False,False,robots_unavailable,0,http,0,1062.922333017923,"Robots unavailable or restricted, HTTP 301"
+inkscape,reserved,https://inkscape.org/about/,True,False,ok,200,http,2876,8351.760000019567,
+obs,reserved,https://obsproject.com/wiki/,False,False,error,0,http,0,4699.028166010976,Redirect limit exceeded
+libreoffice,reserved,https://www.libreoffice.org/discover/libreoffice/,True,False,ok,200,http,1851,1883.6320000118576,
+signal,reserved,https://signal.org/about/,False,False,error,404,http,0,889.6613749966491,HTTP 404
+eff,reserved,https://www.eff.org/about,True,False,ok,200,http,1848,1081.6038339980878,
+fsf,reserved,https://www.fsf.org/about/,True,False,ok,200,http,4511,3430.8371669903863,
+creative-commons,reserved,https://creativecommons.org/about/,True,False,ok,200,http,3020,4820.157915994059,
+jma,reserved,https://www.jma.go.jp/jma/en/Activities/activities.html,False,False,error,404,http,0,2599.6467919903807,HTTP 404
+gov-br,reserved,https://www.gov.br/pt-br/sobre-o-gov.br,False,False,error,404,http,0,3407.216249994235,HTTP 404

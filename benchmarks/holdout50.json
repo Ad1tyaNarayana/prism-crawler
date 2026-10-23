@@ -1,0 +1,752 @@
+[
+  {
+    "id": "python-tutorial",
+    "category": "docs",
+    "url": "https://docs.python.org/3/tutorial/index.html",
+    "min_chars": 250,
+    "groups": [
+      [
+        "python"
+      ],
+      [
+        "tutorial"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "postgresql",
+    "category": "docs",
+    "url": "https://www.postgresql.org/docs/current/tutorial.html",
+    "min_chars": 250,
+    "groups": [
+      [
+        "postgresql"
+      ],
+      [
+        "tutorial"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "sqlite",
+    "category": "docs",
+    "url": "https://www.sqlite.org/about.html",
+    "min_chars": 250,
+    "groups": [
+      [
+        "sqlite"
+      ],
+      [
+        "database"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "nginx",
+    "category": "docs",
+    "url": "https://nginx.org/en/docs/beginners_guide.html",
+    "min_chars": 250,
+    "groups": [
+      [
+        "nginx"
+      ],
+      [
+        "configuration"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "redis",
+    "category": "docs",
+    "url": "https://redis.io/docs/latest/develop/get-started/",
+    "min_chars": 250,
+    "groups": [
+      [
+        "redis"
+      ],
+      [
+        "database"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "docker",
+    "category": "docs",
+    "url": "https://docs.docker.com/get-started/docker-overview/",
+    "min_chars": 250,
+    "groups": [
+      [
+        "docker"
+      ],
+      [
+        "container"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "git",
+    "category": "docs",
+    "url": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control",
+    "min_chars": 250,
+    "groups": [
+      [
+        "version control"
+      ],
+      [
+        "git"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "kubernetes",
+    "category": "docs",
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "min_chars": 250,
+    "groups": [
+      [
+        "kubernetes"
+      ],
+      [
+        "container"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "django",
+    "category": "docs",
+    "url": "https://docs.djangoproject.com/en/5.2/intro/overview/",
+    "min_chars": 250,
+    "groups": [
+      [
+        "django"
+      ],
+      [
+        "model"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "numpy",
+    "category": "docs",
+    "url": "https://numpy.org/doc/stable/user/absolute_beginners.html",
+    "min_chars": 250,
+    "groups": [
+      [
+        "numpy"
+      ],
+      [
+        "array"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "pandas",
+    "category": "science",
+    "url": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/01_table_oriented.html",
+    "min_chars": 250,
+    "groups": [
+      [
+        "pandas"
+      ],
+      [
+        "dataframe"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "rfc9309",
+    "category": "science",
+    "url": "https://www.rfc-editor.org/rfc/rfc9309.html",
+    "min_chars": 250,
+    "groups": [
+      [
+        "robots"
+      ],
+      [
+        "protocol"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "w3-png",
+    "category": "science",
+    "url": "https://www.w3.org/TR/PNG/",
+    "min_chars": 250,
+    "groups": [
+      [
+        "portable network graphics"
+      ],
+      [
+        "png"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "ietf",
+    "category": "science",
+    "url": "https://www.ietf.org/about/",
+    "min_chars": 250,
+    "groups": [
+      [
+        "internet"
+      ],
+      [
+        "standards"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "esa",
+    "category": "science",
+    "url": "https://www.esa.int/Science_Exploration/Space_Science",
+    "min_chars": 250,
+    "groups": [
+      [
+        "space"
+      ],
+      [
+        "science"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "eso",
+    "category": "science",
+    "url": "https://www.eso.org/public/about-eso/",
+    "min_chars": 250,
+    "groups": [
+      [
+        "observatory"
+      ],
+      [
+        "astronomy"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "bgs",
+    "category": "science",
+    "url": "https://www.bgs.ac.uk/about-bgs/",
+    "min_chars": 250,
+    "groups": [
+      [
+        "geological"
+      ],
+      [
+        "research"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "loc",
+    "category": "culture",
+    "url": "https://www.loc.gov/about/",
+    "min_chars": 250,
+    "groups": [
+      [
+        "library"
+      ],
+      [
+        "congress"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "europeana",
+    "category": "culture",
+    "url": "https://www.europeana.eu/en/about-us",
+    "min_chars": 250,
+    "groups": [
+      [
+        "europeana"
+      ],
+      [
+        "cultural"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "rijksmuseum",
+    "category": "culture",
+    "url": "https://www.rijksmuseum.nl/en/about-us",
+    "min_chars": 250,
+    "groups": [
+      [
+        "rijksmuseum"
+      ],
+      [
+        "art"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "vam",
+    "category": "culture",
+    "url": "https://www.vam.ac.uk/info/about-us",
+    "min_chars": 250,
+    "groups": [
+      [
+        "museum"
+      ],
+      [
+        "design"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "tate",
+    "category": "culture",
+    "url": "https://www.tate.org.uk/about-us",
+    "min_chars": 250,
+    "groups": [
+      [
+        "tate"
+      ],
+      [
+        "art"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "moma",
+    "category": "culture",
+    "url": "https://www.moma.org/about/",
+    "min_chars": 250,
+    "groups": [
+      [
+        "museum"
+      ],
+      [
+        "art"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "louvre",
+    "category": "culture",
+    "url": "https://www.louvre.fr/en/the-museum",
+    "min_chars": 250,
+    "groups": [
+      [
+        "louvre"
+      ],
+      [
+        "museum"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "nationalgallery",
+    "category": "culture",
+    "url": "https://www.nationalgallery.org.uk/about-us",
+    "min_chars": 250,
+    "groups": [
+      [
+        "gallery"
+      ],
+      [
+        "paintings"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "un",
+    "category": "institutions",
+    "url": "https://www.un.org/en/about-us",
+    "min_chars": 250,
+    "groups": [
+      [
+        "united nations"
+      ],
+      [
+        "peace"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "unesco",
+    "category": "institutions",
+    "url": "https://www.unesco.org/en/brief",
+    "min_chars": 250,
+    "groups": [
+      [
+        "unesco"
+      ],
+      [
+        "education"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "unicef",
+    "category": "institutions",
+    "url": "https://www.unicef.org/what-we-do",
+    "min_chars": 250,
+    "groups": [
+      [
+        "unicef"
+      ],
+      [
+        "children"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "oecd",
+    "category": "institutions",
+    "url": "https://www.oecd.org/en/about.html",
+    "min_chars": 250,
+    "groups": [
+      [
+        "oecd"
+      ],
+      [
+        "policies"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "worldbank",
+    "category": "institutions",
+    "url": "https://www.worldbank.org/en/who-we-are",
+    "min_chars": 250,
+    "groups": [
+      [
+        "world bank"
+      ],
+      [
+        "poverty"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "wto",
+    "category": "institutions",
+    "url": "https://www.wto.org/english/thewto_e/whatis_e/whatis_e.htm",
+    "min_chars": 250,
+    "groups": [
+      [
+        "trade"
+      ],
+      [
+        "organization"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "imf",
+    "category": "institutions",
+    "url": "https://www.imf.org/en/About",
+    "min_chars": 250,
+    "groups": [
+      [
+        "monetary"
+      ],
+      [
+        "financial"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "ecb",
+    "category": "institutions",
+    "url": "https://www.ecb.europa.eu/ecb/html/index.en.html",
+    "min_chars": 250,
+    "groups": [
+      [
+        "central bank"
+      ],
+      [
+        "euro"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "data-gov",
+    "category": "institutions",
+    "url": "https://data.gov/about/",
+    "min_chars": 250,
+    "groups": [
+      [
+        "data"
+      ],
+      [
+        "government"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "opensource",
+    "category": "community",
+    "url": "https://opensource.org/about",
+    "min_chars": 250,
+    "groups": [
+      [
+        "open source"
+      ],
+      [
+        "initiative"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "stackoverflow",
+    "category": "community",
+    "url": "https://stackoverflow.com/tour",
+    "min_chars": 250,
+    "groups": [
+      [
+        "questions"
+      ],
+      [
+        "answers"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "curl",
+    "category": "community",
+    "url": "https://curl.se/docs/",
+    "min_chars": 250,
+    "groups": [
+      [
+        "curl"
+      ],
+      [
+        "documentation"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "ffmpeg",
+    "category": "community",
+    "url": "https://ffmpeg.org/about.html",
+    "min_chars": 250,
+    "groups": [
+      [
+        "ffmpeg"
+      ],
+      [
+        "audio"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "blender",
+    "category": "community",
+    "url": "https://www.blender.org/about/",
+    "min_chars": 250,
+    "groups": [
+      [
+        "blender"
+      ],
+      [
+        "3d"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "videolan",
+    "category": "community",
+    "url": "https://www.videolan.org/vlc/",
+    "min_chars": 250,
+    "groups": [
+      [
+        "vlc"
+      ],
+      [
+        "media"
+      ]
+    ],
+    "cohort": "initial"
+  },
+  {
+    "id": "gimp",
+    "category": "reserved",
+    "url": "https://www.gimp.org/about/",
+    "min_chars": 250,
+    "groups": [
+      [
+        "gimp"
+      ],
+      [
+        "image"
+      ]
+    ],
+    "cohort": "reserved"
+  },
+  {
+    "id": "inkscape",
+    "category": "reserved",
+    "url": "https://inkscape.org/about/",
+    "min_chars": 250,
+    "groups": [
+      [
+        "inkscape"
+      ],
+      [
+        "vector"
+      ]
+    ],
+    "cohort": "reserved"
+  },
+  {
+    "id": "obs",
+    "category": "reserved",
+    "url": "https://obsproject.com/wiki/",
+    "min_chars": 250,
+    "groups": [
+      [
+        "obs"
+      ],
+      [
+        "studio"
+      ]
+    ],
+    "cohort": "reserved"
+  },
+  {
+    "id": "libreoffice",
+    "category": "reserved",
+    "url": "https://www.libreoffice.org/discover/libreoffice/",
+    "min_chars": 250,
+    "groups": [
+      [
+        "libreoffice"
+      ],
+      [
+        "office"
+      ]
+    ],
+    "cohort": "reserved"
+  },
+  {
+    "id": "signal",
+    "category": "reserved",
+    "url": "https://signal.org/about/",
+    "min_chars": 250,
+    "groups": [
+      [
+        "signal"
+      ],
+      [
+        "privacy"
+      ]
+    ],
+    "cohort": "reserved"
+  },
+  {
+    "id": "eff",
+    "category": "reserved",
+    "url": "https://www.eff.org/about",
+    "min_chars": 250,
+    "groups": [
+      [
+        "electronic frontier"
+      ],
+      [
+        "rights"
+      ]
+    ],
+    "cohort": "reserved"
+  },
+  {
+    "id": "fsf",
+    "category": "reserved",
+    "url": "https://www.fsf.org/about/",
+    "min_chars": 250,
+    "groups": [
+      [
+        "free software"
+      ],
+      [
+        "foundation"
+      ]
+    ],
+    "cohort": "reserved"
+  },
+  {
+    "id": "creative-commons",
+    "category": "reserved",
+    "url": "https://creativecommons.org/about/",
+    "min_chars": 250,
+    "groups": [
+      [
+        "creative commons"
+      ],
+      [
+        "sharing"
+      ]
+    ],
+    "cohort": "reserved"
+  },
+  {
+    "id": "jma",
+    "category": "reserved",
+    "url": "https://www.jma.go.jp/jma/en/Activities/activities.html",
+    "min_chars": 250,
+    "groups": [
+      [
+        "meteorological"
+      ],
+      [
+        "weather"
+      ]
+    ],
+    "cohort": "reserved"
+  },
+  {
+    "id": "gov-br",
+    "category": "reserved",
+    "url": "https://www.gov.br/pt-br/sobre-o-gov.br",
+    "min_chars": 250,
+    "groups": [
+      [
+        "governo"
+      ],
+      [
+        "serviços"
+      ]
+    ],
+    "cohort": "reserved"
+  }
+]

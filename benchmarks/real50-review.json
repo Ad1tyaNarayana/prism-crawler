@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "basis": "Inline inspection of first baseline outputs and saved HTTP bodies, before changing crawler source. Original topic checks remain unchanged. These additional checks expose four false positives in those original checks.",
+  "checks": {
+    "react": {
+      "reject_serialized_json": true,
+      "reason": "A serialized component tree contains the topic words but is not readable extracted prose."
+    },
+    "mathworld": {
+      "extra_groups": [["a^2+b^2=c^2", "a²+b²=c²"]],
+      "reason": "The target page's defining equation must survive. Its image alternative text exists in the saved source."
+    },
+    "coursera": {
+      "min_chars": 1000,
+      "extra_groups": [["instructor", "andrew ng"], ["module", "week", "syllabus"]],
+      "reason": "The initial result is a truncated 499-character description. The source also contains course structure and instructors."
+    },
+    "ikea": {
+      "final_url_contains": "00263850",
+      "reason": "The specified product redirects to a category listing. Matching BILLY keywords does not recover that product. Keep this unavailable target in the denominator."
+    }
+  },
+  "warnings": {
+    "stanford": "Main article is present but output includes navigation and bibliography.",
+    "mit-ocw": "Course information is present but some repeated navigation and footer text remains.",
+    "wikipedia-fr": "Main article is present with editorial notices and category text.",
+    "musicbrainz": "Homepage content is present with substantial navigation."
+  }
+}

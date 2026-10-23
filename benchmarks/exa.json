@@ -1,0 +1,7 @@
+[
+  {"id":"exa-home","category":"supplemental","url":"https://exa.ai/","min_chars":300,"groups":[["exa"],["search"],["web","api"]]},
+  {"id":"exa-about","category":"supplemental","url":"https://exa.ai/about","min_chars":200,"groups":[["exa"],["search","web"],["mission","team","company"]]},
+  {"id":"exa-pricing","category":"supplemental","url":"https://exa.ai/pricing","min_chars":200,"groups":[["search"],["price","pricing","$"],["request","api"]]},
+  {"id":"exa-docs","category":"supplemental","url":"https://exa.ai/docs","min_chars":200,"groups":[["exa"],["search"],["api"]]},
+  {"id":"exa-contents","category":"supplemental","url":"https://exa.ai/docs/contents/quickstart","min_chars":200,"groups":[["content"],["url"],["extract","text"]]}
+]

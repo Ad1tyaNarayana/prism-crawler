@@ -1,0 +1,246 @@
+{
+  "stage": "Verified",
+  "rows": [
+    {
+      "trial": "w2",
+      "correct": true,
+      "ok": 162,
+      "expected_ok": 162,
+      "wall_s": 9.230597999994643,
+      "useful_documents_per_s": 17.550325558549297,
+      "exit_codes": [
+        0
+      ]
+    },
+    {
+      "trial": "recovery-inflight",
+      "correct": true,
+      "ok": 162,
+      "expected_ok": 162,
+      "wall_s": 9.592465166992042,
+      "useful_documents_per_s": 16.888255227388974,
+      "exit_codes": [
+        -9,
+        0
+      ]
+    },
+    {
+      "trial": "recovery-commit-window",
+      "correct": true,
+      "ok": 162,
+      "expected_ok": 162,
+      "wall_s": 9.334527583007002,
+      "useful_documents_per_s": 17.35492220248105,
+      "exit_codes": [
+        -9,
+        0
+      ]
+    }
+  ],
+  "detail": "Exact URL sets and first/last content markers checked. Zero requests to robots-denied pages.",
+  "results": [
+    {
+      "trial": "w2",
+      "workers": 2,
+      "exit_codes": [
+        0
+      ],
+      "expected_ok": 162,
+      "ok": 162,
+      "missing_urls": [],
+      "unexpected_urls": [],
+      "marker_errors": [],
+      "unique_documents": 164,
+      "documents": 164,
+      "wall_s": 9.230597999994643,
+      "useful_documents_per_s": 17.550325558549297,
+      "successful_page_latency": {
+        "n": 162,
+        "median_ms": 93.22481248818804,
+        "p90_ms": 97.55762882123236,
+        "p95_ms": 112.67305894580203,
+        "min_ms": 65.59916699188761,
+        "max_ms": 777.1241670125164,
+        "mean_ms": 108.81045396942042,
+        "sum_ms": 17627.293543046108
+      },
+      "peak_sampled_process_tree_rss_bytes": 609075200,
+      "cpu_self_s": 1.196065,
+      "cpu_reaped_children_s": 0.694959,
+      "browser_pages": 4,
+      "summary": {
+        "run_id": "6733c783cc63",
+        "status": "completed",
+        "strategy": "adaptive",
+        "pages": 164,
+        "outcomes": {
+          "ok": 162,
+          "robots_denied": 2
+        },
+        "elapsed_ms": 8981.09,
+        "requests": 172,
+        "bytes": 202060,
+        "browser_pages": 4,
+        "browser_startup_ms": 201.23,
+        "decision_calls": 0,
+        "decision_ms": 0.0,
+        "duplicates": 87,
+        "pending": 0,
+        "db": "reports/portfolio-build/demo/run/w2/crawl.db"
+      },
+      "integrity_check": "ok",
+      "crash_snapshots": [],
+      "resume_to_completion_s": null,
+      "origin_requests": 172,
+      "duplicate_page_requests": 8,
+      "denied_endpoint_requests": 0,
+      "maximum_origin_active": {
+        "0": 1,
+        "1": 1
+      },
+      "correct": true
+    },
+    {
+      "trial": "recovery-inflight",
+      "workers": 4,
+      "exit_codes": [
+        -9,
+        0
+      ],
+      "expected_ok": 162,
+      "ok": 162,
+      "missing_urls": [],
+      "unexpected_urls": [],
+      "marker_errors": [],
+      "unique_documents": 164,
+      "documents": 164,
+      "wall_s": 9.592465166992042,
+      "useful_documents_per_s": 16.888255227388974,
+      "successful_page_latency": {
+        "n": 162,
+        "median_ms": 92.30020848917775,
+        "p90_ms": 94.96920389938168,
+        "p95_ms": 107.87483604653967,
+        "min_ms": 64.64774999767542,
+        "max_ms": 801.7938749981113,
+        "mean_ms": 110.46550696285263,
+        "sum_ms": 17895.412127982127
+      },
+      "peak_sampled_process_tree_rss_bytes": 593526784,
+      "cpu_self_s": 0.5774429999999999,
+      "cpu_reaped_children_s": 0.493295,
+      "browser_pages": 2,
+      "summary": {
+        "run_id": "35091d3c90c0",
+        "status": "completed",
+        "strategy": "adaptive",
+        "pages": 164,
+        "outcomes": {
+          "ok": 162,
+          "robots_denied": 2
+        },
+        "elapsed_ms": 4497.3,
+        "requests": 174,
+        "bytes": 202124,
+        "browser_pages": 2,
+        "browser_startup_ms": 196.8,
+        "decision_calls": 0,
+        "decision_ms": 0.0,
+        "duplicates": 87,
+        "pending": 0,
+        "db": "reports/portfolio-build/demo/run/recovery-inflight/crawl.db"
+      },
+      "integrity_check": "ok",
+      "crash_snapshots": [
+        {
+          "completed": 82,
+          "states": {
+            "done": 82,
+            "leased": 2,
+            "queued": 80
+          }
+        }
+      ],
+      "resume_to_completion_s": 4.737091541988775,
+      "origin_requests": 176,
+      "duplicate_page_requests": 10,
+      "denied_endpoint_requests": 0,
+      "maximum_origin_active": {
+        "0": 1,
+        "1": 1
+      },
+      "correct": true
+    },
+    {
+      "trial": "recovery-commit-window",
+      "workers": 4,
+      "exit_codes": [
+        -9,
+        0
+      ],
+      "expected_ok": 162,
+      "ok": 162,
+      "missing_urls": [],
+      "unexpected_urls": [],
+      "marker_errors": [],
+      "unique_documents": 164,
+      "documents": 164,
+      "wall_s": 9.334527583007002,
+      "useful_documents_per_s": 17.35492220248105,
+      "successful_page_latency": {
+        "n": 162,
+        "median_ms": 92.65639548539184,
+        "p90_ms": 96.79595030029304,
+        "p95_ms": 112.12941188568944,
+        "min_ms": 64.47237500105985,
+        "max_ms": 808.5145830118563,
+        "mean_ms": 108.00752873991668,
+        "sum_ms": 17497.219655866502
+      },
+      "peak_sampled_process_tree_rss_bytes": 610910208,
+      "cpu_self_s": 0.9901519999999999,
+      "cpu_reaped_children_s": 0.664388,
+      "browser_pages": 4,
+      "summary": {
+        "run_id": "42fa6a3ac804",
+        "status": "completed",
+        "strategy": "adaptive",
+        "pages": 164,
+        "outcomes": {
+          "ok": 162,
+          "robots_denied": 2
+        },
+        "elapsed_ms": 8848.49,
+        "requests": 175,
+        "bytes": 205906,
+        "browser_pages": 4,
+        "browser_startup_ms": 237.8,
+        "decision_calls": 0,
+        "decision_ms": 0.0,
+        "duplicates": 87,
+        "pending": 0,
+        "db": "reports/portfolio-build/demo/run/recovery-commit-window/crawl.db"
+      },
+      "integrity_check": "ok",
+      "crash_snapshots": [
+        {
+          "completed": 1,
+          "states": {
+            "done": 1,
+            "leased": 1,
+            "queued": 81
+          }
+        }
+      ],
+      "resume_to_completion_s": 9.079881916986778,
+      "origin_requests": 175,
+      "duplicate_page_requests": 8,
+      "denied_endpoint_requests": 0,
+      "maximum_origin_active": {
+        "0": 1,
+        "1": 1
+      },
+      "correct": true
+    }
+  ]
+}

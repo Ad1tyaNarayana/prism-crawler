@@ -1,0 +1,7 @@
+{
+  "basis": "Supplemental functional checks frozen before the repeated comparison. These do not replace or change the original 50-site checks.",
+  "archive": {"minimum_chars": 2000, "groups": [["universal access to all knowledge"], ["1996"], ["books"], ["library"]]},
+  "openstax": {"minimum_chars": 1000, "groups": [["physics"], ["summary"], ["authors", "author"], ["license", "licensing"]]},
+  "windy": {"minimum_chars": 300, "groups": [["weather"], ["wind"], ["kt"], ["°"]], "forbidden": ["it appears that you are offline"], "requires_successful_request_path": "/forecast/fragment/", "requires_successful_head_path": "/img/favicon.ico"},
+  "edx": {"minimum_chars": 1000, "groups": [["computer science"], ["course"], ["program"]]}
+}

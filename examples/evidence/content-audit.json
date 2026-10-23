@@ -1,0 +1,125 @@
+{
+  "method": "Purposeful source/output spot review of 12 initial cases, including both content defects and both strict non-Cloudflare failures. Not a blind human-labelled full-text study. Raw heading counts include navigation and are descriptive, not a pass/fail metric.",
+  "cases": [
+    {
+      "id": "python-tutorial",
+      "phase": "initial-first",
+      "source_sha256": "d1b113e0a16ac6db63a697aa5b14ca62928cce91c0fb2d50a96e53f5ef87d293",
+      "source_status": 200,
+      "output_chars": 6220,
+      "raw_h1_h3_count": 5,
+      "raw_h1_h3_exact_matches": 0,
+      "review": "Opening explanation and table of contents survive, through the final customization section. Formatting is flattened."
+    },
+    {
+      "id": "postgresql",
+      "phase": "initial-first",
+      "source_sha256": "692fb5b8190798f89f9537a7aae3265c27b3a32dd5b9b63d4a665f009928bb3c",
+      "source_status": 200,
+      "output_chars": 1995,
+      "raw_h1_h3_count": 2,
+      "raw_h1_h3_exact_matches": 2,
+      "review": "Tutorial prose survives, but version navigation, release notice and correction form text remain. Boilerplate precision is imperfect."
+    },
+    {
+      "id": "w3-png",
+      "phase": "initial-first",
+      "source_sha256": "a3ac82bb9eb8664b93961a2a9ff6def3d70e3a9f63d92721143c1f391d04edec",
+      "source_status": 200,
+      "output_chars": 225802,
+      "raw_h1_h3_count": 120,
+      "raw_h1_h3_exact_matches": 118,
+      "review": "Large specification retained through references; 225k characters exceeds the verifier full-text limit. Do not claim full completeness validation."
+    },
+    {
+      "id": "esa",
+      "phase": "content-recheck",
+      "source_sha256": "1f70ecb0edcedb8120e2f9534c07596abc5ca4bcd06075ac3fb925f209461113",
+      "source_status": 200,
+      "output_chars": 3422,
+      "raw_h1_h3_count": 39,
+      "raw_h1_h3_exact_matches": 39,
+      "review": "Initial output lost card titles because nested headers were removed. Fresh post-fix output preserves source card headings. Dates, counts and buttons remain."
+    },
+    {
+      "id": "loc",
+      "phase": "initial-first",
+      "source_sha256": "2142db35f9659d8bcd27b77e404496b6d64a0b9f4bd8a92718b9c8ab4a6a2ee8",
+      "source_status": 200,
+      "output_chars": 2941,
+      "raw_h1_h3_count": 9,
+      "raw_h1_h3_exact_matches": 8,
+      "review": "Library overview and services survive through the final organizational offices."
+    },
+    {
+      "id": "rijksmuseum",
+      "phase": "initial-first",
+      "source_sha256": "b7e85c18ee4491a890b81e7a6ecd4a3b6136d7dce152bf8e61d9725097044988",
+      "source_status": 200,
+      "output_chars": 290,
+      "raw_h1_h3_count": 7,
+      "raw_h1_h3_exact_matches": 3,
+      "review": "Frozen art keyword is absent in source. Short about paragraph and both section labels are extracted; strict benchmark failure retained."
+    },
+    {
+      "id": "un",
+      "phase": "initial-first",
+      "source_sha256": "bbad82cbd1546435ade49bbf7202acf7586fee02adc9c5b1cd74e6469b0502aa",
+      "source_status": 200,
+      "output_chars": 2825,
+      "raw_h1_h3_count": 12,
+      "raw_h1_h3_exact_matches": 9,
+      "review": "Mission and organizational descriptions survive through ICJ and Nobel Prize sections."
+    },
+    {
+      "id": "worldbank",
+      "phase": "content-recheck",
+      "source_sha256": "5e63d700f3c8edbdf1df5f40a73c774c3b362cd67d1abc3c2ca6506cbf21b33b",
+      "source_status": 200,
+      "output_chars": 2353,
+      "raw_h1_h3_count": 13,
+      "raw_h1_h3_exact_matches": 13,
+      "review": "Initial output contained CMS layout/configuration cells. New CMS prose candidate retains narrative sections and removes grid and section metadata; minor navigation/configuration labels remain."
+    },
+    {
+      "id": "ecb",
+      "phase": "initial-first",
+      "source_sha256": "bd2804123a6a3759c5daf43961e0aed2bbf798936a07507b29fe73ffbc9ff038",
+      "source_status": 200,
+      "output_chars": 4117,
+      "raw_h1_h3_count": 21,
+      "raw_h1_h3_exact_matches": 15,
+      "review": "Price stability, banking safety and public-engagement sections are present. Link labels remain."
+    },
+    {
+      "id": "blender",
+      "phase": "initial-first",
+      "source_sha256": "80ec1efaa44ce8a99881065e97924718161cda2736df9c91d268856b78290338",
+      "source_status": 200,
+      "output_chars": 3021,
+      "raw_h1_h3_count": 11,
+      "raw_h1_h3_exact_matches": 10,
+      "review": "Mission, vision, activities and license narrative retained."
+    },
+    {
+      "id": "videolan",
+      "phase": "initial-first",
+      "source_sha256": "488f8fe43a2793a5ed7b4f4e8927e27c34a9c13499b27e28b32e3d031b12f3fc",
+      "source_status": 200,
+      "output_chars": 4601,
+      "raw_h1_h3_count": 12,
+      "raw_h1_h3_exact_matches": 12,
+      "review": "Core product description and formats are present. Platform links and legal/footer text remain; boilerplate precision is imperfect."
+    },
+    {
+      "id": "louvre",
+      "phase": "initial-first",
+      "source_sha256": "becd8e75c63b7700632aa2fdeea4c5660c8e6821cbf3aeaf0b8253cd489786b6",
+      "source_status": 404,
+      "output_chars": 0,
+      "raw_h1_h3_count": 2,
+      "raw_h1_h3_exact_matches": 0,
+      "review": "Requested URL returned an actual 404 page. Correctly exported as error; do not substitute a different URL to improve the frozen score."
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Unified diffs intentionally contain a space on blank context lines.
+*.patch -whitespace
+*.csv text eol=lf

@@ -1,0 +1,247 @@
+[
+  {
+    "id": "un",
+    "accepted": true,
+    "parser": "trafilatura",
+    "chars": 2799,
+    "source_sha256": "bbad82cbd1546435ade49bbf7202acf7586fee02adc9c5b1cd74e6469b0502aa"
+  },
+  {
+    "id": "w3-png",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 225802,
+    "source_sha256": "a3ac82bb9eb8664b93961a2a9ff6def3d70e3a9f63d92721143c1f391d04edec"
+  },
+  {
+    "id": "postgresql",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 1947,
+    "source_sha256": "692fb5b8190798f89f9537a7aae3265c27b3a32dd5b9b63d4a665f009928bb3c"
+  },
+  {
+    "id": "ffmpeg",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 2859,
+    "source_sha256": "ab2df1dfee77e91783b4d09a150a4a37acbb715e2ec2f281d26d89ef14ebcc45"
+  },
+  {
+    "id": "worldbank",
+    "accepted": true,
+    "parser": "cms_prose",
+    "chars": 2295,
+    "source_sha256": "5e63d700f3c8edbdf1df5f40a73c774c3b362cd67d1abc3c2ca6506cbf21b33b"
+  },
+  {
+    "id": "docker",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 8924,
+    "source_sha256": "0c528ff508854368b4b9288139d4ded34f80d37d01f55d306f4846c235061de1"
+  },
+  {
+    "id": "rfc9309",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 20735,
+    "source_sha256": "bbaa280636d3e38f0a1a130a5ce40e9753db1ed18c860945b0bf795ff8dc1a87"
+  },
+  {
+    "id": "loc",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 2889,
+    "source_sha256": "2142db35f9659d8bcd27b77e404496b6d64a0b9f4bd8a92718b9c8ab4a6a2ee8"
+  },
+  {
+    "id": "redis",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 583,
+    "source_sha256": "7fdf853d0d1b6563c73d2027d2c597e76939e6c85be5807ffd9ff740d2b872cf"
+  },
+  {
+    "id": "videolan",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 4523,
+    "source_sha256": "488f8fe43a2793a5ed7b4f4e8927e27c34a9c13499b27e28b32e3d031b12f3fc"
+  },
+  {
+    "id": "bgs",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 3567,
+    "source_sha256": "864f0c1a7a975866cdc81d63485da8ecf81a51c9f65e83dd90c6ffaa20f8bbfd"
+  },
+  {
+    "id": "unicef",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 2466,
+    "source_sha256": "e5784dfa5c080c5aacd8ca167eebcd0b812ef07d5abee516f2ebebe9e48b8cbb"
+  },
+  {
+    "id": "rijksmuseum",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 267,
+    "source_sha256": "b7e85c18ee4491a890b81e7a6ecd4a3b6136d7dce152bf8e61d9725097044988"
+  },
+  {
+    "id": "sqlite",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 4164,
+    "source_sha256": "4b99169565af75a3e637a2cba19c1a3f59ab770444239931c969f94ab218357e"
+  },
+  {
+    "id": "ietf",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 853,
+    "source_sha256": "62984cf30af54f665cdcd2f454de86d3bbf495ea0245e3e873c722d2d07e5ed2"
+  },
+  {
+    "id": "numpy",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 46297,
+    "source_sha256": "f7f8855d724b294817c5d871aefa512b9e346f7c15457c4bfa251348ef95a06e"
+  },
+  {
+    "id": "curl",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 1500,
+    "source_sha256": "e7ae0135882c0911eb952a7ccfeb7119899ceeee654ab68f5a4868d315bf0072"
+  },
+  {
+    "id": "imf",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 3757,
+    "source_sha256": "1f13eb8d978bd773b3c84c02d1632974eb949e6334cde1bff929860aa720a957"
+  },
+  {
+    "id": "opensource",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 2682,
+    "source_sha256": "d82ed2fbe2c996927ed0912669e93456d79ce7086ede60fc4b3a97883ff17ae3"
+  },
+  {
+    "id": "nginx",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 11850,
+    "source_sha256": "04085df8c02db297fd72eb2fb97c7e02579da4e703f9e98df2c88f84a0f33784"
+  },
+  {
+    "id": "eso",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 10483,
+    "source_sha256": "73dae5ed2993ef68f02ae037a329dac259debcca1a37cade5da7873cd24c0981"
+  },
+  {
+    "id": "esa",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 3402,
+    "source_sha256": "a119bcb98c5f586eb81a43d7c9b24f1e709314a031b212a5338240591b8a91b6"
+  },
+  {
+    "id": "data-gov",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 2888,
+    "source_sha256": "7efe1722e28f60a46332568d5d8cf0b662888eec6aeaaf942d8adac40734e668"
+  },
+  {
+    "id": "tate",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 3283,
+    "source_sha256": "56a59cb0b574c094229cfc668ec66a5f28ecc910307b75a8160275f7d678b8aa"
+  },
+  {
+    "id": "kubernetes",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 9924,
+    "source_sha256": "a47065e8ce4ff80a0c60dcdd07fbd65e30a7a66e621586d4b1a2a87143aad145"
+  },
+  {
+    "id": "unesco",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 3872,
+    "source_sha256": "2db4172518a1c6a0e728ecdd6a294375c52ff7122e295bf883345339d7a54f61"
+  },
+  {
+    "id": "python-tutorial",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 6170,
+    "source_sha256": "d1b113e0a16ac6db63a697aa5b14ca62928cce91c0fb2d50a96e53f5ef87d293"
+  },
+  {
+    "id": "nationalgallery",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 7018,
+    "source_sha256": "ec7b1c2f4be1d0c7a4ae3bf00eda23e4d90b9672c4d643e3720a43be4db50c3c"
+  },
+  {
+    "id": "blender",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 3005,
+    "source_sha256": "80ec1efaa44ce8a99881065e97924718161cda2736df9c91d268856b78290338"
+  },
+  {
+    "id": "django",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 11475,
+    "source_sha256": "4775ff8a4731f92bc5cdc2a8d3436ece9a0755753fc65ae314ce71729c664e7a"
+  },
+  {
+    "id": "vam",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 4215,
+    "source_sha256": "58d927037b72acc2f9ef22fe3468b5cf2cec7a3480654d24bb20239671e13b5b"
+  },
+  {
+    "id": "wto",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 2475,
+    "source_sha256": "6f4355ef7648a7721a7b62102d0913c9fe86221a45ca92608ee9ed12895816e1"
+  },
+  {
+    "id": "git",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 7223,
+    "source_sha256": "4c5dd1724d61e1e0cf5eafd1c8352364882a70b68803d68658a666867fef352f"
+  },
+  {
+    "id": "ecb",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 4117,
+    "source_sha256": "bd2804123a6a3759c5daf43961e0aed2bbf798936a07507b29fe73ffbc9ff038"
+  },
+  {
+    "id": "pandas",
+    "accepted": true,
+    "parser": "semantic",
+    "chars": 4402,
+    "source_sha256": "387564265992cc6c0ddec0d328f68a180a7acebe23b7c806335283a73830092e"
+  }
+]

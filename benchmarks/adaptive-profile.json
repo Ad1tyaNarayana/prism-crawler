@@ -1,0 +1,7 @@
+{
+  "browser_timeout": 90,
+  "max_bytes": 16000000,
+  "load_styles": true,
+  "asset_origins": ["https://node.windy.com", "https://account.windy.com", "https://ims.windy.com"],
+  "redirect_origins": ["https://idp.nature.com"]
+}

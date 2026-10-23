@@ -1,0 +1,2658 @@
+{
+  "first_exposure": {
+    "total": 50,
+    "passed": 39,
+    "cloudflare_skips": 4,
+    "non_cloudflare_total": 46,
+    "all_site_rate": 0.78,
+    "non_cloudflare_rate": 0.8478260869565217,
+    "all_cases_latency": {
+      "n": 50,
+      "median_ms": 1844.2488954897271,
+      "p90_ms": 4862.09687019582,
+      "p95_ms": 6965.2550019076425,
+      "min_ms": 78.8191250176169,
+      "max_ms": 8834.244083001977,
+      "mean_ms": 2383.011599078891,
+      "sum_ms": 119150.57995394454
+    },
+    "passing_cases_latency": {
+      "n": 39,
+      "median_ms": 1879.7669159830548,
+      "p90_ms": 4904.03582439758,
+      "p95_ms": 7368.217799699052,
+      "min_ms": 709.7265410120599,
+      "max_ms": 8834.244083001977,
+      "mean_ms": 2433.5900234067453,
+      "sum_ms": 94910.01091286307
+    }
+  },
+  "rows": [
+    {
+      "id": "python-tutorial",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 832.830791012384,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://docs.python.org/3/tutorial/index.html",
+      "method": "http",
+      "characters": 6220
+    },
+    {
+      "id": "postgresql",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 1938.5692079958972,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://www.postgresql.org/docs/current/tutorial.html",
+      "method": "http",
+      "characters": 1995
+    },
+    {
+      "id": "sqlite",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 5239.547458011657,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://www.sqlite.org/about.html",
+      "method": "http",
+      "characters": 4164
+    },
+    {
+      "id": "nginx",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 1329.4593750033528,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://nginx.org/en/docs/beginners_guide.html",
+      "method": "http",
+      "characters": 11850
+    },
+    {
+      "id": "redis",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 3361.2789580074605,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://redis.io/docs/latest/develop/get-started/",
+      "method": "http",
+      "characters": 603
+    },
+    {
+      "id": "docker",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 859.3086669861805,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://docs.docker.com/get-started/docker-overview/",
+      "method": "http",
+      "characters": 8954
+    },
+    {
+      "id": "git",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 1212.988041981589,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control",
+      "method": "http",
+      "characters": 7251
+    },
+    {
+      "id": "kubernetes",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 799.266207992332,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://kubernetes.io/docs/concepts/overview/",
+      "method": "http",
+      "characters": 9946
+    },
+    {
+      "id": "django",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 948.6288339830935,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://docs.djangoproject.com/en/5.2/intro/overview/",
+      "method": "http",
+      "characters": 11526
+    },
+    {
+      "id": "numpy",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 2339.7897079994436,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://numpy.org/doc/stable/user/absolute_beginners.html",
+      "method": "http",
+      "characters": 46358
+    },
+    {
+      "id": "pandas",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 4338.46224998706,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/01_table_oriented.html",
+      "method": "http",
+      "characters": 4469
+    },
+    {
+      "id": "rfc9309",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 1285.9144579852,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://www.rfc-editor.org/rfc/rfc9309.html",
+      "method": "http",
+      "characters": 20771
+    },
+    {
+      "id": "w3-png",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 2183.9992919994984,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://www.w3.org/TR/PNG/",
+      "method": "http",
+      "characters": 225802
+    },
+    {
+      "id": "ietf",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 918.3615419897251,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://www.ietf.org/about/",
+      "method": "http",
+      "characters": 866
+    },
+    {
+      "id": "esa",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 1538.37279198342,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science",
+      "method": "http",
+      "characters": 904
+    },
+    {
+      "id": "eso",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 2904.0846249845345,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://www.eso.org/public/about-eso/",
+      "method": "http",
+      "characters": 10499
+    },
+    {
+      "id": "bgs",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 3111.7019160010386,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://www.bgs.ac.uk/about-bgs/",
+      "method": "http",
+      "characters": 3605
+    },
+    {
+      "id": "loc",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 709.7265410120599,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://www.loc.gov/about/",
+      "method": "http",
+      "characters": 2941
+    },
+    {
+      "id": "europeana",
+      "passed": false,
+      "skipped_cloudflare": true,
+      "outcome": "robots_unavailable",
+      "status": 0,
+      "elapsed_ms": 511.2108330067713,
+      "reason": "Robots unavailable or restricted, HTTP 403",
+      "missing_groups": [
+        [
+          "europeana"
+        ],
+        [
+          "cultural"
+        ]
+      ],
+      "cohort": "initial",
+      "url": "https://www.europeana.eu/en/about-us",
+      "method": "http",
+      "characters": 0
+    },
+    {
+      "id": "rijksmuseum",
+      "passed": false,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 1808.7308749963995,
+      "reason": "",
+      "missing_groups": [
+        [
+          "art"
+        ]
+      ],
+      "cohort": "initial",
+      "url": "https://www.rijksmuseum.nl/en/about-us",
+      "method": "http",
+      "characters": 290
+    },
+    {
+      "id": "vam",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 1046.460040990496,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://www.vam.ac.uk/info/about-us",
+      "method": "http",
+      "characters": 4094
+    },
+    {
+      "id": "tate",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 1928.9053330139723,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://www.tate.org.uk/about-us",
+      "method": "http",
+      "characters": 3299
+    },
+    {
+      "id": "moma",
+      "passed": false,
+      "skipped_cloudflare": true,
+      "outcome": "access_wall",
+      "status": 403,
+      "elapsed_ms": 1937.2253750043456,
+      "reason": "HTTP 403 access restriction",
+      "missing_groups": [
+        [
+          "museum"
+        ],
+        [
+          "art"
+        ]
+      ],
+      "cohort": "initial",
+      "url": "https://www.moma.org/about/",
+      "method": "http",
+      "characters": 0
+    },
+    {
+      "id": "louvre",
+      "passed": false,
+      "skipped_cloudflare": false,
+      "outcome": "error",
+      "status": 404,
+      "elapsed_ms": 6606.312375020934,
+      "reason": "HTTP 404",
+      "missing_groups": [
+        [
+          "louvre"
+        ],
+        [
+          "museum"
+        ]
+      ],
+      "cohort": "initial",
+      "url": "https://www.louvre.fr/en/the-museum",
+      "method": "http",
+      "characters": 0
+    },
+    {
+      "id": "nationalgallery",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 1888.0252499948256,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://www.nationalgallery.org.uk/about-us",
+      "method": "http",
+      "characters": 7054
+    },
+    {
+      "id": "un",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 1964.7263750084676,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://www.un.org/en/about-us",
+      "method": "http",
+      "characters": 2825
+    },
+    {
+      "id": "unesco",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 2371.5945000003558,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://www.unesco.org/en/brief",
+      "method": "http",
+      "characters": 3897
+    },
+    {
+      "id": "unicef",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 1058.6142499814741,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://www.unicef.org/what-we-do",
+      "method": "http",
+      "characters": 2486
+    },
+    {
+      "id": "oecd",
+      "passed": false,
+      "skipped_cloudflare": true,
+      "outcome": "access_wall",
+      "status": 403,
+      "elapsed_ms": 639.7955420252401,
+      "reason": "HTTP 403 access restriction",
+      "missing_groups": [
+        [
+          "oecd"
+        ],
+        [
+          "policies"
+        ]
+      ],
+      "cohort": "initial",
+      "url": "https://www.oecd.org/en/about.html",
+      "method": "http",
+      "characters": 0
+    },
+    {
+      "id": "worldbank",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 1255.3580419917125,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://www.worldbank.org/en/who-we-are",
+      "method": "http",
+      "characters": 9388
+    },
+    {
+      "id": "wto",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 1223.1563749955967,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://www.wto.org/english/thewto_e/whatis_e/whatis_e.htm",
+      "method": "http",
+      "characters": 2014
+    },
+    {
+      "id": "imf",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 1879.7669159830548,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://www.imf.org/en/About",
+      "method": "http",
+      "characters": 3757
+    },
+    {
+      "id": "ecb",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 7258.935332996771,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://www.ecb.europa.eu/ecb/html/index.en.html",
+      "method": "http",
+      "characters": 4117
+    },
+    {
+      "id": "data-gov",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 2916.8219580024015,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://data.gov/about/",
+      "method": "http",
+      "characters": 2908
+    },
+    {
+      "id": "opensource",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 1616.2422089837492,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://opensource.org/about",
+      "method": "http",
+      "characters": 2713
+    },
+    {
+      "id": "stackoverflow",
+      "passed": false,
+      "skipped_cloudflare": true,
+      "outcome": "robots_unavailable",
+      "status": 0,
+      "elapsed_ms": 78.8191250176169,
+      "reason": "Robots unavailable or restricted, HTTP 403",
+      "missing_groups": [
+        [
+          "questions"
+        ],
+        [
+          "answers"
+        ]
+      ],
+      "cohort": "initial",
+      "url": "https://stackoverflow.com/tour",
+      "method": "http",
+      "characters": 0
+    },
+    {
+      "id": "curl",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 1744.411666993983,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://curl.se/docs/",
+      "method": "http",
+      "characters": 1530
+    },
+    {
+      "id": "ffmpeg",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 8834.244083001977,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://ffmpeg.org/about.html",
+      "method": "http",
+      "characters": 2859
+    },
+    {
+      "id": "blender",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 1310.6454160006251,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://www.blender.org/about/",
+      "method": "http",
+      "characters": 3021
+    },
+    {
+      "id": "videolan",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 1191.8215829937253,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "initial",
+      "url": "https://www.videolan.org/vlc/",
+      "method": "http",
+      "characters": 4601
+    },
+    {
+      "id": "gimp",
+      "passed": false,
+      "skipped_cloudflare": false,
+      "outcome": "robots_unavailable",
+      "status": 0,
+      "elapsed_ms": 1062.922333017923,
+      "reason": "Robots unavailable or restricted, HTTP 301",
+      "missing_groups": [
+        [
+          "gimp"
+        ],
+        [
+          "image"
+        ]
+      ],
+      "cohort": "reserved",
+      "url": "https://www.gimp.org/about/",
+      "method": "http",
+      "characters": 0
+    },
+    {
+      "id": "inkscape",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 8351.760000019567,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "reserved",
+      "url": "https://inkscape.org/about/",
+      "method": "http",
+      "characters": 2876
+    },
+    {
+      "id": "obs",
+      "passed": false,
+      "skipped_cloudflare": false,
+      "outcome": "error",
+      "status": 0,
+      "elapsed_ms": 4699.028166010976,
+      "reason": "Redirect limit exceeded",
+      "missing_groups": [
+        [
+          "obs"
+        ],
+        [
+          "studio"
+        ]
+      ],
+      "cohort": "reserved",
+      "url": "https://obsproject.com/wiki/",
+      "method": "http",
+      "characters": 0
+    },
+    {
+      "id": "libreoffice",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 1883.6320000118576,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "reserved",
+      "url": "https://www.libreoffice.org/discover/libreoffice/",
+      "method": "http",
+      "characters": 1851
+    },
+    {
+      "id": "signal",
+      "passed": false,
+      "skipped_cloudflare": false,
+      "outcome": "error",
+      "status": 404,
+      "elapsed_ms": 889.6613749966491,
+      "reason": "HTTP 404",
+      "missing_groups": [
+        [
+          "signal"
+        ],
+        [
+          "privacy"
+        ]
+      ],
+      "cohort": "reserved",
+      "url": "https://signal.org/about/",
+      "method": "http",
+      "characters": 0
+    },
+    {
+      "id": "eff",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 1081.6038339980878,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "reserved",
+      "url": "https://www.eff.org/about",
+      "method": "http",
+      "characters": 1848
+    },
+    {
+      "id": "fsf",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 3430.8371669903863,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "reserved",
+      "url": "https://www.fsf.org/about/",
+      "method": "http",
+      "characters": 4511
+    },
+    {
+      "id": "creative-commons",
+      "passed": true,
+      "skipped_cloudflare": false,
+      "outcome": "ok",
+      "status": 200,
+      "elapsed_ms": 4820.157915994059,
+      "reason": "",
+      "missing_groups": [],
+      "cohort": "reserved",
+      "url": "https://creativecommons.org/about/",
+      "method": "http",
+      "characters": 3020
+    },
+    {
+      "id": "jma",
+      "passed": false,
+      "skipped_cloudflare": false,
+      "outcome": "error",
+      "status": 404,
+      "elapsed_ms": 2599.6467919903807,
+      "reason": "HTTP 404",
+      "missing_groups": [
+        [
+          "meteorological"
+        ],
+        [
+          "weather"
+        ]
+      ],
+      "cohort": "reserved",
+      "url": "https://www.jma.go.jp/jma/en/Activities/activities.html",
+      "method": "http",
+      "characters": 0
+    },
+    {
+      "id": "gov-br",
+      "passed": false,
+      "skipped_cloudflare": false,
+      "outcome": "error",
+      "status": 404,
+      "elapsed_ms": 3407.216249994235,
+      "reason": "HTTP 404",
+      "missing_groups": [
+        [
+          "governo"
+        ],
+        [
+          "servi\u00e7os"
+        ]
+      ],
+      "cohort": "reserved",
+      "url": "https://www.gov.br/pt-br/sobre-o-gov.br",
+      "method": "http",
+      "characters": 0
+    }
+  ],
+  "freeze": {
+    "frozen_at": "2026-10-23T18:51:40.492051+00:00",
+    "manifest_sha256": "0be1f581012f06dde633f2ad2bc92e0fdad9e121e2b9e183112aa91723e5a267",
+    "source_sha256": "13de7c695090ffcd4b01da00bf8ddfab944b1da2f7fd35f18e49136b9fe2ad32",
+    "case_count": 50,
+    "initial_count": 40,
+    "reserved_count": 10,
+    "selection": "Purposefully varied new hostnames, not a random sample of the web. No candidate target fetched before freeze. No overlap with prior50 hostnames.",
+    "policy": "Robots enforced; explicit Cloudflare challenges skipped and retained in denominator disclosure. No automatic replacement.",
+    "checks": "Outcome ok + 250 characters + two frozen topical groups. Supplement with labelled source/output spot audits; lexical checks alone do not establish completeness.",
+    "source_edits": "None during cohort run. After inspecting initial40 it becomes development data; reserved10 opened after fixes."
+  },
+  "phases": {
+    "initial-first": {
+      "started_at": "2026-10-23T18:51:40.668512+00:00",
+      "manifest_sha256": "0be1f581012f06dde633f2ad2bc92e0fdad9e121e2b9e183112aa91723e5a267",
+      "source_sha256": "13de7c695090ffcd4b01da00bf8ddfab944b1da2f7fd35f18e49136b9fe2ad32",
+      "cohort": "initial",
+      "case_ids": [
+        "python-tutorial",
+        "postgresql",
+        "sqlite",
+        "nginx",
+        "redis",
+        "docker",
+        "git",
+        "kubernetes",
+        "django",
+        "numpy",
+        "pandas",
+        "rfc9309",
+        "w3-png",
+        "ietf",
+        "esa",
+        "eso",
+        "bgs",
+        "loc",
+        "europeana",
+        "rijksmuseum",
+        "vam",
+        "tate",
+        "moma",
+        "louvre",
+        "nationalgallery",
+        "un",
+        "unesco",
+        "unicef",
+        "oecd",
+        "worldbank",
+        "wto",
+        "imf",
+        "ecb",
+        "data-gov",
+        "opensource",
+        "stackoverflow",
+        "curl",
+        "ffmpeg",
+        "blender",
+        "videolan"
+      ],
+      "robots": "enforce",
+      "paid_calls": 0,
+      "cache": "fresh database per site",
+      "claim": "First exposure only if this cohort has never been run before; reruns are development results."
+    },
+    "reserved-first": {
+      "started_at": "2026-10-23T19:02:26.622154+00:00",
+      "manifest_sha256": "0be1f581012f06dde633f2ad2bc92e0fdad9e121e2b9e183112aa91723e5a267",
+      "source_sha256": "2d80b62aa6fb4c320f8f991b91c56825d42daac7dd0595d79298c17588db81ce",
+      "cohort": "reserved",
+      "case_ids": [
+        "gimp",
+        "inkscape",
+        "obs",
+        "libreoffice",
+        "signal",
+        "eff",
+        "fsf",
+        "creative-commons",
+        "jma",
+        "gov-br"
+      ],
+      "robots": "enforce",
+      "paid_calls": 0,
+      "cache": "fresh database per site",
+      "claim": "First exposure only if this cohort has never been run before; reruns are development results."
+    },
+    "load-before": {
+      "started_at": "2026-10-23T18:53:12.581239+00:00",
+      "source_sha256": "13de7c695090ffcd4b01da00bf8ddfab944b1da2f7fd35f18e49136b9fe2ad32",
+      "origins": 8,
+      "pages_per_origin": 100,
+      "mixed": false,
+      "fixture_delay_ms": 15,
+      "rss_sampling_ms": 250,
+      "claim": "Single-host synthetic workload including actual HTTP, parsing, SQLite and fixture server overhead; not public-web throughput."
+    },
+    "load-after": {
+      "started_at": "2026-10-23T18:55:00.793561+00:00",
+      "source_sha256": "800330f9c93eabcbe9e001c4e340859095d132fcd3273b0e1f32bbe048ef1311",
+      "origins": 8,
+      "pages_per_origin": 100,
+      "mixed": false,
+      "fixture_delay_ms": 15,
+      "rss_sampling_ms": 250,
+      "claim": "Single-host synthetic workload including actual HTTP, parsing, SQLite and fixture server overhead; not public-web throughput."
+    },
+    "load-final": {
+      "started_at": "2026-10-23T19:06:35.689183+00:00",
+      "source_sha256": "1794bdddebfba2c07a6ef2724f17b7fa93889f45a0454d960857088d78428390",
+      "origins": 8,
+      "pages_per_origin": 100,
+      "mixed": true,
+      "fixture_delay_ms": 15.0,
+      "rss_sampling_ms": 250,
+      "claim": "Single-host synthetic workload including actual HTTP, parsing, SQLite and fixture server overhead; not public-web throughput."
+    },
+    "load-sustained": {
+      "started_at": "2026-10-23T19:04:58.682188+00:00",
+      "source_sha256": "1794bdddebfba2c07a6ef2724f17b7fa93889f45a0454d960857088d78428390",
+      "origins": 8,
+      "pages_per_origin": 1000,
+      "mixed": false,
+      "fixture_delay_ms": 60.0,
+      "rss_sampling_ms": 250,
+      "claim": "Single-host synthetic workload including actual HTTP, parsing, SQLite and fixture server overhead; not public-web throughput."
+    }
+  },
+  "load": {
+    "load-before": [
+      {
+        "trial": "w1",
+        "workers": 1,
+        "exit_codes": [
+          0
+        ],
+        "expected_ok": 808,
+        "ok": 808,
+        "missing_urls": [],
+        "unexpected_urls": [],
+        "marker_errors": [],
+        "unique_documents": 816,
+        "documents": 816,
+        "wall_s": 20.588722457992844,
+        "useful_documents_per_s": 39.244785665966496,
+        "successful_page_latency": {
+          "n": 808,
+          "median_ms": 23.3618334896164,
+          "p90_ms": 24.111478606937453,
+          "p95_ms": 24.280939700838644,
+          "min_ms": 17.6155410008505,
+          "max_ms": 26.66441598557867,
+          "mean_ms": 23.180699655610383,
+          "sum_ms": 18730.005321733188
+        },
+        "peak_sampled_process_tree_rss_bytes": 78708736,
+        "cpu_self_s": 3.785229,
+        "cpu_reaped_children_s": 0.0,
+        "browser_pages": 0,
+        "summary": {
+          "run_id": "9bb9f03634f8",
+          "status": "completed",
+          "strategy": "adaptive",
+          "pages": 816,
+          "outcomes": {
+            "ok": 808,
+            "robots_denied": 8
+          },
+          "elapsed_ms": 20362.09,
+          "requests": 816,
+          "bytes": 980112,
+          "browser_pages": 0,
+          "browser_startup_ms": 0.0,
+          "decision_calls": 0,
+          "decision_ms": 0.0,
+          "duplicates": 660,
+          "pending": 0,
+          "db": "reports/portfolio-build/load-before/w1/crawl.db"
+        },
+        "integrity_check": "ok",
+        "crash_snapshots": [],
+        "resume_to_completion_s": null,
+        "origin_requests": 816,
+        "duplicate_page_requests": 0,
+        "denied_endpoint_requests": 0,
+        "maximum_origin_active": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1
+        },
+        "correct": true
+      },
+      {
+        "trial": "w4",
+        "workers": 4,
+        "exit_codes": [
+          0
+        ],
+        "expected_ok": 808,
+        "ok": 808,
+        "missing_urls": [],
+        "unexpected_urls": [],
+        "marker_errors": [],
+        "unique_documents": 816,
+        "documents": 816,
+        "wall_s": 5.432607750000898,
+        "useful_documents_per_s": 148.7315184866543,
+        "successful_page_latency": {
+          "n": 808,
+          "median_ms": 23.93860451411456,
+          "p90_ms": 27.446803604834713,
+          "p95_ms": 28.46502684406005,
+          "min_ms": 16.581916977884248,
+          "max_ms": 67.44029201217927,
+          "mean_ms": 24.196833460003894,
+          "sum_ms": 19551.041435683146
+        },
+        "peak_sampled_process_tree_rss_bytes": 71794688,
+        "cpu_self_s": 2.718152,
+        "cpu_reaped_children_s": 0.0,
+        "browser_pages": 0,
+        "summary": {
+          "run_id": "9efc368b9bd1",
+          "status": "completed",
+          "strategy": "adaptive",
+          "pages": 816,
+          "outcomes": {
+            "ok": 808,
+            "robots_denied": 8
+          },
+          "elapsed_ms": 5205.36,
+          "requests": 816,
+          "bytes": 980112,
+          "browser_pages": 0,
+          "browser_startup_ms": 0.0,
+          "decision_calls": 0,
+          "decision_ms": 0.0,
+          "duplicates": 653,
+          "pending": 0,
+          "db": "reports/portfolio-build/load-before/w4/crawl.db"
+        },
+        "integrity_check": "ok",
+        "crash_snapshots": [],
+        "resume_to_completion_s": null,
+        "origin_requests": 816,
+        "duplicate_page_requests": 0,
+        "denied_endpoint_requests": 0,
+        "maximum_origin_active": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1
+        },
+        "correct": true
+      },
+      {
+        "trial": "w8",
+        "workers": 8,
+        "exit_codes": [
+          0
+        ],
+        "expected_ok": 808,
+        "ok": 808,
+        "missing_urls": [],
+        "unexpected_urls": [],
+        "marker_errors": [],
+        "unique_documents": 816,
+        "documents": 816,
+        "wall_s": 2.813601917005144,
+        "useful_documents_per_s": 287.17637527772655,
+        "successful_page_latency": {
+          "n": 808,
+          "median_ms": 23.76858350180555,
+          "p90_ms": 25.393003804492768,
+          "p95_ms": 26.317366457078606,
+          "min_ms": 16.46037498721853,
+          "max_ms": 89.66324999346398,
+          "mean_ms": 24.31609161528223,
+          "sum_ms": 19647.40202514804
+        },
+        "peak_sampled_process_tree_rss_bytes": 72040448,
+        "cpu_self_s": 2.2491339999999997,
+        "cpu_reaped_children_s": 0.0,
+        "browser_pages": 0,
+        "summary": {
+          "run_id": "9896429e9f9b",
+          "status": "completed",
+          "strategy": "adaptive",
+          "pages": 816,
+          "outcomes": {
+            "ok": 808,
+            "robots_denied": 8
+          },
+          "elapsed_ms": 2601.91,
+          "requests": 816,
+          "bytes": 980112,
+          "browser_pages": 0,
+          "browser_startup_ms": 0.0,
+          "decision_calls": 0,
+          "decision_ms": 0.0,
+          "duplicates": 645,
+          "pending": 0,
+          "db": "reports/portfolio-build/load-before/w8/crawl.db"
+        },
+        "integrity_check": "ok",
+        "crash_snapshots": [],
+        "resume_to_completion_s": null,
+        "origin_requests": 816,
+        "duplicate_page_requests": 0,
+        "denied_endpoint_requests": 0,
+        "maximum_origin_active": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1
+        },
+        "correct": true
+      },
+      {
+        "trial": "recovery-inflight",
+        "workers": 4,
+        "exit_codes": [
+          -9,
+          0
+        ],
+        "expected_ok": 808,
+        "ok": 808,
+        "missing_urls": [],
+        "unexpected_urls": [],
+        "marker_errors": [],
+        "unique_documents": 816,
+        "documents": 816,
+        "wall_s": 5.435565958992811,
+        "useful_documents_per_s": 148.6505740332731,
+        "successful_page_latency": {
+          "n": 808,
+          "median_ms": 23.184603502159007,
+          "p90_ms": 25.293512392090634,
+          "p95_ms": 27.283097694453318,
+          "min_ms": 16.608458012342453,
+          "max_ms": 61.82895798701793,
+          "mean_ms": 23.480379572749083,
+          "sum_ms": 18972.14669478126
+        },
+        "peak_sampled_process_tree_rss_bytes": 70811648,
+        "cpu_self_s": 2.15931,
+        "cpu_reaped_children_s": 0.0,
+        "browser_pages": 0,
+        "summary": {
+          "run_id": "7d373ac4c191",
+          "status": "completed",
+          "strategy": "adaptive",
+          "pages": 816,
+          "outcomes": {
+            "ok": 808,
+            "robots_denied": 8
+          },
+          "elapsed_ms": 4133.06,
+          "requests": 824,
+          "bytes": 980368,
+          "browser_pages": 0,
+          "browser_startup_ms": 0.0,
+          "decision_calls": 0,
+          "decision_ms": 0.0,
+          "duplicates": 654,
+          "pending": 0,
+          "db": "reports/portfolio-build/load-before/recovery-inflight/crawl.db"
+        },
+        "integrity_check": "ok",
+        "crash_snapshots": [
+          {
+            "completed": 140,
+            "states": {
+              "done": 140,
+              "leased": 4,
+              "queued": 672
+            }
+          }
+        ],
+        "resume_to_completion_s": 4.357954957988113,
+        "origin_requests": 827,
+        "duplicate_page_requests": 3,
+        "denied_endpoint_requests": 0,
+        "maximum_origin_active": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1
+        },
+        "correct": true
+      },
+      {
+        "trial": "recovery-commit-window",
+        "workers": 4,
+        "exit_codes": [
+          -9,
+          0
+        ],
+        "expected_ok": 808,
+        "ok": 708,
+        "missing_urls": [
+          "http://127.0.0.1:61783/page/0",
+          "http://127.0.0.1:61783/page/1",
+          "http://127.0.0.1:61783/page/10",
+          "http://127.0.0.1:61783/page/11",
+          "http://127.0.0.1:61783/page/12",
+          "http://127.0.0.1:61783/page/13",
+          "http://127.0.0.1:61783/page/14",
+          "http://127.0.0.1:61783/page/15",
+          "http://127.0.0.1:61783/page/16",
+          "http://127.0.0.1:61783/page/17",
+          "http://127.0.0.1:61783/page/18",
+          "http://127.0.0.1:61783/page/19",
+          "http://127.0.0.1:61783/page/2",
+          "http://127.0.0.1:61783/page/20",
+          "http://127.0.0.1:61783/page/21",
+          "http://127.0.0.1:61783/page/22",
+          "http://127.0.0.1:61783/page/23",
+          "http://127.0.0.1:61783/page/24",
+          "http://127.0.0.1:61783/page/25",
+          "http://127.0.0.1:61783/page/26",
+          "http://127.0.0.1:61783/page/27",
+          "http://127.0.0.1:61783/page/28",
+          "http://127.0.0.1:61783/page/29",
+          "http://127.0.0.1:61783/page/3",
+          "http://127.0.0.1:61783/page/30",
+          "http://127.0.0.1:61783/page/31",
+          "http://127.0.0.1:61783/page/32",
+          "http://127.0.0.1:61783/page/33",
+          "http://127.0.0.1:61783/page/34",
+          "http://127.0.0.1:61783/page/35",
+          "http://127.0.0.1:61783/page/36",
+          "http://127.0.0.1:61783/page/37",
+          "http://127.0.0.1:61783/page/38",
+          "http://127.0.0.1:61783/page/39",
+          "http://127.0.0.1:61783/page/4",
+          "http://127.0.0.1:61783/page/40",
+          "http://127.0.0.1:61783/page/41",
+          "http://127.0.0.1:61783/page/42",
+          "http://127.0.0.1:61783/page/43",
+          "http://127.0.0.1:61783/page/44",
+          "http://127.0.0.1:61783/page/45",
+          "http://127.0.0.1:61783/page/46",
+          "http://127.0.0.1:61783/page/47",
+          "http://127.0.0.1:61783/page/48",
+          "http://127.0.0.1:61783/page/49",
+          "http://127.0.0.1:61783/page/5",
+          "http://127.0.0.1:61783/page/50",
+          "http://127.0.0.1:61783/page/51",
+          "http://127.0.0.1:61783/page/52",
+          "http://127.0.0.1:61783/page/53",
+          "http://127.0.0.1:61783/page/54",
+          "http://127.0.0.1:61783/page/55",
+          "http://127.0.0.1:61783/page/56",
+          "http://127.0.0.1:61783/page/57",
+          "http://127.0.0.1:61783/page/58",
+          "http://127.0.0.1:61783/page/59",
+          "http://127.0.0.1:61783/page/6",
+          "http://127.0.0.1:61783/page/60",
+          "http://127.0.0.1:61783/page/61",
+          "http://127.0.0.1:61783/page/62",
+          "http://127.0.0.1:61783/page/63",
+          "http://127.0.0.1:61783/page/64",
+          "http://127.0.0.1:61783/page/65",
+          "http://127.0.0.1:61783/page/66",
+          "http://127.0.0.1:61783/page/67",
+          "http://127.0.0.1:61783/page/68",
+          "http://127.0.0.1:61783/page/69",
+          "http://127.0.0.1:61783/page/7",
+          "http://127.0.0.1:61783/page/70",
+          "http://127.0.0.1:61783/page/71",
+          "http://127.0.0.1:61783/page/72",
+          "http://127.0.0.1:61783/page/73",
+          "http://127.0.0.1:61783/page/74",
+          "http://127.0.0.1:61783/page/75",
+          "http://127.0.0.1:61783/page/76",
+          "http://127.0.0.1:61783/page/77",
+          "http://127.0.0.1:61783/page/78",
+          "http://127.0.0.1:61783/page/79",
+          "http://127.0.0.1:61783/page/8",
+          "http://127.0.0.1:61783/page/80",
+          "http://127.0.0.1:61783/page/81",
+          "http://127.0.0.1:61783/page/82",
+          "http://127.0.0.1:61783/page/83",
+          "http://127.0.0.1:61783/page/84",
+          "http://127.0.0.1:61783/page/85",
+          "http://127.0.0.1:61783/page/86",
+          "http://127.0.0.1:61783/page/87",
+          "http://127.0.0.1:61783/page/88",
+          "http://127.0.0.1:61783/page/89",
+          "http://127.0.0.1:61783/page/9",
+          "http://127.0.0.1:61783/page/90",
+          "http://127.0.0.1:61783/page/91",
+          "http://127.0.0.1:61783/page/92",
+          "http://127.0.0.1:61783/page/93",
+          "http://127.0.0.1:61783/page/94",
+          "http://127.0.0.1:61783/page/95",
+          "http://127.0.0.1:61783/page/96",
+          "http://127.0.0.1:61783/page/97",
+          "http://127.0.0.1:61783/page/98",
+          "http://127.0.0.1:61783/page/99"
+        ],
+        "unexpected_urls": [],
+        "marker_errors": [],
+        "unique_documents": 715,
+        "documents": 715,
+        "wall_s": 5.458999624999706,
+        "useful_documents_per_s": 129.6940920746149,
+        "successful_page_latency": {
+          "n": 708,
+          "median_ms": 23.195520509034395,
+          "p90_ms": 24.763949995394796,
+          "p95_ms": 25.287268857937306,
+          "min_ms": 17.213125014677644,
+          "max_ms": 61.02975000976585,
+          "mean_ms": 23.43904819778702,
+          "sum_ms": 16594.84612403321
+        },
+        "peak_sampled_process_tree_rss_bytes": 70975488,
+        "cpu_self_s": 2.382975,
+        "cpu_reaped_children_s": 0.0,
+        "browser_pages": 0,
+        "summary": {
+          "run_id": "c9ae42120299",
+          "status": "completed",
+          "strategy": "adaptive",
+          "pages": 715,
+          "outcomes": {
+            "ok": 708,
+            "robots_denied": 7
+          },
+          "elapsed_ms": 5041.44,
+          "requests": 722,
+          "bytes": 875414,
+          "browser_pages": 0,
+          "browser_startup_ms": 0.0,
+          "decision_calls": 0,
+          "decision_ms": 0.0,
+          "duplicates": 561,
+          "pending": 0,
+          "db": "reports/portfolio-build/load-before/recovery-commit-window/crawl.db"
+        },
+        "integrity_check": "ok",
+        "crash_snapshots": [
+          {
+            "completed": 1,
+            "states": {
+              "done": 1,
+              "leased": 3,
+              "queued": 4
+            }
+          }
+        ],
+        "resume_to_completion_s": 5.266132916993229,
+        "origin_requests": 722,
+        "duplicate_page_requests": 0,
+        "denied_endpoint_requests": 0,
+        "maximum_origin_active": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1
+        },
+        "correct": false
+      }
+    ],
+    "load-after": [
+      {
+        "trial": "w1",
+        "workers": 1,
+        "exit_codes": [
+          0
+        ],
+        "expected_ok": 808,
+        "ok": 808,
+        "missing_urls": [],
+        "unexpected_urls": [],
+        "marker_errors": [],
+        "unique_documents": 816,
+        "documents": 816,
+        "wall_s": 21.829462958005024,
+        "useful_documents_per_s": 37.01419506079514,
+        "successful_page_latency": {
+          "n": 808,
+          "median_ms": 24.947437501396053,
+          "p90_ms": 26.47005000617355,
+          "p95_ms": 26.861207907495555,
+          "min_ms": 17.044916981831193,
+          "max_ms": 28.85670799878426,
+          "mean_ms": 24.670087634761572,
+          "sum_ms": 19933.43080888735
+        },
+        "peak_sampled_process_tree_rss_bytes": 78987264,
+        "cpu_self_s": 3.9406630000000002,
+        "cpu_reaped_children_s": 0.0,
+        "browser_pages": 0,
+        "summary": {
+          "run_id": "7fc7b329f7a8",
+          "status": "completed",
+          "strategy": "adaptive",
+          "pages": 816,
+          "outcomes": {
+            "ok": 808,
+            "robots_denied": 8
+          },
+          "elapsed_ms": 21598.02,
+          "requests": 816,
+          "bytes": 980112,
+          "browser_pages": 0,
+          "browser_startup_ms": 0.0,
+          "decision_calls": 0,
+          "decision_ms": 0.0,
+          "duplicates": 660,
+          "pending": 0,
+          "db": "reports/portfolio-build/load-after/w1/crawl.db"
+        },
+        "integrity_check": "ok",
+        "crash_snapshots": [],
+        "resume_to_completion_s": null,
+        "origin_requests": 816,
+        "duplicate_page_requests": 0,
+        "denied_endpoint_requests": 0,
+        "maximum_origin_active": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1
+        },
+        "correct": true
+      },
+      {
+        "trial": "w4",
+        "workers": 4,
+        "exit_codes": [
+          0
+        ],
+        "expected_ok": 808,
+        "ok": 808,
+        "missing_urls": [],
+        "unexpected_urls": [],
+        "marker_errors": [],
+        "unique_documents": 816,
+        "documents": 816,
+        "wall_s": 5.260791208012961,
+        "useful_documents_per_s": 153.58906446796385,
+        "successful_page_latency": {
+          "n": 808,
+          "median_ms": 23.0961670022225,
+          "p90_ms": 23.841000214451924,
+          "p95_ms": 24.61085385439219,
+          "min_ms": 16.60145801724866,
+          "max_ms": 42.62929200194776,
+          "mean_ms": 23.15382791936944,
+          "sum_ms": 18708.292958850507
+        },
+        "peak_sampled_process_tree_rss_bytes": 71401472,
+        "cpu_self_s": 2.506303,
+        "cpu_reaped_children_s": 0.0,
+        "browser_pages": 0,
+        "summary": {
+          "run_id": "b258a041d28f",
+          "status": "completed",
+          "strategy": "adaptive",
+          "pages": 816,
+          "outcomes": {
+            "ok": 808,
+            "robots_denied": 8
+          },
+          "elapsed_ms": 4977.13,
+          "requests": 816,
+          "bytes": 980112,
+          "browser_pages": 0,
+          "browser_startup_ms": 0.0,
+          "decision_calls": 0,
+          "decision_ms": 0.0,
+          "duplicates": 653,
+          "pending": 0,
+          "db": "reports/portfolio-build/load-after/w4/crawl.db"
+        },
+        "integrity_check": "ok",
+        "crash_snapshots": [],
+        "resume_to_completion_s": null,
+        "origin_requests": 816,
+        "duplicate_page_requests": 0,
+        "denied_endpoint_requests": 0,
+        "maximum_origin_active": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1
+        },
+        "correct": true
+      },
+      {
+        "trial": "w8",
+        "workers": 8,
+        "exit_codes": [
+          0
+        ],
+        "expected_ok": 808,
+        "ok": 808,
+        "missing_urls": [],
+        "unexpected_urls": [],
+        "marker_errors": [],
+        "unique_documents": 816,
+        "documents": 816,
+        "wall_s": 2.7702977920125704,
+        "useful_documents_per_s": 291.66539508122804,
+        "successful_page_latency": {
+          "n": 808,
+          "median_ms": 23.491541505791247,
+          "p90_ms": 24.834317006752826,
+          "p95_ms": 25.38621417043032,
+          "min_ms": 16.45079199806787,
+          "max_ms": 56.18783400859684,
+          "mean_ms": 23.766057076013883,
+          "sum_ms": 19202.974117419217
+        },
+        "peak_sampled_process_tree_rss_bytes": 72187904,
+        "cpu_self_s": 2.125393,
+        "cpu_reaped_children_s": 0.0,
+        "browser_pages": 0,
+        "summary": {
+          "run_id": "e2c072552c2f",
+          "status": "completed",
+          "strategy": "adaptive",
+          "pages": 816,
+          "outcomes": {
+            "ok": 808,
+            "robots_denied": 8
+          },
+          "elapsed_ms": 2555.64,
+          "requests": 816,
+          "bytes": 980112,
+          "browser_pages": 0,
+          "browser_startup_ms": 0.0,
+          "decision_calls": 0,
+          "decision_ms": 0.0,
+          "duplicates": 648,
+          "pending": 0,
+          "db": "reports/portfolio-build/load-after/w8/crawl.db"
+        },
+        "integrity_check": "ok",
+        "crash_snapshots": [],
+        "resume_to_completion_s": null,
+        "origin_requests": 816,
+        "duplicate_page_requests": 0,
+        "denied_endpoint_requests": 0,
+        "maximum_origin_active": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1
+        },
+        "correct": true
+      },
+      {
+        "trial": "recovery-inflight",
+        "workers": 4,
+        "exit_codes": [
+          -9,
+          0
+        ],
+        "expected_ok": 808,
+        "ok": 808,
+        "missing_urls": [],
+        "unexpected_urls": [],
+        "marker_errors": [],
+        "unique_documents": 816,
+        "documents": 816,
+        "wall_s": 5.410076332977042,
+        "useful_documents_per_s": 149.35094262438548,
+        "successful_page_latency": {
+          "n": 808,
+          "median_ms": 23.111625501769595,
+          "p90_ms": 25.00812930229586,
+          "p95_ms": 27.351829601684585,
+          "min_ms": 16.826292005134746,
+          "max_ms": 40.13945799670182,
+          "mean_ms": 23.343705705748548,
+          "sum_ms": 18861.714210244827
+        },
+        "peak_sampled_process_tree_rss_bytes": 70647808,
+        "cpu_self_s": 2.3023049999999996,
+        "cpu_reaped_children_s": 0.0,
+        "browser_pages": 0,
+        "summary": {
+          "run_id": "de173941e828",
+          "status": "completed",
+          "strategy": "adaptive",
+          "pages": 816,
+          "outcomes": {
+            "ok": 808,
+            "robots_denied": 8
+          },
+          "elapsed_ms": 4383.23,
+          "requests": 826,
+          "bytes": 982730,
+          "browser_pages": 0,
+          "browser_startup_ms": 0.0,
+          "decision_calls": 0,
+          "decision_ms": 0.0,
+          "duplicates": 654,
+          "pending": 0,
+          "db": "reports/portfolio-build/load-after/recovery-inflight/crawl.db"
+        },
+        "integrity_check": "ok",
+        "crash_snapshots": [
+          {
+            "completed": 100,
+            "states": {
+              "done": 100,
+              "leased": 4,
+              "queued": 712
+            }
+          }
+        ],
+        "resume_to_completion_s": 4.602810500015039,
+        "origin_requests": 828,
+        "duplicate_page_requests": 4,
+        "denied_endpoint_requests": 0,
+        "maximum_origin_active": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1
+        },
+        "correct": true
+      },
+      {
+        "trial": "recovery-commit-window",
+        "workers": 4,
+        "exit_codes": [
+          -9,
+          0
+        ],
+        "expected_ok": 808,
+        "ok": 808,
+        "missing_urls": [],
+        "unexpected_urls": [],
+        "marker_errors": [],
+        "unique_documents": 816,
+        "documents": 816,
+        "wall_s": 5.500261334003881,
+        "useful_documents_per_s": 146.90211081512766,
+        "successful_page_latency": {
+          "n": 808,
+          "median_ms": 23.192646011011675,
+          "p90_ms": 27.599591785110537,
+          "p95_ms": 28.48569956113351,
+          "min_ms": 16.784542007371783,
+          "max_ms": 39.31749999173917,
+          "mean_ms": 23.75471159826018,
+          "sum_ms": 19193.806971394224
+        },
+        "peak_sampled_process_tree_rss_bytes": 71385088,
+        "cpu_self_s": 2.6380939999999997,
+        "cpu_reaped_children_s": 0.0,
+        "browser_pages": 0,
+        "summary": {
+          "run_id": "c8d08700d213",
+          "status": "completed",
+          "strategy": "adaptive",
+          "pages": 816,
+          "outcomes": {
+            "ok": 808,
+            "robots_denied": 8
+          },
+          "elapsed_ms": 5090.8,
+          "requests": 823,
+          "bytes": 993506,
+          "browser_pages": 0,
+          "browser_startup_ms": 0.0,
+          "decision_calls": 0,
+          "decision_ms": 0.0,
+          "duplicates": 654,
+          "pending": 0,
+          "db": "reports/portfolio-build/load-after/recovery-commit-window/crawl.db"
+        },
+        "integrity_check": "ok",
+        "crash_snapshots": [
+          {
+            "completed": 1,
+            "states": {
+              "done": 1,
+              "leased": 3,
+              "queued": 105
+            }
+          }
+        ],
+        "resume_to_completion_s": 5.312509999988833,
+        "origin_requests": 823,
+        "duplicate_page_requests": 0,
+        "denied_endpoint_requests": 0,
+        "maximum_origin_active": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1
+        },
+        "correct": true
+      }
+    ],
+    "load-mixed": [
+      {
+        "trial": "w4",
+        "workers": 4,
+        "exit_codes": [
+          0
+        ],
+        "expected_ok": 448,
+        "ok": 448,
+        "missing_urls": [],
+        "unexpected_urls": [],
+        "marker_errors": [],
+        "unique_documents": 456,
+        "documents": 456,
+        "wall_s": 5.6005453329999,
+        "useful_documents_per_s": 79.99221028714204,
+        "successful_page_latency": {
+          "n": 448,
+          "median_ms": 23.543978997622617,
+          "p90_ms": 34.397933114087216,
+          "p95_ms": 90.23858345608458,
+          "min_ms": 16.858957998920232,
+          "max_ms": 1060.2548750175629,
+          "mean_ms": 44.6884033621505,
+          "sum_ms": 20020.404706243426
+        },
+        "peak_sampled_process_tree_rss_bytes": 626835456,
+        "cpu_self_s": 1.753336,
+        "cpu_reaped_children_s": 1.5382149999999999,
+        "browser_pages": 16,
+        "summary": {
+          "run_id": "7fae84b4097a",
+          "status": "completed",
+          "strategy": "adaptive",
+          "pages": 456,
+          "outcomes": {
+            "ok": 448,
+            "robots_denied": 8
+          },
+          "elapsed_ms": 5369.1,
+          "requests": 488,
+          "bytes": 565640,
+          "browser_pages": 16,
+          "browser_startup_ms": 221.14,
+          "decision_calls": 0,
+          "decision_ms": 0.0,
+          "duplicates": 325,
+          "pending": 0,
+          "db": "reports/portfolio-build/load-mixed/w4/crawl.db"
+        },
+        "integrity_check": "ok",
+        "crash_snapshots": [],
+        "resume_to_completion_s": null,
+        "origin_requests": 488,
+        "duplicate_page_requests": 32,
+        "denied_endpoint_requests": 0,
+        "maximum_origin_active": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1
+        },
+        "correct": true
+      },
+      {
+        "trial": "w8",
+        "workers": 8,
+        "exit_codes": [
+          0
+        ],
+        "expected_ok": 448,
+        "ok": 448,
+        "missing_urls": [],
+        "unexpected_urls": [],
+        "marker_errors": [],
+        "unique_documents": 456,
+        "documents": 456,
+        "wall_s": 4.134949625004083,
+        "useful_documents_per_s": 108.34472983441911,
+        "successful_page_latency": {
+          "n": 448,
+          "median_ms": 23.21981299610343,
+          "p90_ms": 38.48410010105001,
+          "p95_ms": 89.8447415544069,
+          "min_ms": 17.11779198376462,
+          "max_ms": 1786.5955000161193,
+          "mean_ms": 57.92502318035986,
+          "sum_ms": 25950.410384801216
+        },
+        "peak_sampled_process_tree_rss_bytes": 626475008,
+        "cpu_self_s": 1.651536,
+        "cpu_reaped_children_s": 1.541274,
+        "browser_pages": 16,
+        "summary": {
+          "run_id": "76d39b446a7e",
+          "status": "completed",
+          "strategy": "adaptive",
+          "pages": 456,
+          "outcomes": {
+            "ok": 448,
+            "robots_denied": 8
+          },
+          "elapsed_ms": 3903.73,
+          "requests": 488,
+          "bytes": 565640,
+          "browser_pages": 16,
+          "browser_startup_ms": 199.38,
+          "decision_calls": 0,
+          "decision_ms": 0.0,
+          "duplicates": 327,
+          "pending": 0,
+          "db": "reports/portfolio-build/load-mixed/w8/crawl.db"
+        },
+        "integrity_check": "ok",
+        "crash_snapshots": [],
+        "resume_to_completion_s": null,
+        "origin_requests": 488,
+        "duplicate_page_requests": 32,
+        "denied_endpoint_requests": 0,
+        "maximum_origin_active": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1
+        },
+        "correct": true
+      },
+      {
+        "trial": "recovery-inflight",
+        "workers": 4,
+        "exit_codes": [
+          -9,
+          0
+        ],
+        "expected_ok": 448,
+        "ok": 448,
+        "missing_urls": [],
+        "unexpected_urls": [],
+        "marker_errors": [],
+        "unique_documents": 456,
+        "documents": 456,
+        "wall_s": 6.026790416013682,
+        "useful_documents_per_s": 74.33475682340418,
+        "successful_page_latency": {
+          "n": 448,
+          "median_ms": 23.930145995109342,
+          "p90_ms": 34.7192331973929,
+          "p95_ms": 91.13549999892712,
+          "min_ms": 16.974750004010275,
+          "max_ms": 1040.9740420000162,
+          "mean_ms": 46.867818258436145,
+          "sum_ms": 20996.782579779392
+        },
+        "peak_sampled_process_tree_rss_bytes": 617693184,
+        "cpu_self_s": 1.483498,
+        "cpu_reaped_children_s": 1.260596,
+        "browser_pages": 12,
+        "summary": {
+          "run_id": "4d69d5c422e9",
+          "status": "completed",
+          "strategy": "adaptive",
+          "pages": 456,
+          "outcomes": {
+            "ok": 448,
+            "robots_denied": 8
+          },
+          "elapsed_ms": 4161.62,
+          "requests": 496,
+          "bytes": 565896,
+          "browser_pages": 12,
+          "browser_startup_ms": 194.19,
+          "decision_calls": 0,
+          "decision_ms": 0.0,
+          "duplicates": 325,
+          "pending": 0,
+          "db": "reports/portfolio-build/load-mixed/recovery-inflight/crawl.db"
+        },
+        "integrity_check": "ok",
+        "crash_snapshots": [
+          {
+            "completed": 86,
+            "states": {
+              "done": 86,
+              "leased": 4,
+              "queued": 366
+            }
+          }
+        ],
+        "resume_to_completion_s": 4.401056834001793,
+        "origin_requests": 500,
+        "duplicate_page_requests": 36,
+        "denied_endpoint_requests": 0,
+        "maximum_origin_active": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1
+        },
+        "correct": true
+      },
+      {
+        "trial": "recovery-commit-window",
+        "workers": 4,
+        "exit_codes": [
+          -9,
+          0
+        ],
+        "expected_ok": 448,
+        "ok": 448,
+        "missing_urls": [],
+        "unexpected_urls": [],
+        "marker_errors": [],
+        "unique_documents": 456,
+        "documents": 456,
+        "wall_s": 5.774504333006917,
+        "useful_documents_per_s": 77.58241645767649,
+        "successful_page_latency": {
+          "n": 448,
+          "median_ms": 23.83220850606449,
+          "p90_ms": 33.82120820169803,
+          "p95_ms": 90.97442729980685,
+          "min_ms": 17.081874975701794,
+          "max_ms": 1021.1959999869578,
+          "mean_ms": 44.576626671901714,
+          "sum_ms": 19970.32874901197
+        },
+        "peak_sampled_process_tree_rss_bytes": 625967104,
+        "cpu_self_s": 1.7466819999999998,
+        "cpu_reaped_children_s": 1.551278,
+        "browser_pages": 16,
+        "summary": {
+          "run_id": "efc3ca20ec68",
+          "status": "completed",
+          "strategy": "adaptive",
+          "pages": 456,
+          "outcomes": {
+            "ok": 448,
+            "robots_denied": 8
+          },
+          "elapsed_ms": 5347.82,
+          "requests": 495,
+          "bytes": 574714,
+          "browser_pages": 16,
+          "browser_startup_ms": 201.15,
+          "decision_calls": 0,
+          "decision_ms": 0.0,
+          "duplicates": 324,
+          "pending": 0,
+          "db": "reports/portfolio-build/load-mixed/recovery-commit-window/crawl.db"
+        },
+        "integrity_check": "ok",
+        "crash_snapshots": [
+          {
+            "completed": 1,
+            "states": {
+              "done": 1,
+              "leased": 3,
+              "queued": 60
+            }
+          }
+        ],
+        "resume_to_completion_s": 5.584988916001748,
+        "origin_requests": 495,
+        "duplicate_page_requests": 32,
+        "denied_endpoint_requests": 0,
+        "maximum_origin_active": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1
+        },
+        "correct": true
+      }
+    ],
+    "load-final": [
+      {
+        "trial": "w1",
+        "workers": 1,
+        "exit_codes": [
+          0
+        ],
+        "expected_ok": 808,
+        "ok": 808,
+        "missing_urls": [],
+        "unexpected_urls": [],
+        "marker_errors": [],
+        "unique_documents": 816,
+        "documents": 816,
+        "wall_s": 33.6795114580018,
+        "useful_documents_per_s": 23.990846809270746,
+        "successful_page_latency": {
+          "n": 808,
+          "median_ms": 25.246000004699454,
+          "p90_ms": 27.366058310144584,
+          "p95_ms": 48.938854494190295,
+          "min_ms": 18.274875008501112,
+          "max_ms": 659.8928330058698,
+          "mean_ms": 39.17307117635483,
+          "sum_ms": 31651.841510494705
+        },
+        "peak_sampled_process_tree_rss_bytes": 531972096,
+        "cpu_self_s": 4.600546,
+        "cpu_reaped_children_s": 2.796348,
+        "browser_pages": 24,
+        "summary": {
+          "run_id": "abde67517e9a",
+          "status": "completed",
+          "strategy": "adaptive",
+          "pages": 816,
+          "outcomes": {
+            "ok": 808,
+            "robots_denied": 8
+          },
+          "elapsed_ms": 33446.05,
+          "requests": 856,
+          "bytes": 1013208,
+          "browser_pages": 24,
+          "browser_startup_ms": 208.94,
+          "decision_calls": 0,
+          "decision_ms": 0.0,
+          "duplicates": 662,
+          "pending": 0,
+          "db": "reports/portfolio-build/load-final/w1/crawl.db"
+        },
+        "integrity_check": "ok",
+        "crash_snapshots": [],
+        "resume_to_completion_s": null,
+        "origin_requests": 856,
+        "duplicate_page_requests": 40,
+        "denied_endpoint_requests": 0,
+        "maximum_origin_active": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1
+        },
+        "correct": true
+      },
+      {
+        "trial": "w4",
+        "workers": 4,
+        "exit_codes": [
+          0
+        ],
+        "expected_ok": 808,
+        "ok": 808,
+        "missing_urls": [],
+        "unexpected_urls": [],
+        "marker_errors": [],
+        "unique_documents": 816,
+        "documents": 816,
+        "wall_s": 8.928823583002668,
+        "useful_documents_per_s": 90.49344434782508,
+        "successful_page_latency": {
+          "n": 808,
+          "median_ms": 24.930978994234465,
+          "p90_ms": 29.99849098559935,
+          "p95_ms": 47.511591456714086,
+          "min_ms": 16.952208010479808,
+          "max_ms": 1049.0677080233581,
+          "mean_ms": 40.43029975553797,
+          "sum_ms": 32667.68220247468
+        },
+        "peak_sampled_process_tree_rss_bytes": 634601472,
+        "cpu_self_s": 3.0785199999999997,
+        "cpu_reaped_children_s": 2.1414619999999998,
+        "browser_pages": 24,
+        "summary": {
+          "run_id": "5de9f5177bc3",
+          "status": "completed",
+          "strategy": "adaptive",
+          "pages": 816,
+          "outcomes": {
+            "ok": 808,
+            "robots_denied": 8
+          },
+          "elapsed_ms": 8692.97,
+          "requests": 856,
+          "bytes": 1013208,
+          "browser_pages": 24,
+          "browser_startup_ms": 196.2,
+          "decision_calls": 0,
+          "decision_ms": 0.0,
+          "duplicates": 653,
+          "pending": 0,
+          "db": "reports/portfolio-build/load-final/w4/crawl.db"
+        },
+        "integrity_check": "ok",
+        "crash_snapshots": [],
+        "resume_to_completion_s": null,
+        "origin_requests": 856,
+        "duplicate_page_requests": 40,
+        "denied_endpoint_requests": 0,
+        "maximum_origin_active": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1
+        },
+        "correct": true
+      },
+      {
+        "trial": "w8",
+        "workers": 8,
+        "exit_codes": [
+          0
+        ],
+        "expected_ok": 808,
+        "ok": 808,
+        "missing_urls": [],
+        "unexpected_urls": [],
+        "marker_errors": [],
+        "unique_documents": 816,
+        "documents": 816,
+        "wall_s": 5.724856874992838,
+        "useful_documents_per_s": 141.13889965170716,
+        "successful_page_latency": {
+          "n": 808,
+          "median_ms": 24.444437498459592,
+          "p90_ms": 29.181837404030375,
+          "p95_ms": 55.69660174805896,
+          "min_ms": 16.77891699364409,
+          "max_ms": 1780.0519170123152,
+          "mean_ms": 47.20285400426382,
+          "sum_ms": 38139.906035445165
+        },
+        "peak_sampled_process_tree_rss_bytes": 634486784,
+        "cpu_self_s": 2.852565,
+        "cpu_reaped_children_s": 2.038528,
+        "browser_pages": 24,
+        "summary": {
+          "run_id": "111954871f77",
+          "status": "completed",
+          "strategy": "adaptive",
+          "pages": 816,
+          "outcomes": {
+            "ok": 808,
+            "robots_denied": 8
+          },
+          "elapsed_ms": 5491.65,
+          "requests": 856,
+          "bytes": 1013208,
+          "browser_pages": 24,
+          "browser_startup_ms": 191.52,
+          "decision_calls": 0,
+          "decision_ms": 0.0,
+          "duplicates": 645,
+          "pending": 0,
+          "db": "reports/portfolio-build/load-final/w8/crawl.db"
+        },
+        "integrity_check": "ok",
+        "crash_snapshots": [],
+        "resume_to_completion_s": null,
+        "origin_requests": 856,
+        "duplicate_page_requests": 40,
+        "denied_endpoint_requests": 0,
+        "maximum_origin_active": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1
+        },
+        "correct": true
+      },
+      {
+        "trial": "recovery-inflight",
+        "workers": 4,
+        "exit_codes": [
+          -9,
+          0
+        ],
+        "expected_ok": 808,
+        "ok": 808,
+        "missing_urls": [],
+        "unexpected_urls": [],
+        "marker_errors": [],
+        "unique_documents": 816,
+        "documents": 816,
+        "wall_s": 9.34072395801195,
+        "useful_documents_per_s": 86.50293099679313,
+        "successful_page_latency": {
+          "n": 808,
+          "median_ms": 25.150103989290074,
+          "p90_ms": 30.709212378133095,
+          "p95_ms": 48.550599990994634,
+          "min_ms": 16.805166989797726,
+          "max_ms": 1042.3733330098912,
+          "mean_ms": 41.62147978156036,
+          "sum_ms": 33630.15566350077
+        },
+        "peak_sampled_process_tree_rss_bytes": 633683968,
+        "cpu_self_s": 2.755983,
+        "cpu_reaped_children_s": 1.8215180000000002,
+        "browser_pages": 20,
+        "summary": {
+          "run_id": "fffb4311425d",
+          "status": "completed",
+          "strategy": "adaptive",
+          "pages": 816,
+          "outcomes": {
+            "ok": 808,
+            "robots_denied": 8
+          },
+          "elapsed_ms": 7205.5,
+          "requests": 866,
+          "bytes": 1015826,
+          "browser_pages": 20,
+          "browser_startup_ms": 188.52,
+          "decision_calls": 0,
+          "decision_ms": 0.0,
+          "duplicates": 652,
+          "pending": 0,
+          "db": "reports/portfolio-build/load-final/recovery-inflight/crawl.db"
+        },
+        "integrity_check": "ok",
+        "crash_snapshots": [
+          {
+            "completed": 124,
+            "states": {
+              "done": 124,
+              "leased": 4,
+              "queued": 688
+            }
+          }
+        ],
+        "resume_to_completion_s": 7.452265541011002,
+        "origin_requests": 868,
+        "duplicate_page_requests": 44,
+        "denied_endpoint_requests": 0,
+        "maximum_origin_active": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1
+        },
+        "correct": true
+      },
+      {
+        "trial": "recovery-commit-window",
+        "workers": 4,
+        "exit_codes": [
+          -9,
+          0
+        ],
+        "expected_ok": 808,
+        "ok": 808,
+        "missing_urls": [],
+        "unexpected_urls": [],
+        "marker_errors": [],
+        "unique_documents": 816,
+        "documents": 816,
+        "wall_s": 9.139470916998107,
+        "useful_documents_per_s": 88.40774343920015,
+        "successful_page_latency": {
+          "n": 808,
+          "median_ms": 24.707354008569382,
+          "p90_ms": 30.342475086217746,
+          "p95_ms": 87.1305732609471,
+          "min_ms": 16.81362499948591,
+          "max_ms": 1015.9923750034068,
+          "mean_ms": 40.66322102567433,
+          "sum_ms": 32855.88258874486
+        },
+        "peak_sampled_process_tree_rss_bytes": 634372096,
+        "cpu_self_s": 3.1357790000000003,
+        "cpu_reaped_children_s": 2.204352,
+        "browser_pages": 24,
+        "summary": {
+          "run_id": "9fbbe4de6142",
+          "status": "completed",
+          "strategy": "adaptive",
+          "pages": 816,
+          "outcomes": {
+            "ok": 808,
+            "robots_denied": 8
+          },
+          "elapsed_ms": 8709.07,
+          "requests": 863,
+          "bytes": 1026602,
+          "browser_pages": 24,
+          "browser_startup_ms": 191.79,
+          "decision_calls": 0,
+          "decision_ms": 0.0,
+          "duplicates": 652,
+          "pending": 0,
+          "db": "reports/portfolio-build/load-final/recovery-commit-window/crawl.db"
+        },
+        "integrity_check": "ok",
+        "crash_snapshots": [
+          {
+            "completed": 1,
+            "states": {
+              "done": 1,
+              "leased": 3,
+              "queued": 105
+            }
+          }
+        ],
+        "resume_to_completion_s": 8.952197000005981,
+        "origin_requests": 863,
+        "duplicate_page_requests": 40,
+        "denied_endpoint_requests": 0,
+        "maximum_origin_active": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1
+        },
+        "correct": true
+      }
+    ],
+    "load-sustained": [
+      {
+        "trial": "w8",
+        "workers": 8,
+        "exit_codes": [
+          0
+        ],
+        "expected_ok": 8008,
+        "ok": 8008,
+        "missing_urls": [],
+        "unexpected_urls": [],
+        "marker_errors": [],
+        "unique_documents": 8016,
+        "documents": 8016,
+        "wall_s": 96.72560966599849,
+        "useful_documents_per_s": 82.79089713316137,
+        "successful_page_latency": {
+          "n": 8008,
+          "median_ms": 91.7909999989206,
+          "p90_ms": 96.19877499353606,
+          "p95_ms": 98.15273144486127,
+          "min_ms": 61.856667016400024,
+          "max_ms": 521.5528339904267,
+          "mean_ms": 92.46233468582942,
+          "sum_ms": 740438.376164122
+        },
+        "peak_sampled_process_tree_rss_bytes": 125255680,
+        "cpu_self_s": 42.339828,
+        "cpu_reaped_children_s": 0.0,
+        "browser_pages": 0,
+        "summary": {
+          "run_id": "e69884a73cc0",
+          "status": "completed",
+          "strategy": "adaptive",
+          "pages": 8016,
+          "outcomes": {
+            "ok": 8008,
+            "robots_denied": 8
+          },
+          "elapsed_ms": 96197.73,
+          "requests": 8016,
+          "bytes": 9756912,
+          "browser_pages": 0,
+          "browser_startup_ms": 0.0,
+          "decision_calls": 0,
+          "decision_ms": 0.0,
+          "duplicates": 7601,
+          "pending": 0,
+          "db": "reports/portfolio-build/load-sustained/w8/crawl.db"
+        },
+        "integrity_check": "ok",
+        "crash_snapshots": [],
+        "resume_to_completion_s": null,
+        "origin_requests": 8016,
+        "duplicate_page_requests": 0,
+        "denied_endpoint_requests": 0,
+        "maximum_origin_active": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1
+        },
+        "correct": true
+      }
+    ]
+  },
+  "audit": {
+    "method": "Purposeful source/output spot review of 12 initial cases, including both content defects and both strict non-Cloudflare failures. Not a blind human-labelled full-text study. Raw heading counts include navigation and are descriptive, not a pass/fail metric.",
+    "cases": [
+      {
+        "id": "python-tutorial",
+        "phase": "initial-first",
+        "source_sha256": "d1b113e0a16ac6db63a697aa5b14ca62928cce91c0fb2d50a96e53f5ef87d293",
+        "source_status": 200,
+        "output_chars": 6220,
+        "raw_h1_h3_count": 5,
+        "raw_h1_h3_exact_matches": 0,
+        "review": "Opening explanation and table of contents survive, through the final customization section. Formatting is flattened."
+      },
+      {
+        "id": "postgresql",
+        "phase": "initial-first",
+        "source_sha256": "692fb5b8190798f89f9537a7aae3265c27b3a32dd5b9b63d4a665f009928bb3c",
+        "source_status": 200,
+        "output_chars": 1995,
+        "raw_h1_h3_count": 2,
+        "raw_h1_h3_exact_matches": 2,
+        "review": "Tutorial prose survives, but version navigation, release notice and correction form text remain. Boilerplate precision is imperfect."
+      },
+      {
+        "id": "w3-png",
+        "phase": "initial-first",
+        "source_sha256": "a3ac82bb9eb8664b93961a2a9ff6def3d70e3a9f63d92721143c1f391d04edec",
+        "source_status": 200,
+        "output_chars": 225802,
+        "raw_h1_h3_count": 120,
+        "raw_h1_h3_exact_matches": 118,
+        "review": "Large specification retained through references; 225k characters exceeds the verifier full-text limit. Do not claim full completeness validation."
+      },
+      {
+        "id": "esa",
+        "phase": "content-recheck",
+        "source_sha256": "1f70ecb0edcedb8120e2f9534c07596abc5ca4bcd06075ac3fb925f209461113",
+        "source_status": 200,
+        "output_chars": 3422,
+        "raw_h1_h3_count": 39,
+        "raw_h1_h3_exact_matches": 39,
+        "review": "Initial output lost card titles because nested headers were removed. Fresh post-fix output preserves source card headings. Dates, counts and buttons remain."
+      },
+      {
+        "id": "loc",
+        "phase": "initial-first",
+        "source_sha256": "2142db35f9659d8bcd27b77e404496b6d64a0b9f4bd8a92718b9c8ab4a6a2ee8",
+        "source_status": 200,
+        "output_chars": 2941,
+        "raw_h1_h3_count": 9,
+        "raw_h1_h3_exact_matches": 8,
+        "review": "Library overview and services survive through the final organizational offices."
+      },
+      {
+        "id": "rijksmuseum",
+        "phase": "initial-first",
+        "source_sha256": "b7e85c18ee4491a890b81e7a6ecd4a3b6136d7dce152bf8e61d9725097044988",
+        "source_status": 200,
+        "output_chars": 290,
+        "raw_h1_h3_count": 7,
+        "raw_h1_h3_exact_matches": 3,
+        "review": "Frozen art keyword is absent in source. Short about paragraph and both section labels are extracted; strict benchmark failure retained."
+      },
+      {
+        "id": "un",
+        "phase": "initial-first",
+        "source_sha256": "bbad82cbd1546435ade49bbf7202acf7586fee02adc9c5b1cd74e6469b0502aa",
+        "source_status": 200,
+        "output_chars": 2825,
+        "raw_h1_h3_count": 12,
+        "raw_h1_h3_exact_matches": 9,
+        "review": "Mission and organizational descriptions survive through ICJ and Nobel Prize sections."
+      },
+      {
+        "id": "worldbank",
+        "phase": "content-recheck",
+        "source_sha256": "5e63d700f3c8edbdf1df5f40a73c774c3b362cd67d1abc3c2ca6506cbf21b33b",
+        "source_status": 200,
+        "output_chars": 2353,
+        "raw_h1_h3_count": 13,
+        "raw_h1_h3_exact_matches": 13,
+        "review": "Initial output contained CMS layout/configuration cells. New CMS prose candidate retains narrative sections and removes grid and section metadata; minor navigation/configuration labels remain."
+      },
+      {
+        "id": "ecb",
+        "phase": "initial-first",
+        "source_sha256": "bd2804123a6a3759c5daf43961e0aed2bbf798936a07507b29fe73ffbc9ff038",
+        "source_status": 200,
+        "output_chars": 4117,
+        "raw_h1_h3_count": 21,
+        "raw_h1_h3_exact_matches": 15,
+        "review": "Price stability, banking safety and public-engagement sections are present. Link labels remain."
+      },
+      {
+        "id": "blender",
+        "phase": "initial-first",
+        "source_sha256": "80ec1efaa44ce8a99881065e97924718161cda2736df9c91d268856b78290338",
+        "source_status": 200,
+        "output_chars": 3021,
+        "raw_h1_h3_count": 11,
+        "raw_h1_h3_exact_matches": 10,
+        "review": "Mission, vision, activities and license narrative retained."
+      },
+      {
+        "id": "videolan",
+        "phase": "initial-first",
+        "source_sha256": "488f8fe43a2793a5ed7b4f4e8927e27c34a9c13499b27e28b32e3d031b12f3fc",
+        "source_status": 200,
+        "output_chars": 4601,
+        "raw_h1_h3_count": 12,
+        "raw_h1_h3_exact_matches": 12,
+        "review": "Core product description and formats are present. Platform links and legal/footer text remain; boilerplate precision is imperfect."
+      },
+      {
+        "id": "louvre",
+        "phase": "initial-first",
+        "source_sha256": "becd8e75c63b7700632aa2fdeea4c5660c8e6821cbf3aeaf0b8253cd489786b6",
+        "source_status": 404,
+        "output_chars": 0,
+        "raw_h1_h3_count": 2,
+        "raw_h1_h3_exact_matches": 0,
+        "review": "Requested URL returned an actual 404 page. Correctly exported as error; do not substitute a different URL to improve the frozen score."
+      }
+    ]
+  },
+  "focused_rechecks": {
+    "content-recheck": {
+      "finished_at": "2026-10-23T19:01:12.196694+00:00",
+      "total": 2,
+      "passed": 2,
+      "skipped_cloudflare": 0,
+      "rows": [
+        {
+          "id": "esa",
+          "passed": true,
+          "skipped_cloudflare": false,
+          "outcome": "ok",
+          "status": 200,
+          "elapsed_ms": 1578.8310829957481,
+          "reason": "",
+          "missing_groups": []
+        },
+        {
+          "id": "worldbank",
+          "passed": true,
+          "skipped_cloudflare": false,
+          "outcome": "ok",
+          "status": 200,
+          "elapsed_ms": 1286.9864169915672,
+          "reason": "",
+          "missing_groups": []
+        }
+      ]
+    },
+    "redirect-recheck": {
+      "finished_at": "2026-10-23T19:03:59.422570+00:00",
+      "total": 2,
+      "passed": 1,
+      "skipped_cloudflare": 0,
+      "rows": [
+        {
+          "id": "gimp",
+          "passed": true,
+          "skipped_cloudflare": false,
+          "outcome": "ok",
+          "status": 200,
+          "elapsed_ms": 5064.451917016413,
+          "reason": "",
+          "missing_groups": []
+        },
+        {
+          "id": "obs",
+          "passed": false,
+          "skipped_cloudflare": false,
+          "outcome": "error",
+          "status": 302,
+          "elapsed_ms": 1136.6148750239518,
+          "reason": "Redirect loop detected",
+          "missing_groups": [
+            [
+              "obs"
+            ],
+            [
+              "studio"
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "validation": "146 passed in 52.68s"
+}

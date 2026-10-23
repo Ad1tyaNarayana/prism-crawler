@@ -1,0 +1,203 @@
+--- before/store.py
++++ after/store.py
+@@ -4,6 +4,7 @@
+ import sqlite3
+ import time
+ import uuid
++from collections.abc import Sequence
+ from dataclasses import asdict
+ from pathlib import Path
+ 
+@@ -99,12 +100,15 @@
+         return run_id
+ 
+     def enqueue(self, run_id: str, url: str, depth: int, limit: int) -> bool:
++        with self.db:
++            return self._insert_frontier(run_id, url, depth, limit)
++
++    def _insert_frontier(self, run_id: str, url: str, depth: int, limit: int) -> bool:
+         count = self.db.execute("SELECT COUNT(*) FROM frontier WHERE run_id=?", (run_id,)).fetchone()[0]
+         if count >= limit:
+             return False
+-        with self.db:
+-            cur = self.db.execute("INSERT OR IGNORE INTO frontier VALUES(?,?,?,?,'queued')",
+-                                  (run_id, url, origin(url), depth))
++        cur = self.db.execute("INSERT OR IGNORE INTO frontier VALUES(?,?,?,?,'queued')",
++                              (run_id, url, origin(url), depth))
+         return cur.rowcount == 1
+ 
+     def claim(self, run_id: str, busy_origins: set[str]):
+@@ -129,7 +133,8 @@
+                                              (now if now is not None else time.time(),))]
+ 
+     def record(self, run_id: str, document: Document, config: CrawlConfig,
+-               etag: str = "", modified: str = "") -> None:
++               etag: str = "", modified: str = "", *,
++               discovered: Sequence[tuple[str, int]] = ()) -> None:
+         previous = self.previous(document.url)
+         now = time.time()
+         with self.db:
+@@ -155,6 +160,8 @@
+                             (run_id, document.url, json.dumps(asdict(document))))
+             self.db.execute("UPDATE frontier SET state='done' WHERE run_id=? AND url=?",
+                             (run_id, document.url))
++            for url, depth in discovered:
++                self._insert_frontier(run_id, url, depth, config.max_frontier)
+ 
+     def duplicate(self, url: str, digest: str, simhash: int, text: str) -> str | None:
+         exact = self.db.execute("SELECT url FROM pages WHERE digest=? AND url!=? LIMIT 1",
+--- before/crawler.py
++++ after/crawler.py
+@@ -69,11 +69,17 @@
+                     if self._lock_file:
+                         self._lock_file.close()
+ 
+-    def _enqueue(self, url: str, depth: int) -> bool:
++    def _frontier_url(self, url: str, depth: int) -> str | None:
+         clean = canonicalize(url)
+         if not clean or origin(clean) not in self._origins or not page_like(clean):
+-            return False
++            return None
+         if depth > self.config.max_depth:
++            return None
++        return clean
++
++    def _enqueue(self, url: str, depth: int) -> bool:
++        clean = self._frontier_url(url, depth)
++        if clean is None:
+             return False
+         return self.store.enqueue(self.run_id, clean, depth, self.config.max_frontier)
+ 
+@@ -135,14 +141,17 @@
+                 claimed += 1
+                 try:
+                     document, extraction, result = await self._process(item["url"])
++                    links = []
++                    if self.config.follow_links and document.outcome in {Outcome.OK, Outcome.LOW_QUALITY}:
++                        links.extend(extraction.links)
++                    if self.config.discover and document.outcome == Outcome.OK:
++                        links.extend(extraction.feeds[:2])
++                    depth = item["depth"] + 1
++                    discovered = [(clean, depth) for link in dict.fromkeys(links)
++                                  if (clean := self._frontier_url(link, depth)) is not None]
+                     self.store.record(self.run_id, document, self.config,
+-                                      result.headers.get("etag", ""), result.headers.get("last-modified", ""))
+-                    if self.config.follow_links and document.outcome in {Outcome.OK, Outcome.LOW_QUALITY}:
+-                        for url in extraction.links:
+-                            self._enqueue(url, item["depth"] + 1)
+-                    if self.config.discover and document.outcome == Outcome.OK:
+-                        for feed in extraction.feeds[:2]:
+-                            self._enqueue(feed, item["depth"] + 1)
++                                      result.headers.get("etag", ""), result.headers.get("last-modified", ""),
++                                      discovered=discovered)
+                 finally:
+                     busy.discard(item["origin"])
+ 
+--- before/extract.py
++++ after/extract.py
+@@ -47,6 +47,32 @@
+ 
+ def text_of(element) -> str:
+     return clean("\n".join(element.itertext()))
++
++
++def strip_chrome(tree) -> None:
++    # Headers inside sections/cards can contain the document's actual title.
++    for node in tree.xpath("//script|//style|//noscript|//nav|//footer|//aside|//form|"
++                           "//header[@role='banner' or parent::body or "
++                           "not(.//h1|.//h2|.//h3|.//h4|.//h5|.//h6)]|"
++                           "//*[@hidden]|//*[@aria-hidden='true']"):
++        node.drop_tree()
++
++
++def cms_prose(container) -> str:
++    # Undecorated CMS block tables expose layout parameters as ordinary div text.
++    cells = container.xpath(".//div[not(*) and not(ancestor::pre or ancestor::code)]")
++    grids = sum(bool(re.fullmatch(r"col-(?:xs|sm|md|lg|xl|xxl)-\d{1,2}",
++                                 (cell.text or "").strip())) for cell in cells)
++    if grids < 4 or not container.xpath(".//div[contains(concat(' ',normalize-space(@class),' '),"
++                                       "' section-metadata ')]"):
++        return ""
++    blocks = container.xpath(".//h1|.//h2|.//h3|.//h4|.//h5|.//h6|.//p|.//li|.//pre|"
++                             ".//blockquote|.//div[not(*)]")
++    selected = set(blocks)
++    return clean("\n".join(text_of(node) for node in blocks
++        if not any(parent in selected or 'section-metadata' in parent.get('class', '').split()
++                   for parent in node.iterancestors())
++        and (node.tag != 'div' or len(text_of(node)) >= 80)))
+ 
+ 
+ def access_wall(tree) -> bool:
+@@ -247,9 +273,7 @@
+                     continue
+                 parser = "jsonld" if "ld+json" in kind else "hydration"
+                 extraction.candidates.extend(json_candidates(data, parser))
+-        for node in tree.xpath("//script|//style|//noscript|//nav|//footer|//header|//aside|//form|"
+-                               "//*[@hidden]|//*[@aria-hidden='true']"):
+-            node.drop_tree()
++        strip_chrome(tree)
+         for node in tree.xpath("//img[@alt] | //math[@alttext]"):
+             alternative = node.get("alttext") or node.get("alt", "")
+             hint = " ".join((node.get("class", ""), node.get("role", ""))).lower()
+@@ -262,6 +286,9 @@
+         body = tree.find("body")
+         body = body if body is not None else tree
+         container = max(semantic, key=lambda e: len(e.text_content()), default=body)
++        prose = cms_prose(container)
++        if prose:
++            extraction.candidates.append(Candidate("cms_prose", prose, title, quality(prose, True)))
+         fallback = text_of(container)
+         body_visible = text_of(body)
+         if not semantic and len(body_visible) < 800 and any(phrase in body_visible.lower() for phrase in (
+--- before/verification.py
++++ after/verification.py
+@@ -5,7 +5,7 @@
+ 
+ from lxml import etree, html
+ 
+-from .extract import text_of
++from .extract import strip_chrome, text_of
+ from .models import (
+     Candidate,
+     Extraction,
+@@ -18,7 +18,7 @@
+ MAX_HEADINGS = 64
+ MAX_BLOCKS = 128
+ MAX_TEXT = 200_000
+-VERIFIER_VERSION = "source-evidence-v3"
++VERIFIER_VERSION = "source-evidence-v4"
+ 
+ 
+ def normalize(text: str) -> str:
+@@ -59,9 +59,7 @@
+         executable = any((script.get("type", "").lower() in {
+             "", "module", "text/javascript", "application/javascript"})
+             and (script.get("src") or (script.text or "").strip()) for script in tree.xpath("//script"))
+-        for node in tree.xpath("//script|//style|//noscript|//nav|//footer|//header|//aside|//form|"
+-                               "//*[@hidden]|//*[@aria-hidden='true']"):
+-            node.drop_tree()
++        strip_chrome(tree)
+         mains = tree.xpath("//main|//*[@role='main']")
+         articles = tree.xpath("//article")
+         body = tree.find("body")
+--- before/network.py
++++ after/network.py
+@@ -172,6 +172,7 @@
+             return FetchResult(url, outcome=Outcome.OUT_OF_SCOPE, reason="Unsupported or invalid URL")
+         current = clean
+         redirected = False
++        visited = {current}
+         for _ in range(6):
+             outcome, reason = await self.allowed(current, asset, redirect=redirected)
+             if outcome != Outcome.OK:
+@@ -198,6 +199,10 @@
+                 destination = canonicalize(result.headers.get("location", ""), current)
+                 if not destination:
+                     return FetchResult(current, outcome=Outcome.ERROR, reason="Invalid redirect")
++                if destination in visited:
++                    result.outcome, result.reason = Outcome.ERROR, "Redirect loop detected"
++                    return result
++                visited.add(destination)
+                 current = destination
+                 redirected = True
+                 headers = {}
