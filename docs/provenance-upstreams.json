@@ -1,0 +1,22 @@
+[
+  {
+    "name": "scrapy",
+    "repository": "https://github.com/scrapy/scrapy",
+    "commit": "171ccbedb734c988fd86708fd5e0803029b6c730"
+  },
+  {
+    "name": "crawlee",
+    "repository": "https://github.com/apify/crawlee-python",
+    "commit": "1603c1c0d86c848eb4a3475b613a59c5d83ca8d7"
+  },
+  {
+    "name": "crawl4ai",
+    "repository": "https://github.com/unclecode/crawl4ai",
+    "commit": "30165f1ee1fb61f6cce1477feed2acc5e2181e25"
+  },
+  {
+    "name": "firecrawl",
+    "repository": "https://github.com/firecrawl/firecrawl",
+    "commit": "5228ce8ac720c321374a7ad4f6eebb9eba2d3072"
+  }
+]

@@ -1,69 +1,111 @@
 # Prism
 
-An adaptive, resumable web crawler built in Python. HTTP is the default; guarded Chromium handles pages that need JavaScript. Extraction, source checks, rate limits, robots policy and SQLite checkpoints run locally. No hosted crawler or model is required.
+[![Verification](https://github.com/Ad1tyaNarayana/prism-crawler/actions/workflows/test.yml/badge.svg)](https://github.com/Ad1tyaNarayana/prism-crawler/actions/workflows/test.yml)
 
-This is a single-machine backend engineering project, with reproducible failure experiments. It does not claim universal website coverage.
+**An async Python crawler with adaptive HTTP/Chromium retrieval, source-aware extraction and durable SQLite checkpoints.**
 
-## Results and demo
+Prism starts with HTTP, uses guarded Chromium when content checks call for rendering, and returns documents together with explicit failure outcomes. Robots, origin scope, pacing and resource budgets apply to both paths. No hosted crawler, API key or decision model is required.
 
-- [Evaluation and limitations](docs/evaluation.md): 50 new hostnames, frozen before fetching, with a reserved ten-site cohort. Original failures and Cloudflare exclusions remain visible.
-- [Interactive results and short recorded demo](examples/evidence/index.html): open through the local server below.
-- [Architecture](docs/architecture.md) and [implementation limits](docs/limits.md).
+Status is **alpha, version 0.2 in preparation**. The repository is private during release preparation. The package has not been uploaded to PyPI. Current support is Python 3.11+ on macOS and Linux; local verification used Python 3.13 on macOS. The wider CI matrix is configured for public runs or explicit manual dispatch.
 
-The most consequential fix came from deliberately killing the process just after a page was saved. The old implementation lost 100 discovered children; the corrected implementation commits the document and its frontier additions in one SQLite transaction. The same experiment recovered **808/808**, versus **708/808** before the fix. Network requests can repeat after a crash; stored URL records remain unique.
-
-Source review also caught two failures hidden by keyword checks: stripped card headings and CMS layout settings mixed with prose. Both have regression tests and fresh focused rechecks. A redirect-loop detector avoids repeating the same failed request six times.
-
-## Run locally
-
-Python 3.11+ on macOS or Linux; tested on Python 3.13, Apple M4 Pro. Setup downloads Python dependencies and Chromium. The default runtime needs no account, key or paid service.
+## Install from source
 
 ```sh
-bash scripts/setup.sh
+git clone https://github.com/Ad1tyaNarayana/prism-crawler.git
+cd prism-crawler
+python3 -m venv .venv
+.venv/bin/python -m pip install .
+# Required for JavaScript rendering. HTTP retrieval works without the browser binary.
+.venv/bin/python -m playwright install chromium
+```
+
+The private repository requires GitHub access. No package upload or public release is implied by these instructions.
+
+## Python library
+
+```python
+import asyncio
+from pathlib import Path
+from prism_crawler import AsyncCrawler, CrawlConfig
+
+async def main():
+    config = CrawlConfig(db=Path("data/pages.db"), max_pages=10, max_requests=100)
+    async with AsyncCrawler(config) as crawler:
+        result = await crawler.crawl(["https://example.com/"])
+
+    for document in result.documents:
+        print(document.url, document.outcome, document.reason)
+    result.to_jsonl("data/pages.jsonl")
+
+asyncio.run(main())
+```
+
+Results remain usable after the context closes. `result.successful` and `result.failures` provide filtered documents; `result.summary` contains counts and costs. Page failures are data, while lifecycle misuse and invalid inputs raise errors. Each client owns one bounded run. Create a new client with the original configuration and seeds to resume an interrupted run.
+
+See the [API reference](docs/api.md) for lifecycle, cancellation, outcomes, export behavior and limits.
+
+## Command line
+
+```sh
 .venv/bin/prism crawl https://example.com --max-pages 10 --db data/example.db
 .venv/bin/prism inspect --db data/example.db
 .venv/bin/prism export --db data/example.db --output data/example.jsonl
+# Equivalent module entry point.
+.venv/bin/python -m prism_crawler --help
 ```
 
-Resume an interrupted run by repeating its exact command with `--resume`. For an explicitly approved public redirect helper, add `--redirect-origin https://helper.example.org`; its robots rules still apply. Browser dependencies use `--asset-origin`. Neither option grants frontier scope on the helper. See `prism crawl --help` and [usage](docs/usage.md).
+Repeat an interrupted crawl command with `--resume`. Each seed authorizes its origin. Additional public helpers require explicit `--redirect-origin` or `--asset-origin` options; their robots rules still apply. See [usage](docs/usage.md).
 
-## Reproduce the engineering demo
+## Try it offline
 
 ```sh
-# Entirely local: HTTP, JavaScript, temporary errors and two actual SIGKILL/resume trials.
+.venv/bin/python examples/local_crawl.py --output data/local-example.jsonl
+```
+
+The example starts a local HTTP server, crawls a static and a JavaScript page, verifies their content, and checks that a robots-denied endpoint receives zero requests. It uses no public websites or hosted service.
+
+For an actual recorded crash/restart demonstration:
+
+```sh
 PYTHONPATH=.:src .venv/bin/python -m benchmarks.demo --output reports/my-demo
-# Serve the saved portfolio (open http://127.0.0.1:8789/examples/evidence/).
 .venv/bin/python -m http.server 8789 --bind 127.0.0.1
+# Open http://127.0.0.1:8789/examples/evidence/ for the saved demo and results.
 ```
 
-The demo records Chromium video and saves SQLite databases, origin request receipts and correctness checks. Use a new output directory for each experiment.
+## What the engine supports
 
-## Verify
+- Per-origin document queues and pacing, bounded dependency concurrency, robots checks, retry cooldowns and request/time/size budgets.
+- HTML, selected structured text fields, feeds, sitemaps and bounded text PDFs; extraction candidates and detectable source-content gaps.
+- Atomic page completion and discovered-child persistence, abandoned-lease recovery, conditional revalidation and heuristic revisit scheduling.
+- Exact/near-duplicate annotations, explicit refusal/error outcomes and SQLite/JSONL telemetry.
+
+This is a bounded single-machine library. Results materialize in memory. It has no distributed frontier, stable plugin API, custom request-handler framework, authentication automation or access-wall solver. Windows is unsupported. Quality checks are heuristic and can miss content gaps. Read [architecture](docs/architecture.md), [limits](docs/limits.md) and [security](SECURITY.md) before embedding it in a service.
+
+## Evidence and provenance
+
+The historical frozen 50-hostname evaluation recorded **39/50 strict passes**, or **39/46 excluding four disclosed Cloudflare skips**. The reserved ten scored **5/10**. Those cohorts ran on two research source revisions; they are not a current-version accuracy claim.
+
+An actual SIGKILL experiment exposed a frontier bug that lost 100 child URLs. Atomic page/child commits changed the same recovery test from **708/808 to 808/808**. A final research-source local load trial recovered **8,008/8,008** documents in **96.73 seconds**. These are synthetic local measurements, not internet capacity estimates. The new library interface is checked separately by behavioral and installed-artifact tests.
+
+Read [evaluation](docs/evaluation.md), [saved receipts](examples/evidence/summary.json), [the source audit](docs/provenance.md) and [comparison with established projects](docs/comparison.md). The audit found no source matches in the scoped comparison; it does not prove originality across all public code. Prism uses existing parsing, networking and browser libraries, credited in [third-party notices](THIRD_PARTY_NOTICES.md).
+
+## Development and releases
 
 ```sh
+.venv/bin/python -m pip install -e '.[dev]'
 .venv/bin/python -m pytest -q
-.venv/bin/python -m ruff check src tests benchmarks
-PYTHONPATH=.:src .venv/bin/python -m benchmarks.load_recovery suite \
-  --output reports/load-check --origins 8 --pages-per-origin 100 \
-  --workers 1 4 8 --recovery --mixed
-PYTHONPATH=.:src .venv/bin/python -m benchmarks.load_recovery suite \
-  --output reports/sustained-check --origins 8 --pages-per-origin 1000 \
-  --workers 8 --fixture-delay .06
+.venv/bin/python -m ruff check src tests benchmarks tools examples
+.venv/bin/python -m mypy
+.venv/bin/python tools/check_links.py
+.venv/bin/python -m build --outdir dist/release
+.venv/bin/python -m twine check dist/release/*
+.venv/bin/python tools/check_distribution.py --dist dist/release
 ```
 
-The core tests and load fixtures use local servers. The frozen web benchmark does make real requests:
+See [CONTRIBUTING](CONTRIBUTING.md), [changelog](CHANGELOG.md), [release preparation](docs/releases.md) and [code of conduct](CODE_OF_CONDUCT.md). CI runs automatically when the repository is public; automatic private runs are skipped to preserve the free/local preparation constraint. A skipped badge/job is not a passing check. Dependency updates are configured through Dependabot. No upload workflow is configured.
 
-```sh
-PYTHONPATH=.:src .venv/bin/python -m benchmarks.holdout \
-  --cohort initial --output reports/new-initial
-PYTHONPATH=.:src .venv/bin/python -m benchmarks.holdout \
-  --cohort reserved --output reports/new-reserved
-```
+The supported namespace is `prism_crawler`. `optimal_crawler` is the internal engine. `benchmarks/` and `experiments/` contain historical research, not stable library interfaces. Raw captures, provider credentials, model downloads and personal writing remain ignored.
 
-Rerunning a published cohort does not make it untouched again. Robots enforcement stays enabled; Cloudflare responses are reported as skipped, not solved or replaced.
+## License
 
-## Repository map
-
-`src/optimal_crawler/` contains the supported adaptive engine. `tests/` contains local behavioral tests. `benchmarks/` contains evaluation tools; older provider/model experiments are historical research, not the default path. `experiments/` holds isolated native-network and model-controller experiments, outside the production runtime. `examples/evidence/` contains small, content-free result receipts and the local demo. Raw website captures, provider account files, model weights and old reports remain ignored on the original machine.
-
-Optional Laya/KEV adapters can advise bounded parser selection. The measured default is deterministic: models did not improve the earlier end-to-end fixture score. They cannot generate the saved document or override access policy. This project has no distributed frontier, multi-tenant API or demonstrated million-page capacity.
+Prism's own code is [MIT licensed](LICENSE). Dependencies and third-party content retain their own licenses. Development used AI coding assistance; the repository preserves source, tests, measurements and reproducible checks.

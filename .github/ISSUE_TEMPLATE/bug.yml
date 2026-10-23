@@ -1,0 +1,31 @@
+name: Bug report
+description: A reproducible retrieval, extraction, library or recovery failure.
+body:
+  - type: textarea
+    id: environment
+    attributes:
+      label: Version and environment
+      description: Include Prism revision/version, Python, operating system and browser version if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproducer
+      description: Prefer a local HTML/HTTP fixture. Remove credentials, private URLs and personal data.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and observed behavior
+      description: Include outcome/reason and relevant counters. A 200 response alone does not establish extraction success.
+    validations:
+      required: true
+  - type: checkboxes
+    id: security
+    attributes:
+      label: Reporting channel
+      options:
+        - label: This is not a private security vulnerability report. I read SECURITY.md.
+          required: true

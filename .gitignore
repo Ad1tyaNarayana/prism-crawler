@@ -19,3 +19,10 @@ dist/
 .env.*
 *.pem
 *.key
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+# Unpublished personal writing is kept locally.
+/docs/substack-draft.md

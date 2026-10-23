@@ -1,10 +1,26 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling>=1.27"]
 build-backend = "hatchling.build"
 
 [project]
-name = "optimal-crawler"
-version = "0.1.0"
+name = "prism-crawler"
+dynamic = ["version"]
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+authors = [{name = "Aditya Narayana Bhat"}]
+keywords = ["crawler", "web-scraping", "asyncio", "retrieval", "robots", "sqlite"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Operating System :: MacOS",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Typing :: Typed",
+]
 description = "An adaptive crawler with guarded recovery, source verification and optional local decisions"
 requires-python = ">=3.11"
 dependencies = [
@@ -21,13 +37,51 @@ dependencies = [
 
 [project.optional-dependencies]
 laya = ["laya==0.3.20"]
-dev = ["pytest>=8,<10", "pytest-asyncio>=1,<2", "ruff>=0.12,<1"]
+dev = [
+  "pytest>=8,<10", "pytest-asyncio>=1,<2", "pytest-cov>=6,<8",
+  "ruff>=0.12,<1", "mypy>=1.15,<3", "build>=1.2,<2", "twine>=6,<8", "pip-audit>=2.9,<3",
+]
+
+[project.urls]
+Homepage = "https://github.com/Ad1tyaNarayana/prism-crawler"
+Repository = "https://github.com/Ad1tyaNarayana/prism-crawler"
+Documentation = "https://github.com/Ad1tyaNarayana/prism-crawler/tree/main/docs"
+Issues = "https://github.com/Ad1tyaNarayana/prism-crawler/issues"
+Changelog = "https://github.com/Ad1tyaNarayana/prism-crawler/blob/main/CHANGELOG.md"
 
 [project.scripts]
 prism = "optimal_crawler.cli:app"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/optimal_crawler"]
+packages = ["src/optimal_crawler", "src/prism_crawler"]
+
+[tool.hatch.version]
+path = "src/optimal_crawler/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "/src", "/tests", "/benchmarks", "/experiments", "/tools", "/examples/*.py",
+  "/docs", "/README.md", "/CHANGELOG.md", "/CONTRIBUTING.md", "/SECURITY.md",
+  "/CODE_OF_CONDUCT.md", "/LICENSE", "/THIRD_PARTY_NOTICES.md", "/pyproject.toml",
+  "/requirements-core.lock",
+]
+exclude = ["/docs/substack-draft.md", "**/__pycache__", "**/*.pyc"]
+
+[tool.mypy]
+python_version = "3.11"
+files = ["src/prism_crawler"]
+follow_imports = "silent"
+check_untyped_defs = true
+disallow_untyped_defs = true
+warn_unused_ignores = true
+
+[tool.coverage.run]
+source = ["prism_crawler", "optimal_crawler"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
