@@ -1,0 +1,825 @@
+{
+  "python": "3.13.4",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "manifest_sha256": "9d4ccf5758dc59b998b8fec344e560a9b9617a74efa602d3f4a44ec105074a54",
+  "interpretation": "Model-assisted source references; cold single-URL configurations; three baseline/holdout repetitions, one final tuned validation; raw page bodies stay local.",
+  "phases": {
+    "baseline-common": {
+      "started_at": "2026-10-24T07:09:07.894020+00:00",
+      "git_head": "90e240297632ed006d01c05afd15e1cf70cac3eb",
+      "source_hashes": {
+        "src/optimal_crawler/__init__.py": "e0f78d84855af0cda7682d1a5276ebc0a67d6084b0117ff14110a06e5549babc",
+        "src/optimal_crawler/browser.py": "837ab7d9f7aa4ac1524c8ceaa145fae0b64714e39ee0bf90dfbb939caece5ee3",
+        "src/optimal_crawler/cli.py": "79ad0291fef134347cfc8ba85e643ba09859ac70d483dc03623cf1cae8524a3b",
+        "src/optimal_crawler/crawler.py": "2a46791286ebdda6caeeafa73f058bafcb518bcaf3b97ae26e016339b735c9e0",
+        "src/optimal_crawler/decisions.py": "1752d8516d2e819403ce5f873af374b9286b0a64484beba88bf8f3f5c8289c21",
+        "src/optimal_crawler/extract.py": "e4c59e351bee2dc2e905c64a290f42ae1401adb028836958af5954201d086088",
+        "src/optimal_crawler/models.py": "f6384b390766f1d29d5629dcb16f4b91b4f1c7bbb5a0427c8a2c3dbd1d41ea47",
+        "src/optimal_crawler/network.py": "a6eab474298088f57f1da5bb65a55da55c880b5aea925bc075ddad0ec021fa47",
+        "src/optimal_crawler/pdf_worker.py": "323dde983ccd9df0e1b6aa5493c334363e5f59a39d5d3fb65622d743b3d23b45",
+        "src/optimal_crawler/recovery.py": "5b74c6d891a91a67b2a9ee440d334cdb3ebb0ed36df88012d07cd17088ee75ea",
+        "src/optimal_crawler/store.py": "bf3bb19b94eb9bbfafcf2bc738040c9b987f877b4be0ead4f400416af81f00f0",
+        "src/optimal_crawler/urls.py": "93f823e0270a9c208902ee5bc86510e635aca7e62fa517a79aa7af7fafd16bc4",
+        "src/optimal_crawler/verification.py": "a6372def5fe81914bd1349f3a1b650ddefee4b22c255152df97c996b8f6e5cf9",
+        "src/prism_crawler/__init__.py": "70f88d89cc1a86a75214febea43ba20dbcd6bec6d66030bbe459fcd818e28d0e",
+        "src/prism_crawler/__main__.py": "bd930234b36bdf68514f56c2c5a124d473c1ac4984dd8d04d3f7b2b2e0f39747",
+        "src/prism_crawler/client.py": "0dfbff8092ac537525869691315c34f13a7a930a35d93cfd33d3cb0ab38baf58",
+        "benchmarks/oss_policy.py": "026311453a76a4821bcdee0a148ad1170215bb642635902e27db52da3a13bb85",
+        "benchmarks/oss_worker.py": "e691088a59bef749c9662630fb03bbe8f83253d5402d1dca72ed8f0bdd1a51e3",
+        "benchmarks/oss_quality.py": "e91deae3178f49eb80f236fd3ccf9b27f883f27da8dc3c0783eb89580bb41ba7",
+        "benchmarks/oss_trial.py": "ca5a46077c04ab5e3b1458e44b1fc5c49b9613835c00822789f90354dd11bcbc"
+      },
+      "repetitions": 3,
+      "providers": [
+        "prism",
+        "crawlee",
+        "crawl4ai"
+      ],
+      "case_ids": [
+        "fastapi",
+        "starlette",
+        "pydantic",
+        "anyio",
+        "aiohttp",
+        "pytest",
+        "astro",
+        "quarto",
+        "nist",
+        "sanger",
+        "embl",
+        "nationalarchives",
+        "rba",
+        "bankofcanada",
+        "statsnz",
+        "clevelandart",
+        "prado",
+        "rmg",
+        "debian",
+        "freebsd",
+        "openbsd",
+        "openlearn",
+        "futurelearn",
+        "edinburgh",
+        "fairphone",
+        "framework",
+        "raspberrypi",
+        "inria",
+        "cnrs",
+        "mpg"
+      ],
+      "gold_lock": {
+        "locked_at": "2026-10-24T07:00:29.042280+00:00",
+        "files": [
+          {
+            "name": "astro.json",
+            "sha256": "94495adb46abf01466f25005427c15ac763c3b94f1d23db2f7e9c6fac461fb29"
+          },
+          {
+            "name": "debian.json",
+            "sha256": "ab83590d764f4050ab7c3071e46962a2c8685e5980e5c23ad7c173d61236957a"
+          },
+          {
+            "name": "statsnz.json",
+            "sha256": "580631c6aea4d0f8eb9a5c356afb4d39268825c60e2b8c9e69e0f25102c565cb"
+          },
+          {
+            "name": "nationalarchives.json",
+            "sha256": "fbc70f586f76fb793349f3978fb1b339962d5c871a8e24fd6236187decf918dd"
+          },
+          {
+            "name": "rmg.json",
+            "sha256": "bf773d7e5111061261625e9b418b268da5b688a6acd61fcb06c841a73d6fd16a"
+          },
+          {
+            "name": "openbsd.json",
+            "sha256": "faf6fef13e9685f103d3b62faae0981df240d45972b00996ab527dc588398d33"
+          },
+          {
+            "name": "embl.json",
+            "sha256": "f564b0d7a86ec039cc98af516448c214d191806c7a6d63c2e0746551fde290a1"
+          },
+          {
+            "name": "freebsd.json",
+            "sha256": "52f30f8b75988b64a6d913ed809c3ad9f5cad0846c0722e337b769d75c1ce385"
+          },
+          {
+            "name": "clevelandart.json",
+            "sha256": "f2ac22d17ccc2839037689f1ac3b362266b1b3d31ff192fc3fd59d5ae2246d3c"
+          },
+          {
+            "name": "edinburgh.json",
+            "sha256": "0df0588141a420b0ed04f33c5a83810bb7d7cdc301411fa121c7f52c656fc2b8"
+          },
+          {
+            "name": "bankofcanada.json",
+            "sha256": "66531d25f6f77b92f9ecb96767c565df74cd156faee0ee5231d28cfd18b8860c"
+          },
+          {
+            "name": "fairphone.json",
+            "sha256": "ac67bc5c57cafe86dab061027beaf15e7aa4c6a409b1f6ce9cbb7bc38fc67c28"
+          },
+          {
+            "name": "nist.json",
+            "sha256": "c4ae6004c2f1bbd2f6a1fb3da008a14b941eb31f8ec8ac68ba4ee6c06b3a5b53"
+          },
+          {
+            "name": "quarto.json",
+            "sha256": "c6896d8ff0447c474c24611339b5134ed6fb69f7efbdf4c1e16029c4b8e3e685"
+          },
+          {
+            "name": "index.json",
+            "sha256": "7868bafb4ef5a48dca1df7698ec84d109cb2129f94d4fd87ea6ba3d782fa279d"
+          },
+          {
+            "name": "fastapi.json",
+            "sha256": "b7dbf6ff88b4cb64afbe3f79c6480d9f640f5c9b87c106a22e93012e178e0097"
+          },
+          {
+            "name": "pytest.json",
+            "sha256": "7414278f0bd4e74a7e49f0e7f07cd0b15ee015dd1ba6714bdac3b27d30f3ac9a"
+          },
+          {
+            "name": "cnrs.json",
+            "sha256": "167003ba8737be6e30aba3d2af541625b92f6bb41433c9737a8501660062f710"
+          },
+          {
+            "name": "mpg.json",
+            "sha256": "7374da9142a2cdee205ee79bd3edfe1abb4944e8f70163233e254c47b93fb3ff"
+          },
+          {
+            "name": "rba.json",
+            "sha256": "5ccf7bc10d257473ca90df3c2ba0edc2b4dcd02614b2e833ce4735bc16680e89"
+          }
+        ],
+        "scorer_sha256": "e91deae3178f49eb80f236fd3ccf9b27f883f27da8dc3c0783eb89580bb41ba7",
+        "meaning": "Reference/metric changes after provider outputs require a separate labelled sensitivity analysis."
+      },
+      "finished_at": "2026-10-24T07:33:18.984607+00:00",
+      "cloudflare_exclusions": [
+        "aiohttp",
+        "anyio",
+        "framework",
+        "openlearn",
+        "prado",
+        "pytest",
+        "raspberrypi"
+      ]
+    },
+    "focused-after": {
+      "started_at": "2026-10-24T07:51:45.385599+00:00",
+      "git_head": "90e240297632ed006d01c05afd15e1cf70cac3eb",
+      "source_hashes": {
+        "src/optimal_crawler/__init__.py": "e0f78d84855af0cda7682d1a5276ebc0a67d6084b0117ff14110a06e5549babc",
+        "src/optimal_crawler/browser.py": "837ab7d9f7aa4ac1524c8ceaa145fae0b64714e39ee0bf90dfbb939caece5ee3",
+        "src/optimal_crawler/cli.py": "79ad0291fef134347cfc8ba85e643ba09859ac70d483dc03623cf1cae8524a3b",
+        "src/optimal_crawler/crawler.py": "2a46791286ebdda6caeeafa73f058bafcb518bcaf3b97ae26e016339b735c9e0",
+        "src/optimal_crawler/decisions.py": "1752d8516d2e819403ce5f873af374b9286b0a64484beba88bf8f3f5c8289c21",
+        "src/optimal_crawler/extract.py": "2df317064c1a856de5f2f0b4d0e9d9a723ecbf7267f4420fe1ace698a84a4641",
+        "src/optimal_crawler/models.py": "f6384b390766f1d29d5629dcb16f4b91b4f1c7bbb5a0427c8a2c3dbd1d41ea47",
+        "src/optimal_crawler/network.py": "a6eab474298088f57f1da5bb65a55da55c880b5aea925bc075ddad0ec021fa47",
+        "src/optimal_crawler/pdf_worker.py": "323dde983ccd9df0e1b6aa5493c334363e5f59a39d5d3fb65622d743b3d23b45",
+        "src/optimal_crawler/recovery.py": "5b74c6d891a91a67b2a9ee440d334cdb3ebb0ed36df88012d07cd17088ee75ea",
+        "src/optimal_crawler/store.py": "bf3bb19b94eb9bbfafcf2bc738040c9b987f877b4be0ead4f400416af81f00f0",
+        "src/optimal_crawler/urls.py": "93f823e0270a9c208902ee5bc86510e635aca7e62fa517a79aa7af7fafd16bc4",
+        "src/optimal_crawler/verification.py": "97ac51415f9099b402e7232cee5f805aa4350c5bfa62d3b61936b945dabe55d4",
+        "src/prism_crawler/__init__.py": "70f88d89cc1a86a75214febea43ba20dbcd6bec6d66030bbe459fcd818e28d0e",
+        "src/prism_crawler/__main__.py": "bd930234b36bdf68514f56c2c5a124d473c1ac4984dd8d04d3f7b2b2e0f39747",
+        "src/prism_crawler/client.py": "0dfbff8092ac537525869691315c34f13a7a930a35d93cfd33d3cb0ab38baf58",
+        "benchmarks/oss_policy.py": "026311453a76a4821bcdee0a148ad1170215bb642635902e27db52da3a13bb85",
+        "benchmarks/oss_worker.py": "e691088a59bef749c9662630fb03bbe8f83253d5402d1dca72ed8f0bdd1a51e3",
+        "benchmarks/oss_quality.py": "e91deae3178f49eb80f236fd3ccf9b27f883f27da8dc3c0783eb89580bb41ba7",
+        "benchmarks/oss_trial.py": "ca5a46077c04ab5e3b1458e44b1fc5c49b9613835c00822789f90354dd11bcbc"
+      },
+      "repetitions": 3,
+      "providers": [
+        "prism",
+        "crawlee",
+        "crawl4ai"
+      ],
+      "case_ids": [
+        "quarto",
+        "nationalarchives"
+      ],
+      "gold_lock": {
+        "locked_at": "2026-10-24T07:00:29.042280+00:00",
+        "files": [
+          {
+            "name": "astro.json",
+            "sha256": "94495adb46abf01466f25005427c15ac763c3b94f1d23db2f7e9c6fac461fb29"
+          },
+          {
+            "name": "debian.json",
+            "sha256": "ab83590d764f4050ab7c3071e46962a2c8685e5980e5c23ad7c173d61236957a"
+          },
+          {
+            "name": "statsnz.json",
+            "sha256": "580631c6aea4d0f8eb9a5c356afb4d39268825c60e2b8c9e69e0f25102c565cb"
+          },
+          {
+            "name": "nationalarchives.json",
+            "sha256": "fbc70f586f76fb793349f3978fb1b339962d5c871a8e24fd6236187decf918dd"
+          },
+          {
+            "name": "rmg.json",
+            "sha256": "bf773d7e5111061261625e9b418b268da5b688a6acd61fcb06c841a73d6fd16a"
+          },
+          {
+            "name": "openbsd.json",
+            "sha256": "faf6fef13e9685f103d3b62faae0981df240d45972b00996ab527dc588398d33"
+          },
+          {
+            "name": "embl.json",
+            "sha256": "f564b0d7a86ec039cc98af516448c214d191806c7a6d63c2e0746551fde290a1"
+          },
+          {
+            "name": "freebsd.json",
+            "sha256": "52f30f8b75988b64a6d913ed809c3ad9f5cad0846c0722e337b769d75c1ce385"
+          },
+          {
+            "name": "clevelandart.json",
+            "sha256": "f2ac22d17ccc2839037689f1ac3b362266b1b3d31ff192fc3fd59d5ae2246d3c"
+          },
+          {
+            "name": "edinburgh.json",
+            "sha256": "0df0588141a420b0ed04f33c5a83810bb7d7cdc301411fa121c7f52c656fc2b8"
+          },
+          {
+            "name": "bankofcanada.json",
+            "sha256": "66531d25f6f77b92f9ecb96767c565df74cd156faee0ee5231d28cfd18b8860c"
+          },
+          {
+            "name": "fairphone.json",
+            "sha256": "ac67bc5c57cafe86dab061027beaf15e7aa4c6a409b1f6ce9cbb7bc38fc67c28"
+          },
+          {
+            "name": "nist.json",
+            "sha256": "c4ae6004c2f1bbd2f6a1fb3da008a14b941eb31f8ec8ac68ba4ee6c06b3a5b53"
+          },
+          {
+            "name": "quarto.json",
+            "sha256": "c6896d8ff0447c474c24611339b5134ed6fb69f7efbdf4c1e16029c4b8e3e685"
+          },
+          {
+            "name": "index.json",
+            "sha256": "7868bafb4ef5a48dca1df7698ec84d109cb2129f94d4fd87ea6ba3d782fa279d"
+          },
+          {
+            "name": "fastapi.json",
+            "sha256": "b7dbf6ff88b4cb64afbe3f79c6480d9f640f5c9b87c106a22e93012e178e0097"
+          },
+          {
+            "name": "pytest.json",
+            "sha256": "7414278f0bd4e74a7e49f0e7f07cd0b15ee015dd1ba6714bdac3b27d30f3ac9a"
+          },
+          {
+            "name": "cnrs.json",
+            "sha256": "167003ba8737be6e30aba3d2af541625b92f6bb41433c9737a8501660062f710"
+          },
+          {
+            "name": "mpg.json",
+            "sha256": "7374da9142a2cdee205ee79bd3edfe1abb4944e8f70163233e254c47b93fb3ff"
+          },
+          {
+            "name": "rba.json",
+            "sha256": "5ccf7bc10d257473ca90df3c2ba0edc2b4dcd02614b2e833ce4735bc16680e89"
+          }
+        ],
+        "scorer_sha256": "e91deae3178f49eb80f236fd3ccf9b27f883f27da8dc3c0783eb89580bb41ba7",
+        "meaning": "Reference/metric changes after provider outputs require a separate labelled sensitivity analysis."
+      },
+      "finished_at": "2026-10-24T08:08:11.490687+00:00",
+      "cloudflare_exclusions": []
+    },
+    "prism-regression-after": {
+      "started_at": "2026-10-24T10:50:22.123872+00:00",
+      "git_head": "90e240297632ed006d01c05afd15e1cf70cac3eb",
+      "source_hashes": {
+        "src/optimal_crawler/__init__.py": "e0f78d84855af0cda7682d1a5276ebc0a67d6084b0117ff14110a06e5549babc",
+        "src/optimal_crawler/browser.py": "837ab7d9f7aa4ac1524c8ceaa145fae0b64714e39ee0bf90dfbb939caece5ee3",
+        "src/optimal_crawler/cli.py": "79ad0291fef134347cfc8ba85e643ba09859ac70d483dc03623cf1cae8524a3b",
+        "src/optimal_crawler/crawler.py": "2a46791286ebdda6caeeafa73f058bafcb518bcaf3b97ae26e016339b735c9e0",
+        "src/optimal_crawler/decisions.py": "1752d8516d2e819403ce5f873af374b9286b0a64484beba88bf8f3f5c8289c21",
+        "src/optimal_crawler/extract.py": "2df317064c1a856de5f2f0b4d0e9d9a723ecbf7267f4420fe1ace698a84a4641",
+        "src/optimal_crawler/models.py": "f6384b390766f1d29d5629dcb16f4b91b4f1c7bbb5a0427c8a2c3dbd1d41ea47",
+        "src/optimal_crawler/network.py": "a6eab474298088f57f1da5bb65a55da55c880b5aea925bc075ddad0ec021fa47",
+        "src/optimal_crawler/pdf_worker.py": "323dde983ccd9df0e1b6aa5493c334363e5f59a39d5d3fb65622d743b3d23b45",
+        "src/optimal_crawler/recovery.py": "5b74c6d891a91a67b2a9ee440d334cdb3ebb0ed36df88012d07cd17088ee75ea",
+        "src/optimal_crawler/store.py": "bf3bb19b94eb9bbfafcf2bc738040c9b987f877b4be0ead4f400416af81f00f0",
+        "src/optimal_crawler/urls.py": "93f823e0270a9c208902ee5bc86510e635aca7e62fa517a79aa7af7fafd16bc4",
+        "src/optimal_crawler/verification.py": "97ac51415f9099b402e7232cee5f805aa4350c5bfa62d3b61936b945dabe55d4",
+        "src/prism_crawler/__init__.py": "70f88d89cc1a86a75214febea43ba20dbcd6bec6d66030bbe459fcd818e28d0e",
+        "src/prism_crawler/__main__.py": "bd930234b36bdf68514f56c2c5a124d473c1ac4984dd8d04d3f7b2b2e0f39747",
+        "src/prism_crawler/client.py": "0dfbff8092ac537525869691315c34f13a7a930a35d93cfd33d3cb0ab38baf58",
+        "benchmarks/oss_policy.py": "026311453a76a4821bcdee0a148ad1170215bb642635902e27db52da3a13bb85",
+        "benchmarks/oss_worker.py": "e691088a59bef749c9662630fb03bbe8f83253d5402d1dca72ed8f0bdd1a51e3",
+        "benchmarks/oss_quality.py": "e91deae3178f49eb80f236fd3ccf9b27f883f27da8dc3c0783eb89580bb41ba7",
+        "benchmarks/oss_trial.py": "ca5a46077c04ab5e3b1458e44b1fc5c49b9613835c00822789f90354dd11bcbc"
+      },
+      "repetitions": 3,
+      "providers": [
+        "prism"
+      ],
+      "case_ids": [
+        "fastapi",
+        "starlette",
+        "pydantic",
+        "anyio",
+        "aiohttp",
+        "pytest",
+        "astro",
+        "quarto",
+        "nist",
+        "sanger",
+        "embl",
+        "nationalarchives",
+        "rba",
+        "bankofcanada",
+        "statsnz",
+        "clevelandart",
+        "prado",
+        "rmg",
+        "debian",
+        "freebsd",
+        "openbsd",
+        "openlearn",
+        "futurelearn",
+        "edinburgh",
+        "fairphone",
+        "framework",
+        "raspberrypi",
+        "inria",
+        "cnrs",
+        "mpg"
+      ],
+      "gold_lock": {
+        "locked_at": "2026-10-24T07:00:29.042280+00:00",
+        "files": [
+          {
+            "name": "astro.json",
+            "sha256": "94495adb46abf01466f25005427c15ac763c3b94f1d23db2f7e9c6fac461fb29"
+          },
+          {
+            "name": "debian.json",
+            "sha256": "ab83590d764f4050ab7c3071e46962a2c8685e5980e5c23ad7c173d61236957a"
+          },
+          {
+            "name": "statsnz.json",
+            "sha256": "580631c6aea4d0f8eb9a5c356afb4d39268825c60e2b8c9e69e0f25102c565cb"
+          },
+          {
+            "name": "nationalarchives.json",
+            "sha256": "fbc70f586f76fb793349f3978fb1b339962d5c871a8e24fd6236187decf918dd"
+          },
+          {
+            "name": "rmg.json",
+            "sha256": "bf773d7e5111061261625e9b418b268da5b688a6acd61fcb06c841a73d6fd16a"
+          },
+          {
+            "name": "openbsd.json",
+            "sha256": "faf6fef13e9685f103d3b62faae0981df240d45972b00996ab527dc588398d33"
+          },
+          {
+            "name": "embl.json",
+            "sha256": "f564b0d7a86ec039cc98af516448c214d191806c7a6d63c2e0746551fde290a1"
+          },
+          {
+            "name": "freebsd.json",
+            "sha256": "52f30f8b75988b64a6d913ed809c3ad9f5cad0846c0722e337b769d75c1ce385"
+          },
+          {
+            "name": "clevelandart.json",
+            "sha256": "f2ac22d17ccc2839037689f1ac3b362266b1b3d31ff192fc3fd59d5ae2246d3c"
+          },
+          {
+            "name": "edinburgh.json",
+            "sha256": "0df0588141a420b0ed04f33c5a83810bb7d7cdc301411fa121c7f52c656fc2b8"
+          },
+          {
+            "name": "bankofcanada.json",
+            "sha256": "66531d25f6f77b92f9ecb96767c565df74cd156faee0ee5231d28cfd18b8860c"
+          },
+          {
+            "name": "fairphone.json",
+            "sha256": "ac67bc5c57cafe86dab061027beaf15e7aa4c6a409b1f6ce9cbb7bc38fc67c28"
+          },
+          {
+            "name": "nist.json",
+            "sha256": "c4ae6004c2f1bbd2f6a1fb3da008a14b941eb31f8ec8ac68ba4ee6c06b3a5b53"
+          },
+          {
+            "name": "quarto.json",
+            "sha256": "c6896d8ff0447c474c24611339b5134ed6fb69f7efbdf4c1e16029c4b8e3e685"
+          },
+          {
+            "name": "index.json",
+            "sha256": "7868bafb4ef5a48dca1df7698ec84d109cb2129f94d4fd87ea6ba3d782fa279d"
+          },
+          {
+            "name": "fastapi.json",
+            "sha256": "b7dbf6ff88b4cb64afbe3f79c6480d9f640f5c9b87c106a22e93012e178e0097"
+          },
+          {
+            "name": "pytest.json",
+            "sha256": "7414278f0bd4e74a7e49f0e7f07cd0b15ee015dd1ba6714bdac3b27d30f3ac9a"
+          },
+          {
+            "name": "cnrs.json",
+            "sha256": "167003ba8737be6e30aba3d2af541625b92f6bb41433c9737a8501660062f710"
+          },
+          {
+            "name": "mpg.json",
+            "sha256": "7374da9142a2cdee205ee79bd3edfe1abb4944e8f70163233e254c47b93fb3ff"
+          },
+          {
+            "name": "rba.json",
+            "sha256": "5ccf7bc10d257473ca90df3c2ba0edc2b4dcd02614b2e833ce4735bc16680e89"
+          }
+        ],
+        "scorer_sha256": "e91deae3178f49eb80f236fd3ccf9b27f883f27da8dc3c0783eb89580bb41ba7",
+        "meaning": "Reference/metric changes after provider outputs require a separate labelled sensitivity analysis."
+      },
+      "finished_at": "2026-10-24T12:38:03.119860+00:00",
+      "cloudflare_exclusions": [
+        "aiohttp",
+        "anyio",
+        "framework",
+        "openlearn",
+        "prado",
+        "raspberrypi"
+      ]
+    },
+    "reserved-final": {
+      "started_at": "2026-10-24T12:41:53.741965+00:00",
+      "git_head": "90e240297632ed006d01c05afd15e1cf70cac3eb",
+      "source_hashes": {
+        "src/optimal_crawler/__init__.py": "e0f78d84855af0cda7682d1a5276ebc0a67d6084b0117ff14110a06e5549babc",
+        "src/optimal_crawler/browser.py": "837ab7d9f7aa4ac1524c8ceaa145fae0b64714e39ee0bf90dfbb939caece5ee3",
+        "src/optimal_crawler/cli.py": "79ad0291fef134347cfc8ba85e643ba09859ac70d483dc03623cf1cae8524a3b",
+        "src/optimal_crawler/crawler.py": "2a46791286ebdda6caeeafa73f058bafcb518bcaf3b97ae26e016339b735c9e0",
+        "src/optimal_crawler/decisions.py": "1752d8516d2e819403ce5f873af374b9286b0a64484beba88bf8f3f5c8289c21",
+        "src/optimal_crawler/extract.py": "2df317064c1a856de5f2f0b4d0e9d9a723ecbf7267f4420fe1ace698a84a4641",
+        "src/optimal_crawler/models.py": "f6384b390766f1d29d5629dcb16f4b91b4f1c7bbb5a0427c8a2c3dbd1d41ea47",
+        "src/optimal_crawler/network.py": "a6eab474298088f57f1da5bb65a55da55c880b5aea925bc075ddad0ec021fa47",
+        "src/optimal_crawler/pdf_worker.py": "323dde983ccd9df0e1b6aa5493c334363e5f59a39d5d3fb65622d743b3d23b45",
+        "src/optimal_crawler/recovery.py": "5b74c6d891a91a67b2a9ee440d334cdb3ebb0ed36df88012d07cd17088ee75ea",
+        "src/optimal_crawler/store.py": "bf3bb19b94eb9bbfafcf2bc738040c9b987f877b4be0ead4f400416af81f00f0",
+        "src/optimal_crawler/urls.py": "93f823e0270a9c208902ee5bc86510e635aca7e62fa517a79aa7af7fafd16bc4",
+        "src/optimal_crawler/verification.py": "97ac51415f9099b402e7232cee5f805aa4350c5bfa62d3b61936b945dabe55d4",
+        "src/prism_crawler/__init__.py": "70f88d89cc1a86a75214febea43ba20dbcd6bec6d66030bbe459fcd818e28d0e",
+        "src/prism_crawler/__main__.py": "bd930234b36bdf68514f56c2c5a124d473c1ac4984dd8d04d3f7b2b2e0f39747",
+        "src/prism_crawler/client.py": "0dfbff8092ac537525869691315c34f13a7a930a35d93cfd33d3cb0ab38baf58",
+        "benchmarks/oss_policy.py": "026311453a76a4821bcdee0a148ad1170215bb642635902e27db52da3a13bb85",
+        "benchmarks/oss_worker.py": "e691088a59bef749c9662630fb03bbe8f83253d5402d1dca72ed8f0bdd1a51e3",
+        "benchmarks/oss_quality.py": "e91deae3178f49eb80f236fd3ccf9b27f883f27da8dc3c0783eb89580bb41ba7",
+        "benchmarks/oss_trial.py": "ca5a46077c04ab5e3b1458e44b1fc5c49b9613835c00822789f90354dd11bcbc"
+      },
+      "repetitions": 3,
+      "providers": [
+        "prism",
+        "crawlee",
+        "crawl4ai"
+      ],
+      "case_ids": [
+        "sqlalchemy",
+        "attrs",
+        "svelte",
+        "nextjs",
+        "bipm",
+        "royalsociety",
+        "parliament",
+        "bundesbank",
+        "getty",
+        "artic",
+        "designmuseum",
+        "gnome",
+        "netbsd",
+        "kde",
+        "cambridge",
+        "oxford",
+        "arduino",
+        "homeassistant",
+        "riken",
+        "jaxa"
+      ],
+      "gold_lock": {
+        "locked_at": "2026-10-24T12:41:41.980567+00:00",
+        "files": [
+          {
+            "name": "bundesbank.json",
+            "sha256": "6dc2a5cd411056b658597cba316de0add60483d4bbc80f30f41039c33cd2f7a6"
+          },
+          {
+            "name": "designmuseum.json",
+            "sha256": "04157a0c5b18c84f13b49675e15759b3d017c12b4b94d6fd8c7787bce1cf6063"
+          },
+          {
+            "name": "homeassistant.json",
+            "sha256": "1de49636513aa4ba481debd099f95a473850e81b149eff4446080a6e5a6ac9e2"
+          },
+          {
+            "name": "attrs.json",
+            "sha256": "882bd496470a66b841898307d6e8f40df8196c8158a190da35e82d0eaf1c71d6"
+          },
+          {
+            "name": "nextjs.json",
+            "sha256": "c6dd502c31c38d82b91f11eb84b06a05367b1349f0258cc102134de6a3e2643d"
+          },
+          {
+            "name": "netbsd.json",
+            "sha256": "028b577841a362717be5ef0deb39e16b9eae5ac193b41cf0f8832c47b9f7f6e5"
+          },
+          {
+            "name": "svelte.json",
+            "sha256": "82d116783abbd4bb08db6b1128acdf4b0cc65d27e2d0116251c99930e3c31c96"
+          },
+          {
+            "name": "arduino.json",
+            "sha256": "2c19fae658320d00e3b18f82248dc209709a97b48063d024360fc75441a210b7"
+          },
+          {
+            "name": "bipm.json",
+            "sha256": "06b04517e3fb531f25920d551f29630337d8c7cc05aac4378a5fa2f3c69e088a"
+          },
+          {
+            "name": "cambridge.json",
+            "sha256": "cbffbaac940890b808a8bee6e8eef2583446e9a7834b222f673876665dca8aaa"
+          },
+          {
+            "name": "kde.json",
+            "sha256": "750c55566f64a2c6e228458b2292c6db33ef6933e3c99ba73eb5923045c6784a"
+          },
+          {
+            "name": "index.json",
+            "sha256": "6db90c0b62cda5046a493fd9b16f7fb932b3ac741498a0af3f07da61c0681241"
+          },
+          {
+            "name": "getty.json",
+            "sha256": "9e4463188b42e6eff69d8915f25df12fb9987818194896bf73ad33eedb7c588e"
+          },
+          {
+            "name": "jaxa.json",
+            "sha256": "3d3eec571a124b70c5b295f00f9f5ba6c4933fa78e07a4bfdceb76ad7481f10e"
+          },
+          {
+            "name": "riken.json",
+            "sha256": "98c143197ba778b92cb3454645fc68061a336af43b8b9033ff4f0af4369afdd7"
+          }
+        ],
+        "scorer_sha256": "e91deae3178f49eb80f236fd3ccf9b27f883f27da8dc3c0783eb89580bb41ba7",
+        "reference_schema": "semantic-and-unwrapped-v2",
+        "sensitivity_analysis": false,
+        "meaning": "Reference/metric changes after provider outputs require a separate labelled sensitivity analysis."
+      },
+      "finished_at": "2026-10-24T12:50:38.040988+00:00",
+      "cloudflare_exclusions": [
+        "artic",
+        "attrs",
+        "oxford",
+        "parliament"
+      ]
+    },
+    "final-verified": {
+      "started_at": "2026-10-24T13:51:27.029070+00:00",
+      "git_head": "90e240297632ed006d01c05afd15e1cf70cac3eb",
+      "source_hashes": {
+        "src/optimal_crawler/__init__.py": "e0f78d84855af0cda7682d1a5276ebc0a67d6084b0117ff14110a06e5549babc",
+        "src/optimal_crawler/browser.py": "837ab7d9f7aa4ac1524c8ceaa145fae0b64714e39ee0bf90dfbb939caece5ee3",
+        "src/optimal_crawler/cli.py": "79ad0291fef134347cfc8ba85e643ba09859ac70d483dc03623cf1cae8524a3b",
+        "src/optimal_crawler/crawler.py": "2a46791286ebdda6caeeafa73f058bafcb518bcaf3b97ae26e016339b735c9e0",
+        "src/optimal_crawler/decisions.py": "1752d8516d2e819403ce5f873af374b9286b0a64484beba88bf8f3f5c8289c21",
+        "src/optimal_crawler/extract.py": "51dccb5407b87f1deb8b8ffb3b330bf9086db1bb6e50e8f9f6205393520221dd",
+        "src/optimal_crawler/models.py": "f6384b390766f1d29d5629dcb16f4b91b4f1c7bbb5a0427c8a2c3dbd1d41ea47",
+        "src/optimal_crawler/network.py": "a6eab474298088f57f1da5bb65a55da55c880b5aea925bc075ddad0ec021fa47",
+        "src/optimal_crawler/pdf_worker.py": "323dde983ccd9df0e1b6aa5493c334363e5f59a39d5d3fb65622d743b3d23b45",
+        "src/optimal_crawler/recovery.py": "5b74c6d891a91a67b2a9ee440d334cdb3ebb0ed36df88012d07cd17088ee75ea",
+        "src/optimal_crawler/store.py": "bf3bb19b94eb9bbfafcf2bc738040c9b987f877b4be0ead4f400416af81f00f0",
+        "src/optimal_crawler/urls.py": "93f823e0270a9c208902ee5bc86510e635aca7e62fa517a79aa7af7fafd16bc4",
+        "src/optimal_crawler/verification.py": "5fae42536c1c8a95645a3007d87d0f042d7f0bf710320b0e76466d03d3e150c1",
+        "src/prism_crawler/__init__.py": "70f88d89cc1a86a75214febea43ba20dbcd6bec6d66030bbe459fcd818e28d0e",
+        "src/prism_crawler/__main__.py": "bd930234b36bdf68514f56c2c5a124d473c1ac4984dd8d04d3f7b2b2e0f39747",
+        "src/prism_crawler/client.py": "0dfbff8092ac537525869691315c34f13a7a930a35d93cfd33d3cb0ab38baf58",
+        "benchmarks/oss_policy.py": "026311453a76a4821bcdee0a148ad1170215bb642635902e27db52da3a13bb85",
+        "benchmarks/oss_worker.py": "e691088a59bef749c9662630fb03bbe8f83253d5402d1dca72ed8f0bdd1a51e3",
+        "benchmarks/oss_quality.py": "e91deae3178f49eb80f236fd3ccf9b27f883f27da8dc3c0783eb89580bb41ba7",
+        "benchmarks/oss_trial.py": "ca5a46077c04ab5e3b1458e44b1fc5c49b9613835c00822789f90354dd11bcbc"
+      },
+      "repetitions": 1,
+      "providers": [
+        "prism",
+        "crawlee",
+        "crawl4ai"
+      ],
+      "case_ids": [
+        "fastapi",
+        "starlette",
+        "pydantic",
+        "sqlalchemy",
+        "attrs",
+        "anyio",
+        "aiohttp",
+        "pytest",
+        "svelte",
+        "nextjs",
+        "astro",
+        "quarto",
+        "nist",
+        "bipm",
+        "royalsociety",
+        "sanger",
+        "embl",
+        "nationalarchives",
+        "parliament",
+        "bundesbank",
+        "rba",
+        "bankofcanada",
+        "statsnz",
+        "getty",
+        "artic",
+        "clevelandart",
+        "prado",
+        "rmg",
+        "designmuseum",
+        "gnome",
+        "debian",
+        "freebsd",
+        "openbsd",
+        "netbsd",
+        "kde",
+        "openlearn",
+        "futurelearn",
+        "edinburgh",
+        "cambridge",
+        "oxford",
+        "fairphone",
+        "framework",
+        "raspberrypi",
+        "arduino",
+        "homeassistant",
+        "inria",
+        "cnrs",
+        "mpg",
+        "riken",
+        "jaxa"
+      ],
+      "gold_lock": {
+        "locked_at": "2026-10-24T13:10:17.879846+00:00",
+        "files": [
+          {
+            "name": "astro.json",
+            "sha256": "4075c7ffc32028c65c5a75bb9b0feb538470191fe582bfc818c0cec1cc107c15"
+          },
+          {
+            "name": "debian.json",
+            "sha256": "d03aa5b0820c73838f0e9fcef705843cdde9e10335b019bf115a1d6257a3fa73"
+          },
+          {
+            "name": "statsnz.json",
+            "sha256": "4e09436ed42dc7106ba1157f625902197d04c63b80719c8a35849f3e14cb5298"
+          },
+          {
+            "name": "bundesbank.json",
+            "sha256": "6dc2a5cd411056b658597cba316de0add60483d4bbc80f30f41039c33cd2f7a6"
+          },
+          {
+            "name": "nationalarchives.json",
+            "sha256": "7cf06c9d0ec6a21439e329762ab0b0846942c9970076bc422179abd7ebe910ba"
+          },
+          {
+            "name": "designmuseum.json",
+            "sha256": "04157a0c5b18c84f13b49675e15759b3d017c12b4b94d6fd8c7787bce1cf6063"
+          },
+          {
+            "name": "rmg.json",
+            "sha256": "2c49b2169b506734a5bcf4753e8c61e1ba41175804a335cdf0aa740b52e86594"
+          },
+          {
+            "name": "homeassistant.json",
+            "sha256": "1de49636513aa4ba481debd099f95a473850e81b149eff4446080a6e5a6ac9e2"
+          },
+          {
+            "name": "openbsd.json",
+            "sha256": "2ea72c54007a2e2547a2ba97ada6fc8532e9c6843b7a1bea3808b3d98536017c"
+          },
+          {
+            "name": "attrs.json",
+            "sha256": "882bd496470a66b841898307d6e8f40df8196c8158a190da35e82d0eaf1c71d6"
+          },
+          {
+            "name": "embl.json",
+            "sha256": "24ebfcd66f2193a0bd41031b9df8a188b057e43f5120b08ee9940776f2f5c35b"
+          },
+          {
+            "name": "nextjs.json",
+            "sha256": "c6dd502c31c38d82b91f11eb84b06a05367b1349f0258cc102134de6a3e2643d"
+          },
+          {
+            "name": "netbsd.json",
+            "sha256": "028b577841a362717be5ef0deb39e16b9eae5ac193b41cf0f8832c47b9f7f6e5"
+          },
+          {
+            "name": "svelte.json",
+            "sha256": "82d116783abbd4bb08db6b1128acdf4b0cc65d27e2d0116251c99930e3c31c96"
+          },
+          {
+            "name": "arduino.json",
+            "sha256": "2c19fae658320d00e3b18f82248dc209709a97b48063d024360fc75441a210b7"
+          },
+          {
+            "name": "freebsd.json",
+            "sha256": "5ca7cbef4411d38adccb1e6847cc8ea138bfda724d2c361af15f4993642a7d48"
+          },
+          {
+            "name": "bipm.json",
+            "sha256": "06b04517e3fb531f25920d551f29630337d8c7cc05aac4378a5fa2f3c69e088a"
+          },
+          {
+            "name": "clevelandart.json",
+            "sha256": "e4808eee872583c34be96612d3313d39a85115c2f383adb48c69e2903024de40"
+          },
+          {
+            "name": "cambridge.json",
+            "sha256": "cbffbaac940890b808a8bee6e8eef2583446e9a7834b222f673876665dca8aaa"
+          },
+          {
+            "name": "edinburgh.json",
+            "sha256": "42376134fec99e2b1ba9d1f178b861eca02c0dd8709f4317b5106c1ba0b14d06"
+          },
+          {
+            "name": "bankofcanada.json",
+            "sha256": "3466c3ae0c54476a2fabac3a08f2be57df280ad05f869fa91fbe25ecd6cf973b"
+          },
+          {
+            "name": "fairphone.json",
+            "sha256": "106d3351079a11d05338707aed08d94dbc837dd3d40888071ecae57812cdeb83"
+          },
+          {
+            "name": "kde.json",
+            "sha256": "750c55566f64a2c6e228458b2292c6db33ef6933e3c99ba73eb5923045c6784a"
+          },
+          {
+            "name": "nist.json",
+            "sha256": "a462f8fe0e674b4ae7aa927fe485310640707ceb8a650fca86167ffd34b4bd31"
+          },
+          {
+            "name": "quarto.json",
+            "sha256": "6506645f21c0f25d53946fd19665cc615dfa19d2fdbd6a3a9d5ec9888a8b6f9a"
+          },
+          {
+            "name": "index.json",
+            "sha256": "d4a38aa5a89b324f9508fec2483810f9d5f1d10d8fc45b2238f7030cb5ff3d5f"
+          },
+          {
+            "name": "fastapi.json",
+            "sha256": "ba09ef4cb38377d89486fda67a912f2ac23ac767ad0d8e918ec25f799b2a3504"
+          },
+          {
+            "name": "getty.json",
+            "sha256": "9e4463188b42e6eff69d8915f25df12fb9987818194896bf73ad33eedb7c588e"
+          },
+          {
+            "name": "pytest.json",
+            "sha256": "53961a45417534ed260e98432ad1c04551363aa2289bd44c8b896d3e1847a81e"
+          },
+          {
+            "name": "cnrs.json",
+            "sha256": "e9a334f302549700980a3a97c5c4634ef03d39edfff9f982b8a8d538387d4440"
+          },
+          {
+            "name": "mpg.json",
+            "sha256": "ca69177839a4d731f5fe969593840857e2560d5bdfc0fd47e8f2de055c0bc119"
+          },
+          {
+            "name": "jaxa.json",
+            "sha256": "3d3eec571a124b70c5b295f00f9f5ba6c4933fa78e07a4bfdceb76ad7481f10e"
+          },
+          {
+            "name": "rba.json",
+            "sha256": "a280fde321509d7c659e1eb67d797e71f11f1e65eca56cda410e92a8e0e9ec8b"
+          },
+          {
+            "name": "riken.json",
+            "sha256": "98c143197ba778b92cb3454645fc68061a336af43b8b9033ff4f0af4369afdd7"
+          }
+        ],
+        "scorer_sha256": "e91deae3178f49eb80f236fd3ccf9b27f883f27da8dc3c0783eb89580bb41ba7",
+        "reference_schema": "semantic-and-unwrapped-v2",
+        "meaning": "Reuse unchanged development post-hoc full-text labels and reserved labels locked before first provider observations. This final validation is no longer blind. Confirmed challenge union is pre-excluded."
+      },
+      "finished_at": "2026-10-24T14:02:18.173622+00:00",
+      "cloudflare_exclusions": [
+        "aiohttp",
+        "anyio",
+        "artic",
+        "attrs",
+        "framework",
+        "openlearn",
+        "oxford",
+        "parliament",
+        "prado",
+        "pytest",
+        "raspberrypi"
+      ]
+    }
+  },
+  "public_inventory_format": "Reference filename/digest records; same hashes as local locks, structured to avoid treating FastAPI-named hashes as API credentials."
+}

@@ -2,6 +2,8 @@
 
 Measured locally on an Apple M4 Pro, Python 3.13. Dates and source hashes are in [the evidence](../examples/evidence/summary.json). No vendor API calls or paid inference were used in this round.
 
+This page covers the earlier research evaluation. The newer [Crawlee/Crawl4AI comparison](oss-benchmark-results.md) uses a separate frozen 50-URL corpus, source-reference quality metrics and explicit cold-start configurations.
+
 ## New-site evaluation
 
 The manifest froze 50 distinct hostnames not in the earlier development manifest, before any target fetch. This was a purposeful varied sample, not a random sample of the web. Forty sites were tested first; ten stayed unrequested until the initial fixes and 146-test suite passed. Each site used a fresh database, robots enforcement, a 55-second run budget and frozen lexical expectations. Confirmed Cloudflare challenges were skipped without retries or replacement URLs.

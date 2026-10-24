@@ -8,7 +8,7 @@ FILES = [Path(name) for name in (
     'README.md', 'CONTRIBUTING.md', 'SECURITY.md', 'CODE_OF_CONDUCT.md', 'CHANGELOG.md',
     'THIRD_PARTY_NOTICES.md', 'docs/api.md', 'docs/architecture.md', 'docs/limits.md',
     'docs/usage.md', 'docs/releases.md', 'docs/provenance.md', 'docs/evaluation.md',
-    'docs/comparison.md',
+    'docs/comparison.md', 'docs/oss-benchmark-method.md', 'docs/oss-benchmark-results.md',
 )]
 
 

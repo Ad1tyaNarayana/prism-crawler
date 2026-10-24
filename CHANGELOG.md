@@ -10,6 +10,11 @@ The project uses semantic versioning. Before 1.0, minor versions can change the 
 - Cancel and join active work on context exit, preserving resumable checkpoints.
 - Add distribution metadata, MIT license, dependency credits, provenance review, contributor/security guidance and release checks.
 - Add local public-API tests, installed wheel/sdist examples, typing checks and Python/macOS/Linux CI configuration.
+- Preserve descriptive article cards inside main-content navigation instead of removing them as menus.
+- Route empty regions owned by simple inline network-and-DOM-write scripts to guarded browser recovery, even when the introduction is substantial.
+- Remove link-heavy legacy global header/footer containers while preserving article metadata and introductory prose.
+- Preserve inline token adjacency and preformatted code whitespace; avoid decoding DOM text entities twice.
+- Add a local comparison harness for pinned Crawlee and Crawl4AI configurations, source-reference quality scoring, browser/request receipts and explicit post-hoc label sensitivity analysis.
 
 ## 0.1.0 (local research prototype)
 

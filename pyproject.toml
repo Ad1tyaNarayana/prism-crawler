@@ -36,6 +36,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+benchmark = ["html5lib>=1.1,<2"]
 laya = ["laya==0.3.20"]
 dev = [
   "pytest>=8,<10", "pytest-asyncio>=1,<2", "pytest-cov>=6,<8",

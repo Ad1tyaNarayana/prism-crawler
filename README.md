@@ -89,6 +89,8 @@ An actual SIGKILL experiment exposed a frontier bug that lost 100 child URLs. At
 
 Read [evaluation](docs/evaluation.md), [saved receipts](examples/evidence/summary.json), [the source audit](docs/provenance.md) and [comparison with established projects](docs/comparison.md). The audit found no source matches in the scoped comparison; it does not prove originality across all public code. Prism uses existing parsing, networking and browser libraries, credited in [third-party notices](THIRD_PARTY_NOTICES.md).
 
+A separate [local comparison with Crawlee and Crawl4AI](docs/oss-benchmark-results.md) uses 50 new URLs and source-reference content scoring. It separates the untouched holdout from later fixes, records browser/request costs, and preserves failed runs and label corrections. Read the [configurations and limits](docs/oss-benchmark-method.md) before interpreting it as a library ranking.
+
 ## Development and releases
 
 ```sh

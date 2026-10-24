@@ -1,0 +1,302 @@
+[
+  {
+    "id": "fastapi",
+    "category": "docs",
+    "url": "https://fastapi.tiangolo.com/tutorial/",
+    "cohort": "development"
+  },
+  {
+    "id": "starlette",
+    "category": "docs",
+    "url": "https://www.starlette.io/",
+    "cohort": "development"
+  },
+  {
+    "id": "pydantic",
+    "category": "docs",
+    "url": "https://docs.pydantic.dev/latest/concepts/models/",
+    "cohort": "development"
+  },
+  {
+    "id": "sqlalchemy",
+    "category": "docs",
+    "url": "https://docs.sqlalchemy.org/en/20/tutorial/index.html",
+    "cohort": "reserved"
+  },
+  {
+    "id": "attrs",
+    "category": "docs",
+    "url": "https://www.attrs.org/en/stable/why.html",
+    "cohort": "reserved"
+  },
+  {
+    "id": "anyio",
+    "category": "docs",
+    "url": "https://anyio.readthedocs.io/en/stable/basics.html",
+    "cohort": "development"
+  },
+  {
+    "id": "aiohttp",
+    "category": "docs",
+    "url": "https://docs.aiohttp.org/en/stable/client_quickstart.html",
+    "cohort": "development"
+  },
+  {
+    "id": "pytest",
+    "category": "docs",
+    "url": "https://docs.pytest.org/en/stable/how-to/assert.html",
+    "cohort": "development"
+  },
+  {
+    "id": "svelte",
+    "category": "docs-js",
+    "url": "https://svelte.dev/docs/svelte/overview",
+    "cohort": "reserved"
+  },
+  {
+    "id": "nextjs",
+    "category": "docs-js",
+    "url": "https://nextjs.org/docs/app/getting-started/installation",
+    "cohort": "reserved"
+  },
+  {
+    "id": "astro",
+    "category": "docs-js",
+    "url": "https://docs.astro.build/en/getting-started/",
+    "cohort": "development"
+  },
+  {
+    "id": "quarto",
+    "category": "docs",
+    "url": "https://quarto.org/docs/get-started/",
+    "cohort": "development"
+  },
+  {
+    "id": "nist",
+    "category": "science",
+    "url": "https://www.nist.gov/pml/owm/metric-si/si-units",
+    "cohort": "development"
+  },
+  {
+    "id": "bipm",
+    "category": "science",
+    "url": "https://www.bipm.org/en/measurement-units",
+    "cohort": "reserved"
+  },
+  {
+    "id": "royalsociety",
+    "category": "science",
+    "url": "https://royalsociety.org/about-us/",
+    "cohort": "reserved"
+  },
+  {
+    "id": "sanger",
+    "category": "science",
+    "url": "https://www.sanger.ac.uk/about/",
+    "cohort": "development"
+  },
+  {
+    "id": "embl",
+    "category": "science",
+    "url": "https://www.embl.org/about/",
+    "cohort": "development"
+  },
+  {
+    "id": "nationalarchives",
+    "category": "government",
+    "url": "https://www.nationalarchives.gov.uk/about/",
+    "cohort": "development"
+  },
+  {
+    "id": "parliament",
+    "category": "government",
+    "url": "https://www.parliament.uk/about/",
+    "cohort": "reserved"
+  },
+  {
+    "id": "bundesbank",
+    "category": "government",
+    "url": "https://www.bundesbank.de/en/tasks",
+    "cohort": "reserved"
+  },
+  {
+    "id": "rba",
+    "category": "government",
+    "url": "https://www.rba.gov.au/about-rba/",
+    "cohort": "development"
+  },
+  {
+    "id": "bankofcanada",
+    "category": "government",
+    "url": "https://www.bankofcanada.ca/about/",
+    "cohort": "development"
+  },
+  {
+    "id": "statsnz",
+    "category": "government",
+    "url": "https://www.stats.govt.nz/about-us/",
+    "cohort": "development"
+  },
+  {
+    "id": "getty",
+    "category": "culture",
+    "url": "https://www.getty.edu/about/",
+    "cohort": "reserved"
+  },
+  {
+    "id": "artic",
+    "category": "culture",
+    "url": "https://www.artic.edu/about-us",
+    "cohort": "reserved"
+  },
+  {
+    "id": "clevelandart",
+    "category": "culture",
+    "url": "https://www.clevelandart.org/about",
+    "cohort": "development"
+  },
+  {
+    "id": "prado",
+    "category": "culture",
+    "url": "https://www.museodelprado.es/en/the-museum",
+    "cohort": "development"
+  },
+  {
+    "id": "rmg",
+    "category": "culture",
+    "url": "https://www.rmg.co.uk/about-us",
+    "cohort": "development"
+  },
+  {
+    "id": "designmuseum",
+    "category": "culture",
+    "url": "https://designmuseum.org/about-the-museum",
+    "cohort": "reserved"
+  },
+  {
+    "id": "gnome",
+    "category": "opensource",
+    "url": "https://www.gnome.org/about-us/",
+    "cohort": "reserved"
+  },
+  {
+    "id": "debian",
+    "category": "opensource",
+    "url": "https://www.debian.org/intro/about",
+    "cohort": "development"
+  },
+  {
+    "id": "freebsd",
+    "category": "opensource",
+    "url": "https://www.freebsd.org/about/",
+    "cohort": "development"
+  },
+  {
+    "id": "openbsd",
+    "category": "opensource",
+    "url": "https://www.openbsd.org/goals.html",
+    "cohort": "development"
+  },
+  {
+    "id": "netbsd",
+    "category": "opensource",
+    "url": "https://www.netbsd.org/about/",
+    "cohort": "reserved"
+  },
+  {
+    "id": "kde",
+    "category": "opensource",
+    "url": "https://kde.org/community/whatiskde/",
+    "cohort": "reserved"
+  },
+  {
+    "id": "openlearn",
+    "category": "education",
+    "url": "https://www.open.edu/openlearn/about-openlearn",
+    "cohort": "development"
+  },
+  {
+    "id": "futurelearn",
+    "category": "education",
+    "url": "https://www.futurelearn.com/about-futurelearn",
+    "cohort": "development"
+  },
+  {
+    "id": "edinburgh",
+    "category": "education",
+    "url": "https://www.ed.ac.uk/about",
+    "cohort": "development"
+  },
+  {
+    "id": "cambridge",
+    "category": "education",
+    "url": "https://www.cam.ac.uk/about-the-university",
+    "cohort": "reserved"
+  },
+  {
+    "id": "oxford",
+    "category": "education",
+    "url": "https://www.ox.ac.uk/about",
+    "cohort": "reserved"
+  },
+  {
+    "id": "fairphone",
+    "category": "product",
+    "url": "https://www.fairphone.com/en/impact/",
+    "cohort": "development"
+  },
+  {
+    "id": "framework",
+    "category": "product",
+    "url": "https://frame.work/about",
+    "cohort": "development"
+  },
+  {
+    "id": "raspberrypi",
+    "category": "product",
+    "url": "https://www.raspberrypi.com/about/",
+    "cohort": "development"
+  },
+  {
+    "id": "arduino",
+    "category": "product-js",
+    "url": "https://www.arduino.cc/en/about",
+    "cohort": "reserved"
+  },
+  {
+    "id": "homeassistant",
+    "category": "product",
+    "url": "https://www.home-assistant.io/getting-started/",
+    "cohort": "reserved"
+  },
+  {
+    "id": "inria",
+    "category": "multilingual",
+    "url": "https://www.inria.fr/fr/qui-sommes-nous",
+    "cohort": "development"
+  },
+  {
+    "id": "cnrs",
+    "category": "multilingual",
+    "url": "https://www.cnrs.fr/fr/le-cnrs",
+    "cohort": "development"
+  },
+  {
+    "id": "mpg",
+    "category": "multilingual",
+    "url": "https://www.mpg.de/kurzportrait",
+    "cohort": "development"
+  },
+  {
+    "id": "riken",
+    "category": "multilingual",
+    "url": "https://www.riken.jp/en/about/",
+    "cohort": "reserved"
+  },
+  {
+    "id": "jaxa",
+    "category": "multilingual",
+    "url": "https://www.jaxa.jp/about/index_j.html",
+    "cohort": "reserved"
+  }
+]

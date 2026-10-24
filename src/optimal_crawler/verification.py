@@ -18,7 +18,46 @@ from .models import (
 MAX_HEADINGS = 64
 MAX_BLOCKS = 128
 MAX_TEXT = 200_000
-VERIFIER_VERSION = "source-evidence-v4"
+VERIFIER_VERSION = "source-evidence-v7"
+
+
+def scripted_content_targets(tree) -> list[re.Pattern]:
+    """Recognize a bounded inline fetch + target-write hint without evaluating JS.
+
+    This deliberately handles simple ID lookups, including prefix templates. It
+    is a routing hint, not a JavaScript interpreter or a completeness proof.
+    """
+    targets = []
+    lookup = re.compile(r"(?:window\.)?document\.getElementById\(\s*(['\"`])([^\n]{1,160}?)\1\s*\)")
+    network = re.compile(r"\bfetch\s*\(|\bXMLHttpRequest\b|\$\.(?:ajax|getJSON)\s*\(")
+    write = r"\.(?:(?:innerHTML|innerText|textContent)\s*=|(?:append|appendChild|replaceChildren|insertAdjacentHTML)\s*\()"
+    variable = re.compile(r"(?:const|let|var)\s+([A-Za-z_$][\w$]*)\s*=\s*$")
+    template = re.compile(r"\$\{[A-Za-z_$][\w$.]*\}")
+    for script in tree.xpath("//script[not(@src)]")[:100]:
+        if script.get("type", "").lower() not in {"", "module", "text/javascript", "application/javascript"}:
+            continue
+        code = (script.text or "")[:MAX_TEXT]
+        if not network.search(code):
+            continue
+        for match in lookup.finditer(code):
+            bound = variable.search(code[max(0, match.start() - 160):match.start()])
+            direct_write = re.match(r"\s*" + write, code[match.end():])
+            bound_write = bound and re.search(r"(?<![\w$])" + re.escape(bound[1]) + write, code)
+            if not (direct_write or bound_write):
+                continue
+            identifier = match[2]
+            literal = template.sub("", identifier)
+            if "${" in literal or len(literal) < 3:
+                continue
+            pieces, start = [], 0
+            for part in template.finditer(identifier):
+                pieces.extend((re.escape(identifier[start:part.start()]), r"[\w:.-]{1,80}"))
+                start = part.end()
+            pieces.append(re.escape(identifier[start:]))
+            targets.append(re.compile("".join(pieces)))
+            if len(targets) >= 64:
+                return targets
+    return targets
 
 
 def normalize(text: str) -> str:
@@ -59,6 +98,7 @@ class ContentVerifier:
         executable = any((script.get("type", "").lower() in {
             "", "module", "text/javascript", "application/javascript"})
             and (script.get("src") or (script.text or "").strip()) for script in tree.xpath("//script"))
+        targets = scripted_content_targets(tree)
         strip_chrome(tree)
         mains = tree.xpath("//main|//*[@role='main']")
         articles = tree.xpath("//article")
@@ -82,7 +122,11 @@ class ContentVerifier:
                                    if len(text_of(node)) >= 80))
         loading = executable and len(visible) < 300 and bool(re.search(
             r"\bloading\b|please enable javascript|you need to enable javascript", visible, re.I))
-        deferred = bool(executable and (root.get("aria-busy") == "true"
+        empty_target = any(node.tag in {"div", "section", "table", "ul", "ol"}
+                           and node.get("id") and not text_of(node)
+                           and any(target.fullmatch(node.get("id")) for target in targets)
+                           for node in root.iter()) if targets else False
+        deferred = bool(executable and (empty_target or root.get("aria-busy") == "true"
                         or root.xpath(".//*[@aria-busy='true']")
                         or re.search(r"\bloading (?:more|additional)\b", visible, re.I)))
         return SourceEvidence(scope, tuple(headings[:MAX_HEADINGS]), tuple(blocks), bool(loading),

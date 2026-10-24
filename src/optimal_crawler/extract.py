@@ -46,12 +46,67 @@ def quality(text: str, semantic: bool = False) -> float:
 
 
 def text_of(element) -> str:
-    return clean("\n".join(element.itertext()))
+    blocks = {"address", "article", "aside", "blockquote", "dd", "details", "div", "dl", "dt",
+              "fieldset", "figcaption", "figure", "footer", "form", "h1", "h2", "h3", "h4",
+              "h5", "h6", "header", "hr", "li", "main", "nav", "ol", "p", "section",
+              "table", "tbody", "td", "tfoot", "th", "thead", "tr", "ul"}
+    output, pending = [], []
+
+    def normal(value):
+        return re.sub(r"\s+", " ", value or "")
+
+    def flush():
+        value = re.sub(r"[^\S\n]+", " ", "".join(pending))
+        output.extend(line.strip() for line in value.splitlines() if line.strip())
+        pending.clear()
+
+    stack = [(element, False)]
+    while stack:
+        node, closing = stack.pop()
+        if closing:
+            if node.tag in blocks:
+                pending.append("\n")
+            if node is not element:
+                pending.append(normal(node.tail))
+        elif not isinstance(node.tag, str):
+            pending.append(normal(node.tail))
+        elif node.tag == "pre":
+            flush()
+            code = "".join(node.itertext()).replace("\r\n", "\n").replace("\r", "\n").strip("\n")
+            if code:
+                output.append(code)
+            if node is not element:
+                pending.append(normal(node.tail))
+        else:
+            if node.tag in blocks or node.tag == "br":
+                pending.append("\n")
+            pending.append(normal(node.text))
+            stack.append((node, True))
+            stack.extend((child, False) for child in reversed(node))
+    flush()
+    return "\n".join(output)
 
 
 def strip_chrome(tree) -> None:
+    for node in tree.xpath("//div[@id or @class]|//section[@id or @class]"):
+        labels = set(re.split(r"[\s_:-]+", (node.get("id", "") + " " + node.get("class", "")).lower()))
+        if not labels & {"header", "footer"} or labels & {"article", "post", "entry", "card"}:
+            continue
+        if any(parent.tag in {"main", "article"} or parent.get("role") == "main"
+               for parent in node.iterancestors()) or node.xpath(".//main|.//article|.//*[@role='main']"):
+            continue
+        links = node.xpath(".//a")
+        if len(links) >= 3 and sum(len(text_of(a)) for a in links) / max(1, len(text_of(node))) > 0.5:
+            node.drop_tree()
+    for node in tree.xpath("//nav"):
+        content_scope = any(parent.tag in {"main", "article"} or parent.get("role") == "main"
+                            for parent in node.iterancestors())
+        cards = node.xpath(".//article[.//p and (.//h1 or .//h2 or .//h3 or .//h4)]")
+        if content_scope and any(len(text_of(p)) >= 40 for card in cards for p in card.xpath(".//p")):
+            continue
+        node.drop_tree()
     # Headers inside sections/cards can contain the document's actual title.
-    for node in tree.xpath("//script|//style|//noscript|//nav|//footer|//aside|//form|"
+    for node in tree.xpath("//script|//style|//noscript|//footer|//aside|//form|"
                            "//header[@role='banner' or parent::body or "
                            "not(.//h1|.//h2|.//h3|.//h4|.//h5|.//h6)]|"
                            "//*[@hidden]|//*[@aria-hidden='true']"):
@@ -69,10 +124,10 @@ def cms_prose(container) -> str:
     blocks = container.xpath(".//h1|.//h2|.//h3|.//h4|.//h5|.//h6|.//p|.//li|.//pre|"
                              ".//blockquote|.//div[not(*)]")
     selected = set(blocks)
-    return clean("\n".join(text_of(node) for node in blocks
+    return "\n".join(text_of(node) for node in blocks
         if not any(parent in selected or 'section-metadata' in parent.get('class', '').split()
                    for parent in node.iterancestors())
-        and (node.tag != 'div' or len(text_of(node)) >= 80)))
+        and (node.tag != 'div' or len(text_of(node)) >= 80))
 
 
 def access_wall(tree) -> bool:
