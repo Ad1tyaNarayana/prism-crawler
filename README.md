@@ -6,7 +6,7 @@
 
 Prism starts with HTTP, uses guarded Chromium when content checks call for rendering, and returns documents together with explicit failure outcomes. Robots, origin scope, pacing and resource budgets apply to both paths. No hosted crawler, API key or decision model is required.
 
-Status is **alpha, version 0.2 in preparation**. The repository is private during release preparation. The package has not been uploaded to PyPI. Current support is Python 3.11+ on macOS and Linux; local verification used Python 3.13 on macOS. The wider CI matrix is configured for public runs or explicit manual dispatch.
+Status is **experimental alpha, version 0.2.0a1**. Install from this repository; the package has not been uploaded to PyPI. Python 3.11+ on macOS and Linux is targeted. See the verification workflow for current platform results. Expect API changes before 1.0.
 
 ## Install from source
 
@@ -19,7 +19,7 @@ python3 -m venv .venv
 .venv/bin/python -m playwright install chromium
 ```
 
-The private repository requires GitHub access. No package upload or public release is implied by these instructions.
+For the alpha release, check out the `v0.2.0a1` tag after cloning. The `main` branch contains ongoing development.
 
 ## Python library
 
@@ -79,7 +79,7 @@ PYTHONPATH=.:src .venv/bin/python -m benchmarks.demo --output reports/my-demo
 - Atomic page completion and discovered-child persistence, abandoned-lease recovery, conditional revalidation and heuristic revisit scheduling.
 - Exact/near-duplicate annotations, explicit refusal/error outcomes and SQLite/JSONL telemetry.
 
-This is a bounded single-machine library. Results materialize in memory. It has no distributed frontier, stable plugin API, custom request-handler framework, authentication automation or access-wall solver. Windows is unsupported. Quality checks are heuristic and can miss content gaps. Read [architecture](docs/architecture.md), [limits](docs/limits.md) and [security](SECURITY.md) before embedding it in a service.
+This is a bounded single-machine library. Results materialize in memory. It has no distributed frontier, stable plugin API, custom request-handler framework, authentication automation or access-wall solver. Windows is unsupported. Quality checks are heuristic and can miss content gaps. Known extraction problems include escaped presentation markup in FastAPI terminal examples and navigation/newsletter noise on Fairphone. These remain open limitations; see [known extraction issues](docs/limits.md#known-extraction-issues). Read [architecture](docs/architecture.md), [limits](docs/limits.md) and [security](SECURITY.md) before embedding it in a service.
 
 ## Evidence and provenance
 
@@ -104,7 +104,7 @@ A separate [local comparison with Crawlee and Crawl4AI](docs/oss-benchmark-resul
 .venv/bin/python tools/check_distribution.py --dist dist/release
 ```
 
-See [CONTRIBUTING](CONTRIBUTING.md), [changelog](CHANGELOG.md), [release preparation](docs/releases.md) and [code of conduct](CODE_OF_CONDUCT.md). CI runs automatically when the repository is public; automatic private runs are skipped to preserve the free/local preparation constraint. A skipped badge/job is not a passing check. Dependency updates are configured through Dependabot. No upload workflow is configured.
+See [CONTRIBUTING](CONTRIBUTING.md), [changelog](CHANGELOG.md), [release preparation](docs/releases.md) and [code of conduct](CODE_OF_CONDUCT.md). CI runs on public pushes and pull requests. Earlier automatic private runs skipped verification jobs; those skips are not passing checks. Dependency updates are configured through Dependabot. No upload workflow is configured.
 
 The supported namespace is `prism_crawler`. `optimal_crawler` is the internal engine. `benchmarks/` and `experiments/` contain historical research, not stable library interfaces. Raw captures, provider credentials, model downloads and personal writing remain ignored.
 

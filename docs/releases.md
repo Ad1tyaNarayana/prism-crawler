@@ -1,6 +1,6 @@
 # Preparing a release
 
-The repository is private until the maintainer chooses to make it public. Nothing here automatically uploads to PyPI, creates a release, or changes visibility. The `prism-crawler` PyPI name was unregistered when checked during preparation; this does not reserve it.
+The first public release is `v0.2.0a1`, an experimental alpha. GitHub release artifacts are provided for installation and inspection. The package has not been published to PyPI, and there is no automatic upload workflow. Future releases should follow the checks below.
 
 1. Review [provenance](provenance.md), [third-party notices](../THIRD_PARTY_NOTICES.md), [security](../SECURITY.md) and the current Git history for source/content/credential issues.
 2. Run the local checks in [CONTRIBUTING.md](../CONTRIBUTING.md), including wheel and sdist installation tests. Check dependency advisories and resolve actionable findings.

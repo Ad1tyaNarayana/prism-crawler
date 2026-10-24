@@ -26,7 +26,7 @@ propcache==0.5.4
 Protego==0.7.0
 pyee==14.0.0
 Pygments==2.21.0
-pypdf==6.21.1
+pypdf==6.21.2
 pytest==9.1.1
 pytest-asyncio==1.4.0
 python-dateutil==3.0.0

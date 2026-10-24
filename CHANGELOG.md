@@ -2,7 +2,12 @@
 
 The project uses semantic versioning. Before 1.0, minor versions can change the documented API; migration notes will accompany those changes. Patch versions are intended for compatible fixes. Experimental modules and the internal engine namespace have no compatibility promise.
 
-## 0.2.0 (unreleased)
+## 0.2.0a1 (2026-10-24)
+
+First public alpha. Install from the repository or GitHub release artifacts; no PyPI publication.
+
+- Update pypdf to 6.21.2 for fixes to repeated file loading and malformed cross-reference handling.
+- Document remaining FastAPI terminal-formatting and Fairphone boilerplate limitations.
 
 - Add `prism_crawler.AsyncCrawler`, `CrawlResult`, `CrawlStateError` and typed result exports.
 - Preserve the measured engine under `optimal_crawler` while exposing a documented library interface.

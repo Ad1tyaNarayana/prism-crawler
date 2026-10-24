@@ -42,3 +42,9 @@ Model probabilities are not calibrated for this crawler's workload. A threshold 
 Robots caches last for one run. Long-lived `recrawl --loop` starts fresh runs and refreshes policy. Raw content may contain personal data from public pages. Exports retain what the source returned and do not automatically redact it.
 
 The network restrictions have behavioral tests, including origin-side receipts proving that forbidden fixture requests did not arrive. They are not an independent security audit or an OS-level egress sandbox. Do not expose this crawler as an untrusted multi-tenant service without further isolation and review.
+
+## Known extraction issues
+
+The final frozen comparison retained two strict quality failures. FastAPI terminal examples expose escaped presentation tags in HTTP source, and the source references also contain animation duplicates and controls. Prism can preserve formatting markup as literal text. Launching a browser alone did not resolve that output in the focused diagnostic. Fairphone retains the expected source content alongside search navigation and newsletter text. A focused browser-first diagnostic reduced extra text but also dropped some reference content. These are known extraction limitations, not reasons to render every page.
+
+The focused diagnostic used one fresh trial per mode on each site and does not change the original benchmark totals. See the [comparison results](oss-benchmark-results.md) for the untouched holdout, final tuned validation and limits of the reference labels. Neither keyword passes nor source-token scores establish complete visual or code fidelity.
