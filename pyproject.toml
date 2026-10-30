@@ -37,7 +37,7 @@ dependencies = [
 
 [project.optional-dependencies]
 benchmark = ["html5lib>=1.1,<2"]
-laya = ["laya==0.3.20"]
+laya = ["laya==0.4.15"]
 dev = [
   "pytest>=8,<10", "pytest-asyncio>=1,<2", "pytest-cov>=6,<8",
   "ruff>=0.12,<1", "mypy>=1.15,<3", "build>=1.2,<2", "twine>=6,<8", "pip-audit>=2.9,<3",
